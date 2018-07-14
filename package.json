@@ -1,0 +1,36 @@
+{
+  "name": "PayEx.Ecommerce.Node",
+  "version": "1.0.0",
+  "description": "PayEx Payments API Library for Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjerkio/PayEx.Ecommerce.Node.git"
+  },
+  "keywords": [
+    "payex",
+    "ecom",
+    "ecommerce",
+    "payexpim"
+  ],
+  "author": "Simen A. W. Olsen <so@bjerk.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bjerkio/PayEx.Ecommerce.Node/issues"
+  },
+  "homepage": "https://github.com/Bjerkio/PayEx.Ecommerce.Node#readme",
+  "devDependencies": {
+    "gts": "^0.5.4",
+    "typescript": "~2.6.1"
+  }
+}
