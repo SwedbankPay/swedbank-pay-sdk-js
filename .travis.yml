@@ -6,3 +6,4 @@ install:
 
 script:
   - npm run check
+  - npm run compile
