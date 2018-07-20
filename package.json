@@ -1,10 +1,10 @@
 {
-  "name": "PayEx.Ecommerce.Node",
+  "name": "payex",
   "version": "1.0.0",
   "description": "PayEx Payments API Library for Node",
-  "main": "index.js",
+  "main": "./dist/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha -r ts-node/register test/**",
     "check": "gts check",
     "clean": "gts clean",
     "compile": "tsc -p .",
@@ -23,14 +23,34 @@
     "ecommerce",
     "payexpim"
   ],
-  "author": "Simen A. W. Olsen <so@bjerk.io>",
+  "types": "./dist/src/index.d.ts",
+  "author": "Bjerk AS",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bjerkio/PayEx.Ecommerce.Node/issues"
   },
   "homepage": "https://github.com/Bjerkio/PayEx.Ecommerce.Node#readme",
   "devDependencies": {
+    "@types/bluebird": "3.5.21",
+    "@types/chai": "^4.1.4",
+    "@types/lodash": "^4.14.112",
+    "@types/mocha": "^5.2.4",
+    "@types/request": "^2.47.1",
+    "@types/request-promise": "4.1.41",
+    "assert-rejects": "^0.1.1",
+    "chai": "^4.1.2",
     "gts": "^0.5.4",
-    "typescript": "~2.6.1"
+    "mocha": "^5.2.0",
+    "typescript": "~2.9.2"
+  },
+  "files": [
+    "./dist/**"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "ts-node": "^7.0.0"
   }
 }
