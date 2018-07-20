@@ -1,10 +1,16 @@
 language: node_js
 sudo: false
 node_js: 8.3
-
 install:
-  - travis_retry npm install
-
+- travis_retry npm install
 script:
-  - npm run check
-  - npm run compile
+- npm run check
+- npm run compile
+deploy:
+  provider: npm
+  email: office@bjerk.io
+  skip_cleanup: true
+  on:
+    tags: true
+  api_key:
+    secure: Wh/gWEwh6/aRBkCHG7iAtAHtwU8bR9PPLIB3OqilTZ7ON0eX0iRgSHzjgAbNbyXiz7pE7vbD02HJbIsy1I2JybkAOBoCCrHMwiCl8/Udd0J//7D/lpayqVmTjPCil6FIjJI5pZvH+oUsN2AuyIOvibziQgrwJPI7HEjas30rn/TihnJnywRUDHoyyn80ZlBdOzg7x0hJkfyr5PLlY4Up8X8AlLdJ9c8BbMWFP7GVrArv4BTCSZIgqeietHyoi+TCK5mowZmBqeW0XZaoGkGiQ/USwu1tsbBAaawB5sHwtegiG54OR9+XPrBm5QoRGhcPqkPgSHRFLt6yjRZWiN5qRXnPDnplJ6mtghnXOo2wzQToz1JZuWfAgprudcLE8nAMDOm4B/6s+/3NdTexPTyAfrRMQBXNhWNFQ+uNIZZjo/v+UN2xfEr1vIjclK2BeUn5YH/ZtFoPxIFTHDb/xeL1dXmh3r2ajkfnSWT1zm+D37AalWCtcXv6ivztZcqPygVCWGmRMVveuLQFzkXTUrdujbXerVLILlkqQT9or6BCX6lt8Uejvptzp0XXmm8eG7YanWbgSzWezZrBrhQ8I1xnJkZY1pLU0Jwk5WS95c9MKe7shS5hA6mNwoMpvyTMM6yUrAQ5t5xXlfwdhrj4EFxxk3O8VPhQI02vsDB2tU3jHxM=
