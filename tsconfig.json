@@ -21,6 +21,7 @@
   },
   "include": [
     "src/**/*",
+    "examples/**/*",
     "__tests__/**/*"
   ]
 }

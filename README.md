@@ -1,4 +1,4 @@
-![Push](https://github.com/bjerkio/swedbank-pay-js/workflows/Push/badge.svg)
+![Build & Deploy](https://github.com/bjerkio/swedbank-pay-js/workflows/Build%20&%20Deploy/badge.svg?branch=master)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bjerkio/swedbank-pay-js.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bjerkio/swedbank-pay-js/context:javascript)
 [![codecov](https://codecov.io/gh/bjerkio/swedbank-pay-js/branch/master/graph/badge.svg)](https://codecov.io/gh/bjerkio/swedbank-pay-js)
 [![Maintainability](https://api.codeclimate.com/v1/badges/04b50822a61583ccdb5f/maintainability)](https://codeclimate.com/github/bjerkio/swedbank-pay-js/maintainability)

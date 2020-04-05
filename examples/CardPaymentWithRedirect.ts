@@ -6,7 +6,7 @@ const payment = new CardPayment({
   sessionId: 'n7zMx0AT*2RoJ8n#hRkLCNYeC%Y8o74fUn84B7zcW3P%1mBP@m0Q',
 });
 
-const runTransaction = async () => {
+const runTransaction = async (): Promise<void> => {
   const purchase = await payment.createPurchase({
     intent: 'Authorization',
     currency: 'NOK',
