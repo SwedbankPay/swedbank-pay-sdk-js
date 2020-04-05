@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Typescript / Javascript Software Development Kit for the Swedbank Pay API Platform",
   "main": "build/src/main.js",
+  "files": [
+    "/build"
+  ],
   "engines": {
     "node": ">= 12.13 <13"
   },
