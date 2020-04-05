@@ -1,56 +1,45 @@
 {
-  "name": "payex",
-  "version": "1.0.0",
-  "description": "PayEx Payments API Library for Node",
-  "main": "./dist/src/index.js",
-  "scripts": {
-    "test": "mocha -r ts-node/register test/**",
-    "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc -p .",
-    "fix": "gts fix",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run check"
+  "name": "swedbank-pay",
+  "version": "0.0.0",
+  "description": "Typescript / Javascript Software Development Kit for the Swedbank Pay API Platform",
+  "engines": {
+    "node": ">= 12.13 <13"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bjerkio/PayEx.Ecommerce.Node.git"
+    "url": "https://github.com/bjerkio/swedbank-pay-js.git"
   },
-  "keywords": [
-    "payex",
-    "ecom",
-    "ecommerce",
-    "payexpim"
-  ],
-  "types": "./dist/src/index.d.ts",
-  "author": "Bjerk AS",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Bjerkio/PayEx.Ecommerce.Node/issues"
-  },
-  "homepage": "https://github.com/Bjerkio/PayEx.Ecommerce.Node#readme",
   "devDependencies": {
-    "@types/bluebird": "3.5.21",
-    "@types/chai": "^4.1.4",
-    "@types/lodash": "^4.14.112",
-    "@types/mocha": "^5.2.4",
-    "@types/request": "^2.47.1",
-    "@types/request-promise": "4.1.41",
-    "assert-rejects": "^0.1.1",
-    "chai": "^4.1.2",
-    "gts": "^0.5.4",
-    "mocha": "^5.2.0",
-    "typescript": "~2.9.2"
+    "@types/jest": "~25.1.2",
+    "@types/node": "~12.12.27",
+    "@typescript-eslint/eslint-plugin": "~2.19.2",
+    "@typescript-eslint/parser": "~2.19.2",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.0",
+    "eslint-plugin-jest": "~23.7.0",
+    "jest": "~25.1.0",
+    "nock": "^12.0.3",
+    "prettier": "~1.19.1",
+    "rimraf": "~3.0.2",
+    "ts-jest": "~25.2.0",
+    "tsutils": "~3.17.0",
+    "typedoc": "^0.15.6",
+    "typedoc-plugin-markdown": "^2.2.16",
+    "typescript": "~3.8.2"
   },
-  "files": [
-    "./dist/**"
-  ],
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "generate-docs": "typedoc --mode file --readme none --plugin typedoc-plugin-markdown --hideSources --out docs src",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "author": "Bjerk AS <office@bjerk.io>",
+  "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "lodash": "^4.17.10",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2",
-    "ts-node": "^7.0.0"
+    "got": "^10.7.0",
+    "tslib": "~1.10.0"
   }
 }

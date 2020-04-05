@@ -1,0 +1,37 @@
+name: Push
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm run lint --if-present
+    - run: npm run build --if-present
+    - run: npm test
+      env:
+        CI: true
+    - run: npx codecov
+      env:
+        CODECOV_TOKEN: ${{ secret.CODECOV_TOKEN }}
+    - name: Semantic Release
+      uses: cycjimmy/semantic-release-action@v2
+      with:
+        semantic_version: 17.0.4
+        extra_plugins: |
+          @semantic-release/changelog@5.0.1
+          @semantic-release/git
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

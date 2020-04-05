@@ -1,41 +1,38 @@
-# PayEx PSP Payments API Library for Node [![Build Status](https://travis-ci.org/Bjerkio/PayEx.Ecommerce.Node.svg?branch=master)](https://travis-ci.org/Bjerkio/PayEx.Ecommerce.Node)
+![Push](https://github.com/bjerkio/swedbank-pay-js/workflows/Push/badge.svg)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bjerkio/swedbank-pay-js.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bjerkio/swedbank-pay-js/context:javascript)
+[![codecov](https://codecov.io/gh/bjerkio/swedbank-pay-js/branch/master/graph/badge.svg)](https://codecov.io/gh/bjerkio/swedbank-pay-js)
 
-## Description ##
-PayEx Payments API Library for Node provide library work with PayEx Payments API.
+![Swedbank Pay Javascript / Typescript SDK](assets/logo.png)
 
-## Documentation ##
-https://developer.payex.com/
+## About
 
-## Installation ##
+**IMPORTANT**: This SDK is at an early stage and not yet used in production.
+We do not offer support for this version, but will release supported versions
+in the future. Feel free to play around, but for full functionality and support,
+please wait for the supported, stable release.
 
-**Install via npm:**
-  ```bash
-  npm install payex
-  ```
+The Swedbank Pay SDK for PHP simplifies integrations against
+[Swedbank Pay's API Platform](https://developer.swedbankpay.com/payments/) by providing native PHP interface towards
+the REST API.
 
-## Examples ##
+This SDK includes the following payments options:
 
-**Typescript**
-  ```javascript
-  import { CardPayments } from 'payex';
+* Credit and debit cards (Visa, Mastercard, Visa Electron, Maestro etc).
 
-  const payex = new CardPayments({
-    merchantToken: 'xxxx-xxxx-xxxx', // Merchant Token from admin.payex.com
-    sessionId: 'xxx-xxx-xxx', // Session ID. If not given, Payex will generate.
-    consumerIp: 'xxx.xxx.xxx.xxx', // The endusers IP address
-    testMode: false // If true, testing URLs are used.
-  })
+## Quickstart
 
-  payex.initiate({
-    operation: 'Purchase'
-    // … in accordance of: https://developer.payex.com/xwiki/wiki/developer/view/Main/ecommerce/technical-reference/card-payments/#HCreatePayment
-  }).then(payment => {
-    // Save stuff to database …
-    //
-    // or, work with it!
-    payment.capture().then(payment => {
-      // Payment is captured.
-    });
-  });
+```
+npm install swedbank-pay
+```
 
-  ```
+# Documentation
+Apart from this README, you can find details and examples of using the SDK in the following places:  
+
+- [Tutorials](tutorials/README.md)
+- [SDK Documentation](docs/README.md)
+- [API Documentation](https://developer.swedbankpay.com/payments/)
+- [Examples](examples/)
+
+## Contribute & Disclaimer
+
+We love to get help 🙏 This package and repository are not connected to Swedbank Pay.
