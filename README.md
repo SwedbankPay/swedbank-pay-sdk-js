@@ -14,8 +14,8 @@ We do not offer support for this version, but will release supported versions
 in the future. Feel free to play around, but for full functionality and support,
 please wait for the supported, stable release.
 
-The Swedbank Pay SDK for PHP simplifies integrations against
-[Swedbank Pay's API Platform](https://developer.swedbankpay.com/payments/) by providing native PHP interface towards
+The Swedbank Pay SDK for Node.js simplifies integrations against
+[Swedbank Pay's API Platform](https://developer.swedbankpay.com/payments/) by providing native Node.js interface towards
 the REST API.
 
 This SDK includes the following payments options:
