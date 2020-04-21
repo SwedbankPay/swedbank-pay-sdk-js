@@ -39,3 +39,9 @@ Apart from this README, you can find details and examples of using the SDK in th
 ## Contribute & Disclaimer
 
 We love to get help 🙏 This package and repository are not connected to Swedbank Pay.
+
+### Project: v1
+
+This SDK is still under heavy development and needs help from the community 🎉
+
+We have a project for the release of **version 1**, follow the [link](https://github.com/bjerkio/swedbank-pay-js/projects/1) and look for issues that you'd like to help with!
