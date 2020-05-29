@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.4](https://github.com/bjerkio/swedbank-pay-js/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2020-05-29)
+
+
+### Bug Fixes
+
+* Add Typescript Declarations ([faba3a3](https://github.com/bjerkio/swedbank-pay-js/commit/faba3a36a4f29c753464c037712d308f630a3a15))
+
 # [1.0.0-alpha.3](https://github.com/bjerkio/swedbank-pay-js/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2020-05-15)
 
 
