@@ -4140,9 +4140,9 @@ typedoc-default-themes@^0.10.1:
     lunr "^2.3.8"
 
 typedoc-plugin-markdown@^2.2.16:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-2.3.0.tgz#f80264866c484cf1c0578d50cbb575f41ffb4f81"
-  integrity sha512-Cahzf68+0xAwy8wMxA4P1tDQbr5ndFtdl2ZOPgoha7GclLGzO6FC1ExcDKfdhzdqDOgMQzxqpzlbIqbF3TDMTg==
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-2.3.1.tgz#c4c6c3228f625b24875e87cc1622b9a259b914ce"
+  integrity sha512-7rlmg1tLjddYy11uznHCAlyoOpxdWnFXqGEZ7j2mJ4KJg2avwWgEpw6SFZVofgPCGn36zklpFS51lHxYSRTLVQ==
   dependencies:
     fs-extra "^9.0.0"
     handlebars "^4.7.6"
