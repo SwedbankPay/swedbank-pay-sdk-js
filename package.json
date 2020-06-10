@@ -14,7 +14,7 @@
     "url": "https://github.com/bjerkio/swedbank-pay-js.git"
   },
   "devDependencies": {
-    "@types/jest": "~25.2.1",
+    "@types/jest": "~26.0.0",
     "@types/node": "~12.12.27",
     "@typescript-eslint/eslint-plugin": "~2.34.0",
     "@typescript-eslint/parser": "~2.34.0",
