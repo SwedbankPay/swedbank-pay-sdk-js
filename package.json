@@ -1,8 +1,11 @@
 {
-  "name": "swedbank-pay",
+  "name": "@swedbank-pay/sdk",
   "version": "1.0.0-alpha.4",
-  "description": "Typescript / Javascript Software Development Kit for the Swedbank Pay API Platform",
+  "description": "TypeScript / JavaScript Software Development Kit for the Swedbank Pay API Platform",
   "main": "build/src/main.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "/build"
   ],
@@ -11,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bjerkio/swedbank-pay-js.git"
+    "url": "https://github.com/SwedbankPay/swedbank-pay-sdk-js.git"
   },
   "devDependencies": {
     "@types/jest": "~26.0.0",
