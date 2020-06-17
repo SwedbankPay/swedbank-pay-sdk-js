@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-alpha.5](https://github.com/SwedbankPay/swedbank-pay-sdk-js/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2020-06-17)
+
+
+### Bug Fixes
+
+* **package.json:** Change to SwedbankPay NPM organizationThis is a chore change, but due to semantic release it needs to trigger a release. ([9f43355](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/9f433550a3de3b75191c398eb6fbaf0758a41b06))
+
 # [1.0.0-alpha.4](https://github.com/bjerkio/swedbank-pay-js/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2020-05-29)
 
 
