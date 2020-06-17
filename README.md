@@ -25,7 +25,7 @@ This SDK includes the following payments options:
 ## Quickstart
 
 ```
-npm install swedbank-pay
+npm install @swedbank-pay/sdk
 ```
 
 # Documentation
