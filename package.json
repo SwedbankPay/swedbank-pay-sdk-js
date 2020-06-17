@@ -1,6 +1,6 @@
 {
   "name": "@swedbank-pay/sdk",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "TypeScript / JavaScript Software Development Kit for the Swedbank Pay API Platform",
   "main": "build/src/main.js",
   "publishConfig": {
