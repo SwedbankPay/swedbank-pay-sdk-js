@@ -37,20 +37,23 @@ the following places:
 - [API Documentation][developer-portal]
 - [Examples][examples]
 
-## Contribute & Disclaimer
+## Contributing
 
-We love to get help 🙏 This package and repository are not connected to Swedbank
-Pay.
+We love contributions! 🙏 This SDK is still under heavy development and needs
+help from the community 🎉
 
-### Project: v1
+We have a [milestone for v1.0.0][milestone-1.0.0] where you can find issues that
+you would like to help resolve.
 
-This SDK is still under heavy development and needs help from the community 🎉
-
-We have a project for the release of **version 1**, follow the
-[link][milestone-1.0.0] and look for issues that you'd like to help with!
+Bug reports and pull requests are welcome on [GitHub][github]. This project is
+intended to be a safe, welcoming space for collaboration, and contributors are
+expected to adhere to the [code of conduct][coc] and sign the
+[contributor's license agreement][cla].
 
 [banner]:               https://repository-images.githubusercontent.com/253005089/71a47e00-b15a-11ea-837e-bd2edf92c6ea
 [build-badge]:          https://github.com/SwedbankPay/swedbank-pay-sdk-js/workflows/Build%20&%20Deploy/badge.svg
+[cla]:                  https://cla-assistant.io/SwedbankPay/swedbank-pay-sdk-js
+[coc]:                  ./CODE_OF_CONDUCT.md
 [codeclimate-badge]:    https://api.codeclimate.com/v1/badges/26db1d69e388b2f03bc0/maintainability
 [codeclimate]:          https://codeclimate.com/github/SwedbankPay/swedbank-pay-sdk-js/maintainability
 [codecov-badge]:        https://codecov.io/gh/SwedbankPay/swedbank-pay-sdk-js/branch/master/graph/badge.svg
@@ -59,6 +62,7 @@ We have a project for the release of **version 1**, follow the
 [dependabot]:           https://dependabot.com
 [developer-portal]:     https://developer.swedbankpay.com/
 [examples]:             ./examples/
+[github]:               https://github.com/SwedbankPay/swedbank-pay-sdk-js
 [lgtm-badge]:           https://img.shields.io/lgtm/grade/javascript/g/SwedbankPay/swedbank-pay-sdk-js.svg?logo=lgtm&logoWidth=18
 [lgtm]:                 https://lgtm.com/projects/g/SwedbankPay/swedbank-pay-sdk-js/context:javascript
 [milestone-1.0.0]:      https://github.com/SwedbankPay/swedbank-pay-sdk-js/milestone/1
