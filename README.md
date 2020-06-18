@@ -1,10 +1,13 @@
 ![Swedbank Pay Javascript / Typescript SDK][banner]
 
 ![Build & Deploy][build-badge]
+[![NPM version][npm-badge]][npm]
 [![Language grade: JavaScript][lgtm-badge]][lgtm]
 [![codecov][codecov-badge]][codecov]
 [![Maintainability][codeclimate-badge]][codeclimate]
 [![Dependabot Status][dependabot-badge]][dependabot]
+[![CLA assistant][cla-badge]][cla]
+[![Contributor Covenant][coc-badge]][coc]
 
 ## About
 
@@ -58,7 +61,9 @@ agreement][cla].
 
 [banner]:               https://repository-images.githubusercontent.com/253005089/71a47e00-b15a-11ea-837e-bd2edf92c6ea
 [build-badge]:          https://github.com/SwedbankPay/swedbank-pay-sdk-js/workflows/Build%20&%20Deploy/badge.svg
+[cla-badge]:            https://cla-assistant.io/readme/badge/SwedbankPay/jekyll-plantuml-docker
 [cla]:                  https://cla-assistant.io/SwedbankPay/swedbank-pay-sdk-js
+[coc-badge]:            https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
 [coc]:                  ./CODE_OF_CONDUCT.md
 [codeclimate-badge]:    https://api.codeclimate.com/v1/badges/26db1d69e388b2f03bc0/maintainability
 [codeclimate]:          https://codeclimate.com/github/SwedbankPay/swedbank-pay-sdk-js/maintainability
@@ -73,5 +78,7 @@ agreement][cla].
 [lgtm]:                 https://lgtm.com/projects/g/SwedbankPay/swedbank-pay-sdk-js/context:javascript
 [license]:              https://opensource.org/licenses/Apache-2.0
 [milestone-1.0.0]:      https://github.com/SwedbankPay/swedbank-pay-sdk-js/milestone/1
+[npm-badge]:            https://img.shields.io/npm/v/@swedbank-pay/sdk
+[npm]:                  https://www.npmjs.com/package/@swedbank-pay/sdk
 [sdk-doc]:              ./docs/README.md
 [tutorials]:            ./tutorials/README.md
