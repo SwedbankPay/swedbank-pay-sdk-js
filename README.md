@@ -50,6 +50,12 @@ intended to be a safe, welcoming space for collaboration, and contributors are
 expected to adhere to the [code of conduct][coc] and sign the
 [contributor's license agreement][cla].
 
+## License
+
+The code within this repository is available as open source under the terms of
+the [Apache 2.0 License][license] and the [contributor's license
+agreement][cla].
+
 [banner]:               https://repository-images.githubusercontent.com/253005089/71a47e00-b15a-11ea-837e-bd2edf92c6ea
 [build-badge]:          https://github.com/SwedbankPay/swedbank-pay-sdk-js/workflows/Build%20&%20Deploy/badge.svg
 [cla]:                  https://cla-assistant.io/SwedbankPay/swedbank-pay-sdk-js
@@ -65,6 +71,7 @@ expected to adhere to the [code of conduct][coc] and sign the
 [github]:               https://github.com/SwedbankPay/swedbank-pay-sdk-js
 [lgtm-badge]:           https://img.shields.io/lgtm/grade/javascript/g/SwedbankPay/swedbank-pay-sdk-js.svg?logo=lgtm&logoWidth=18
 [lgtm]:                 https://lgtm.com/projects/g/SwedbankPay/swedbank-pay-sdk-js/context:javascript
+[license]:              https://opensource.org/licenses/Apache-2.0
 [milestone-1.0.0]:      https://github.com/SwedbankPay/swedbank-pay-sdk-js/milestone/1
 [sdk-doc]:              ./docs/README.md
 [tutorials]:            ./tutorials/README.md
