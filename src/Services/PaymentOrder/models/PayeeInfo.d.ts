@@ -1,5 +1,3 @@
-
-
 export interface PayeeInfo {
   /**
    * The payeeId, this is usually the Merchant ID (you). Found by accessing

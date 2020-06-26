@@ -1,5 +1,3 @@
-
-
 export interface PayerInfo {
   /**
    * The consumer profile reference as obtained through initiating a

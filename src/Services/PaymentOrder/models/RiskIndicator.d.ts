@@ -1,4 +1,3 @@
-
 export interface RiskIndicator {
   /**
    * For electronic delivery, the email address to which the
