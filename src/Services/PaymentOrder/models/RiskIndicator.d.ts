@@ -1,3 +1,5 @@
+import { Address } from "./Address";
+
 export interface RiskIndicator {
   /**
    * For electronic delivery, the email address to which the
@@ -54,13 +56,9 @@ export interface RiskIndicator {
    * 02 (Future availability)
    */
   reOrderPurchaseIndicator?: '01' | '02';
-
-  pickUpAddress?: {
-    name: string;
-    streetAddress: string;
-    coAddress?: string;
-    city: string;
-    zipCode: string;
-    countryCode: string;
-  };
+  /**
+   * If shipIndicator is set to 04, then prefill this with the payers
+   * pickUpAddress of the purchase to decrease the risk factor of the purchase.
+   */
+  pickUpAddress?: Address;
 }
