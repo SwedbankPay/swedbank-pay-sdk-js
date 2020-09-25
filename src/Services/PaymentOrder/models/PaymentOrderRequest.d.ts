@@ -3,13 +3,14 @@ import { OrderItem } from "./OrderItem";
 import { PaymentUrls } from "./PaymentUrls";
 import { PayeeInfo } from "./PayeeInfo";
 import { PayerInfo } from "./PayerInfo";
+import { SwedbankBase } from "../../../SwedbankBase";
 
 export interface PaymentOrderRequest {
   paymentorder: PaymentOrderRequestResource
 }
 
 
-export interface PaymentOrderRequestResource {
+export interface PaymentOrderRequestResource extends SwedbankBase {
   /**
    * Determines the initial operation, that defines the type card payment
    * created.
