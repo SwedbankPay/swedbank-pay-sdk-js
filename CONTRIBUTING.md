@@ -22,18 +22,19 @@ If you are still working on your pull request, prepend `WIP:` to indicate that i
 
 ### Pull Request Title
 
-Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.) 
+Same as commit messages, prepend the type of change being made (refactor, fix, chore, feat, etc.)
 Example: `docs: add linux setup instructions`
 
 ## Documentation
 
 Most of the documentation are automatically generated. We utilize `typedoc` that uses tags inline
-with classes in order to generate. The nice thing about this is that documentation will be visible
+with classes in order to generate the documentation.
+The nice thing about this is that documentation will be visible
 when using Typescript in editors as well.
 
 However, we love to have examples and guides as well.
 
-## Need Help?
+## Need Help
 
 If any of this information confusing, incorrect, or incomplete, feel free to
 [open an issue](https://github.com/bjerkio/swedbank-pay-js/issues/new)
