@@ -1,12 +1,16 @@
 import { SwedbankBase } from '../../SwedbankBase';
 import { MerchantConfig } from '../../MerchantConfig';
 import { PaymentOrderResponse } from './models/PaymentOrderResponse';
+import { Operation } from '../../models/Operation'
 
 export class PaymentOrder extends SwedbankBase {
-  constructor(config: MerchantConfig, response: {
-    paymentOrder: PaymentOrderResponse
-  }) {
+  private _operations: Operation[];
+  paymentOrder: PaymentOrder;
+
+  constructor(config: MerchantConfig, response: PaymentOrderResponse) {
     super(config);
+    this._operations = response.operations;
+    this.paymentOrder = response.paymentOrder;
   }
 
   async get(id: string): Promise<PaymentOrder> {
