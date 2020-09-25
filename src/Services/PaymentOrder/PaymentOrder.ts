@@ -1,25 +1,27 @@
 import { SwedbankBase } from '../../SwedbankBase';
 import { MerchantConfig } from '../../MerchantConfig';
 import { PaymentOrderResponse } from './models/PaymentOrderResponse';
-import { Operation } from '../../models/Operation'
+import { PaymentOrderRequest } from './models/PaymentOrderRequest';
 
 export class PaymentOrder extends SwedbankBase {
-  private _operations: Operation[];
   paymentOrder: PaymentOrder;
 
-  constructor(config: MerchantConfig, response: PaymentOrderResponse) {
+  constructor(config: MerchantConfig) {
     super(config);
-    this._operations = response.operations;
-    this.paymentOrder = response.paymentOrder;
   }
 
-  getOperations() {
-    return this._operations;
+  async create(item: PaymentOrderRequest): Promise<PaymentOrderResponse> {
+    const payment = await this.request<PaymentOrderResponse>(
+      'psp/paymentorders',
+      item,
+      'POST'
+    );
+    return payment.body;
   }
 
-  async get(id: string): Promise<PaymentOrder> {
-    const paymentOrder = await this.request<PaymentOrderResponse>(id)
-    return new PaymentOrder(this.config, paymentOrder.body);
+  async get(id: string): Promise<PaymentOrderResponse> {
+    const payment = await this.request<PaymentOrderResponse>(id);
+    return payment.body;
   }
 
 }
