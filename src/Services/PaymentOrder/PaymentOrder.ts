@@ -13,6 +13,10 @@ export class PaymentOrder extends SwedbankBase {
     this.paymentOrder = response.paymentOrder;
   }
 
+  getOperations() {
+    return this._operations;
+  }
+
   async get(id: string): Promise<PaymentOrder> {
     const paymentOrder = await this.request<PaymentOrderResponse>(id)
     return new PaymentOrder(this.config, paymentOrder.body);
