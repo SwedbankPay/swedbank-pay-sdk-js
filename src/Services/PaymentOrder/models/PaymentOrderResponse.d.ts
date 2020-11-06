@@ -1,8 +1,7 @@
-import { PaymentOrder } from "../PaymentOrder";
 import { Operation } from "../../../models/Operation";
 import { Payment } from "../../CardPayment/models/Payment";
 
-export class PaymentOrderResponse {
+export interface PaymentOrderResponse {
   paymentOrder: Payment;
   operations: Operation[];
   /**

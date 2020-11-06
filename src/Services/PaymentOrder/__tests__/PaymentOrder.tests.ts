@@ -1,6 +1,5 @@
 import * as nock from 'nock';
 import { PaymentOrder } from "../PaymentOrder";
-import { PaymentOrderResponse } from "../models/PaymentOrderResponse";
 import PaymentOrderResponseExample from "../__fixtures__/PaymentOrderResponse";
 
 describe('PaymentOrder', () => {
@@ -20,7 +19,7 @@ describe('PaymentOrder', () => {
       .persist()
       .post('/test')
       .reply(200, PaymentOrderResponseExample);
-    let response = await paymentorder.get("/test");
+    const response = await paymentorder.get("/test");
     expect(response.paymentOrder).toBeTruthy()
   })
 })
