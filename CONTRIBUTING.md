@@ -52,7 +52,7 @@ release channels, `main`, `next` and `develop`. Our Github Actions workflow
 automatically releases a canary release based on the content at `develop` as
 long as at least one commit message follows [Conventional Commits][].
 
-When the team decides too, `develop` is merged into `next` or `main`, dependant
+When the team decides to, `develop` is merged into `next` or `main`, dependant
 on the changes.
 
 - `develop` should be considered as unstable code (not ready for production).
