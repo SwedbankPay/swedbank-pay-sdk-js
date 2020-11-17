@@ -47,20 +47,19 @@ However, we love to have examples and guides as well.
 
 ## Releasing
 
-This package utilizes [semantic release][] to manage releasing. We have three
-release channels, `main`, `next` and `develop`. Our Github Actions workflow
-automatically releases a canary release based on the content at `develop` as
-long as at least one commit message follows [Conventional Commits][].
+This package utilizes [semantic release][] to manage releasing. We have two
+release channels; `main` and `develop`. Our Github Actions workflow
+automatically releases a canary release on `develop` as long as at least one
+commit message follows [Conventional Commits][].
 
-When the team decides to, `develop` is merged into `next` or `main`, dependant
-on the changes.
+When the team decides to, `develop` is merged into `main` to release as stable
+release.
 
 - `develop` should be considered as unstable code (not ready for production).
   e.g. `v1.0.3-develop.5`
-- `next` used for the next major version. e.g. `v2.0.0-next.1`
 - `main` should be considered stable. e.g. `v1.0.3`
 
-These are all considered [release branches][] as per Semantic Release
+These are both considered [release branches][] as per Semantic Release
 documentation.
 
 ## Need Help?
