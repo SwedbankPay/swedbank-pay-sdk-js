@@ -2,9 +2,8 @@ name: Release
 on:
   push:
     branches:
-      - master
-      - next
-      - alpha
+      - main
+      - develop
 
 jobs:
   build:
