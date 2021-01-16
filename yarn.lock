@@ -4363,10 +4363,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typedoc-default-themes@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.12.0.tgz#42451948e55a148c1350eb2aa68829be5c2b06b3"
-  integrity sha512-0hHBxwmfxE0rkIslOiO39fJyYwaScQEhUIxcpqx3uS1BL3zhFW5oQfUaPx2cv2XLL/GXhYFxhdFLoVmNptbxEQ==
+typedoc-default-themes@^0.12.4:
+  version "0.12.4"
+  resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.12.4.tgz#5cbb79c1d6421f1274e86b1b542934eb557abd4f"
+  integrity sha512-EZiXBUpogsYWe0dLgy47J8yRZCd+HAn9woGzO28XJxxSCSwZRYGKeQiw1KjyIcm3cBtLWUXiPD5+Bgx24GgZjg==
 
 typedoc-plugin-markdown@^3.1.1:
   version "3.4.0"
@@ -4376,9 +4376,9 @@ typedoc-plugin-markdown@^3.1.1:
     handlebars "^4.7.6"
 
 typedoc@^0.20.5:
-  version "0.20.7"
-  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.20.7.tgz#627bf640786e79b93dccfdb9c320892e1c58767a"
-  integrity sha512-HMfPatgQiEf71pvSqQRhs9Myri7Yczg3yMxlPTwNnHXb0Qw8vYE4ZWCe/NEgBCwvBTvj/tDAtHFk9/hIBYxOJw==
+  version "0.20.15"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.20.15.tgz#8e21ceb20b86ff22bb6962dccfa6c3793c50782c"
+  integrity sha512-z3Hf0HLJXdsPiWQT+HDv0kOJAagGu6qEOexHpi9xQNlMFBR5y6UjBAmIfoKTo/vBtSM59tP2ebX1dA3i/p2mrQ==
   dependencies:
     colors "^1.4.0"
     fs-extra "^9.0.1"
@@ -4390,7 +4390,7 @@ typedoc@^0.20.5:
     progress "^2.0.3"
     shelljs "^0.8.4"
     shiki "^0.2.7"
-    typedoc-default-themes "0.12.0"
+    typedoc-default-themes "^0.12.4"
 
 typescript@~3.9.2:
   version "3.9.7"
