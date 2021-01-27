@@ -10,14 +10,8 @@ export class PaymentOrder extends SwedbankBase {
 
   private _operations: Operation[];
 
-  constructor(config: MerchantConfig,
-    response: {
-      paymentOrder: PaymentOrderProperties,
-      operations: Operation[]
-    }) {
+  constructor(config: MerchantConfig) {
     super(config);
-    this.paymentOrder = response.paymentOrder;
-    this._operations = response.operations;
   }
 
   async create(item: PaymentOrderRequest): Promise<PaymentOrderResponse> {
