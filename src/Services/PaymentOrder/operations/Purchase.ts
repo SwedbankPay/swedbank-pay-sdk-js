@@ -1,9 +1,8 @@
-import { PaymentOrderRequestResource } from '../models/PaymentOrderRequest';
-import { PaymentOrder } from '../PaymentOrder';
+import { PaymentOrderRequestResource, PaymentOrderRequest } from '../models/PaymentOrderRequest';
 
 export type PurchaseInput = Omit<PaymentOrderRequestResource, 'operation'>;
 
-export class Purchase extends PaymentOrder {
+export class Purchase extends PaymentOrderRequest {
   getRedirectAuthorization(): string {
     return this.getOperations().find(
       operation => operation.rel === 'redirect-authorization',

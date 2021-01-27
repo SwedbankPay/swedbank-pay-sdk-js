@@ -4,6 +4,7 @@ import { PaymentOrderResponse } from './models/PaymentOrderResponse';
 import { PaymentOrderProperties } from "./models/PaymentOrderProperties";
 import { PaymentOrderRequest } from './models/PaymentOrderRequest';
 import { Operation } from '../../models/Operation';
+import { Purchase, PurchaseInput } from './operations/Purchase';
 
 export class PaymentOrder extends SwedbankBase {
   paymentOrder: PaymentOrderProperties;
@@ -22,6 +23,18 @@ export class PaymentOrder extends SwedbankBase {
     );
     return payment.body;
   }
+
+  async createPurchase(item: PurchaseInput): Promise<Purchase> {
+    const response = await this.create({
+      paymentorder: {
+        operation: 'Purchase',
+        ...item,
+      },
+    });
+
+    return new Purchase(this.config, response);
+  }
+
 
   async get(id: string): Promise<PaymentOrderResponse> {
     const payment = await this.request<PaymentOrderResponse>(id);

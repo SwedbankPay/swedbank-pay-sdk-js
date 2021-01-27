@@ -1,7 +1,7 @@
 import { Operation } from "../../../models/Operation";
 import { PaymentOrderProperties } from "./PaymentOrderProperties";
 
-export interface PaymentOrderResponse {
+export class PaymentOrderResponse {
   paymentOrder: PaymentOrderProperties;
   operations: Operation[];
 }

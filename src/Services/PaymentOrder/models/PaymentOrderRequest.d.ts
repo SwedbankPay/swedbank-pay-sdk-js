@@ -1,9 +1,9 @@
 import { RiskIndicator } from "./RiskIndicator";
 import { OrderItem } from "./OrderItem";
-import { PaymentUrls } from "./PaymentUrls";
 import { PayeeInfo } from "./PayeeInfo";
 import { PayerInfo } from "./PayerInfo";
 import { SwedbankBase } from "../../../SwedbankBase";
+import { Urls } from "../../CardPayment/models/Payment/Urls";
 
 export interface PaymentOrderRequest {
   paymentorder: PaymentOrderRequestResource
@@ -85,7 +85,7 @@ export interface PaymentOrderRequestResource extends SwedbankBase {
   /**
    * Object containing the URLS relevant for this payment order.
    */
-  urls: PaymentUrls;
+  urls: Urls;
   /**
    * Information about the payee.
    * That's you!
