@@ -15,9 +15,9 @@ describe('PaymentOrder', () => {
 
 
   it('should properly map properties', async () => {
-    nock('https://api.payex.com/psp')
+    nock('https://api.payex.com')
       .persist()
-      .post('/test')
+      .get('/test')
       .reply(200, PaymentOrderResponseExample);
     const response = await paymentorder.get("/test");
     expect(response.paymentOrder).toBeTruthy()

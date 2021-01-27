@@ -1,5 +1,5 @@
 export default {
-  "paymentorder": {
+  "paymentOrder": {
     "id": "/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce",
     "created": "2018-09-14T13:21:29.3182115Z",
     "updated": "2018-09-14T13:21:57.6627579Z",
