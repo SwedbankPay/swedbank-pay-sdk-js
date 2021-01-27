@@ -1,6 +1,7 @@
 import { SwedbankBase } from '../../SwedbankBase';
 import { MerchantConfig } from '../../MerchantConfig';
-import { PaymentOrderProperties, PaymentOrderResponse } from './models/PaymentOrderResponse';
+import { PaymentOrderResponse } from './models/PaymentOrderResponse';
+import { PaymentOrderProperties } from "./models/PaymentOrderProperties";
 import { PaymentOrderRequest } from './models/PaymentOrderRequest';
 import { Operation } from '../../models/Operation';
 
