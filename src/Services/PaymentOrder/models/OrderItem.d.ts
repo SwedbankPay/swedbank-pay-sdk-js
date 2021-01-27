@@ -1,6 +1,7 @@
 import { Url } from "url";
+import { GenericResource } from "../../../models/GenericResource";
 
-export interface OrderItem {
+export interface OrderItem extends GenericResource {
   /**
    * A reference that identifies the order item.
    * This is a reference in your system.
