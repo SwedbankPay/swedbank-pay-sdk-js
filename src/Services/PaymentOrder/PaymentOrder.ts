@@ -1,13 +1,22 @@
 import { SwedbankBase } from '../../SwedbankBase';
 import { MerchantConfig } from '../../MerchantConfig';
-import { PaymentOrderResponse } from './models/PaymentOrderResponse';
+import { PaymentOrderProperties, PaymentOrderResponse } from './models/PaymentOrderResponse';
 import { PaymentOrderRequest } from './models/PaymentOrderRequest';
+import { Operation } from '../../models/Operation';
 
 export class PaymentOrder extends SwedbankBase {
-  paymentOrder: PaymentOrder;
+  paymentOrder: PaymentOrderProperties;
 
-  constructor(config: MerchantConfig) {
+  private _operations: Operation[];
+
+  constructor(config: MerchantConfig,
+    response: {
+      paymentOrder: PaymentOrderProperties,
+      operations: Operation[]
+    }) {
     super(config);
+    this.paymentOrder = response.paymentOrder;
+    this._operations = response.operations;
   }
 
   async create(item: PaymentOrderRequest): Promise<PaymentOrderResponse> {
@@ -24,4 +33,7 @@ export class PaymentOrder extends SwedbankBase {
     return payment.body;
   }
 
+  getOperations(): Operation[] {
+    return this._operations;
+  }
 }
