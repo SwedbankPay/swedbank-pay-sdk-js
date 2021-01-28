@@ -1,5 +1,6 @@
 ![Swedbank Pay Javascript / Typescript SDK][banner]
 
+![Build & Deploy][build-deploy]
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bjerkio/swedbank-pay-js.svg?logo=lgtm&logoWidth=18)][language-grade]
 [![codecov](https://codecov.io/gh/bjerkio/swedbank-pay-js/branch/master/graph/badge.svg)][code-coverage]
 [![Maintainability](https://api.codeclimate.com/v1/badges/04b50822a61583ccdb5f/maintainability)][maintainability]
@@ -65,6 +66,7 @@ agreement][cla].
 
 [banner]:               https://repository-images.githubusercontent.com/253005089/71a47e00-b15a-11ea-837e-bd2edf92c6ea
 [build-badge]:          https://github.com/SwedbankPay/swedbank-pay-sdk-js/workflows/Build%20&%20Deploy/badge.svg
+[build-deploy]:         https://github.com/bjerkio/swedbank-pay-js/workflows/Build%20&%20Deploy/badge.svg
 [cla-badge]:            https://cla-assistant.io/readme/badge/SwedbankPay/jekyll-plantuml-docker
 [cla]:                  https://cla-assistant.io/SwedbankPay/swedbank-pay-sdk-js
 [coc-badge]:            https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
