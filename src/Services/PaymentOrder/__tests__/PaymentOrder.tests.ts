@@ -1,6 +1,5 @@
 import * as nock from 'nock';
 import { PaymentOrder } from "../PaymentOrder";
-import { PaymentOrderResponse } from './../models/PaymentOrderResponse';
 import PaymentOrderRequestExample from '../__fixtures__/PaymentOrderRequestExample';
 import PaymentOrderResponseExample from "../__fixtures__/PaymentOrderResponseExample";
 
@@ -34,7 +33,6 @@ describe('PaymentOrder', () => {
   it('should be able to create paymentOrder object', async () =>{
     const response = await paymentorder.create(PaymentOrderRequestExample);
     expect(response).toBeTruthy();
-    expect(response).toBeInstanceOf(PaymentOrderResponse);
     expect(response.paymentOrder.id).toBe(PaymentOrderResponseExample.paymentOrder.id);
   });
 })
