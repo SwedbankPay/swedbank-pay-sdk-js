@@ -1,18 +1,14 @@
 import { GenericResource } from "../../../models/GenericResource";
 import { MetaData } from "../../../models/MetaData";
+import { PaymentProperties } from "../../../models/Payment";
 import { OrderItem } from "./OrderItem";
 import { PayeeInfo } from "./PayeeInfo";
 import { PayersInfo } from "./PayersInfo";
 
 
-export interface PaymentOrderProperties {
-  id: string;
-  amount: number;
-  created: string;
+export interface PaymentOrderProperties extends PaymentProperties{  
   currency: string;
   currentPayment: GenericResource;
-  description: string;
-  language: string;
   metadata: MetaData;
   operation: string;
   orderItems: OrderItem;
@@ -20,12 +16,7 @@ export interface PaymentOrderProperties {
   payers: PayersInfo;
   payments: string;
   remainingCancelAmount: number;
-  remainingCaptureAmount: number;
-  remainingReversalAmount: number;
   settings: string;
-  state: string;
-  updated: string;
   urls: GenericResource;
-  userAgent: string;
   vatAmount: number;
 }
