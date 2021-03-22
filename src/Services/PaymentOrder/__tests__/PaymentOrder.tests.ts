@@ -17,7 +17,6 @@ describe('PaymentOrder', () => {
   let paymentorder: PaymentOrder;
 
   beforeEach(() => {
-    await 
     paymentorder = new PaymentOrder(merchantConfig);
   });
 

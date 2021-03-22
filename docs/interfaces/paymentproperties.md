@@ -1,4 +1,4 @@
-[swedbank-pay - v0.0.0](../README.md) › [PaymentProperties](paymentproperties.md)
+[@swedbank-pay/sdk](../README.md) › [PaymentProperties](paymentproperties.md)
 
 # Interface: PaymentProperties
 
@@ -19,7 +19,7 @@
 * [language](paymentproperties.md#language)
 * [number](paymentproperties.md#number)
 * [payerReference](paymentproperties.md#payerreference)
-* [price](paymentproperties.md#price)
+* [prices](paymentproperties.md#prices)
 * [remainingCancellationAmount](paymentproperties.md#remainingcancellationamount)
 * [remainingCaptureAmount](paymentproperties.md#remainingcaptureamount)
 * [remainingReversalAmount](paymentproperties.md#remainingreversalamount)
@@ -83,9 +83,9 @@ ___
 
 ___
 
-###  price
+###  prices
 
-• **price**: *GenericResource*
+• **prices**: *GenericResource*
 
 ___
 

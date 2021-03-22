@@ -1,54 +1,43 @@
-[@swedbank-pay/sdk](../README.md) › [CardPayment](cardpayment.md)
+[@swedbank-pay/sdk](../README.md) › [PaymentOrder](paymentorder.md)
 
-# Class: CardPayment
+# Class: PaymentOrder
 
 ## Hierarchy
 
 * [SwedbankBase](swedbankbase.md)
 
-  ↳ **CardPayment**
+  ↳ **PaymentOrder**
 
 ## Index
 
 ### Constructors
 
-* [constructor](cardpayment.md#constructor)
+* [constructor](paymentorder.md#constructor)
 
 ### Properties
 
-* [config](cardpayment.md#config)
+* [_operations](paymentorder.md#private-_operations)
+* [config](paymentorder.md#config)
+* [paymentOrder](paymentorder.md#paymentorder)
 
 ### Methods
 
-* [GenericResource](cardpayment.md#genericresource)
-* [create](cardpayment.md#private-create)
-* [createPurchase](cardpayment.md#createpurchase)
-* [get](cardpayment.md#get)
-* [getUrl](cardpayment.md#geturl)
-* [request](cardpayment.md#request)
-* [runOperation](cardpayment.md#runoperation)
+* [GenericResource](paymentorder.md#genericresource)
+* [create](paymentorder.md#create)
+* [createPurchase](paymentorder.md#createpurchase)
+* [get](paymentorder.md#get)
+* [getOperations](paymentorder.md#getoperations)
+* [getUrl](paymentorder.md#geturl)
+* [request](paymentorder.md#request)
+* [runOperation](paymentorder.md#runoperation)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new CardPayment**(`config`: MerchantConfig): *[CardPayment](cardpayment.md)*
+\+ **new PaymentOrder**(`config`: MerchantConfig): *[PaymentOrder](paymentorder.md)*
 
 *Overrides [SwedbankBase](swedbankbase.md).[constructor](swedbankbase.md#constructor)*
-
-**`example`** 
-```typescript
-const payments = new CardPayment({
- merchantToken: '88837cjijsgjhguwg8xxmx9ax8ax8x',
- consumerIp,
- sessionId,
-});
-
-payment.create({
- intent: 'Authorization',
- ...
-})
-```
 
 **Parameters:**
 
@@ -56,15 +45,27 @@ Name | Type |
 ------ | ------ |
 `config` | MerchantConfig |
 
-**Returns:** *[CardPayment](cardpayment.md)*
+**Returns:** *[PaymentOrder](paymentorder.md)*
 
 ## Properties
+
+### `Private` _operations
+
+• **_operations**: *Operation[]*
+
+___
 
 ###  config
 
 • **config**: *MerchantConfig*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)*
+
+___
+
+###  paymentOrder
+
+• **paymentOrder**: *PaymentOrderProperties*
 
 ## Methods
 
@@ -88,23 +89,23 @@ Name | Type |
 
 ___
 
-### `Private` create
+###  create
 
-▸ **create**(`item`: PaymentRequest): *Promise‹[PaymentResponse](../interfaces/paymentresponse.md)›*
+▸ **create**(`item`: PaymentOrderRequest): *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`item` | PaymentRequest |
+`item` | PaymentOrderRequest |
 
-**Returns:** *Promise‹[PaymentResponse](../interfaces/paymentresponse.md)›*
+**Returns:** *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
 
 ___
 
 ###  createPurchase
 
-▸ **createPurchase**(`item`: [PurchaseInput](../README.md#purchaseinput)): *Promise‹[Purchase](purchase.md)›*
+▸ **createPurchase**(`item`: [PurchaseInput](../README.md#purchaseinput)): *Promise‹Purchase›*
 
 **Parameters:**
 
@@ -112,13 +113,13 @@ Name | Type |
 ------ | ------ |
 `item` | [PurchaseInput](../README.md#purchaseinput) |
 
-**Returns:** *Promise‹[Purchase](purchase.md)›*
+**Returns:** *Promise‹Purchase›*
 
 ___
 
 ###  get
 
-▸ **get**(`id`: string): *Promise‹[Payment](payment.md)›*
+▸ **get**(`id`: string): *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
 
 **Parameters:**
 
@@ -126,7 +127,15 @@ Name | Type |
 ------ | ------ |
 `id` | string |
 
-**Returns:** *Promise‹[Payment](payment.md)›*
+**Returns:** *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
+
+___
+
+###  getOperations
+
+▸ **getOperations**(): *Operation[]*
+
+**Returns:** *Operation[]*
 
 ___
 
