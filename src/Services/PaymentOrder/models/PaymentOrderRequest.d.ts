@@ -2,7 +2,6 @@ import { RiskIndicator } from "./RiskIndicator";
 import { OrderItem } from "./OrderItem";
 import { PayeeInfo } from "./PayeeInfo";
 import { PayerInfo } from "./PayerInfo";
-import { SwedbankBase } from "../../../SwedbankBase";
 import { Urls } from "../../CardPayment/models/Payment/Urls";
 
 export interface PaymentOrderRequest {
@@ -10,7 +9,7 @@ export interface PaymentOrderRequest {
 }
 
 
-export interface PaymentOrderRequestResource extends SwedbankBase {
+export interface PaymentOrderRequestResource {
   /**
    * Determines the initial operation, that defines the type card payment
    * created.

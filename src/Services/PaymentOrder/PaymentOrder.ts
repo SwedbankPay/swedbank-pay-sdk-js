@@ -25,12 +25,16 @@ export class PaymentOrder extends SwedbankBase {
   }
 
   async createPurchase(item: PurchaseInput): Promise<Purchase> {
-    const response = await this.create({
+    let request = {
       paymentorder: {
         operation: 'Purchase',
-        ...item,
-      },
-    });
+        ...item
+      }
+    } as PaymentOrderRequest;
+    
+    const response = await this.create(
+      request
+    );
 
     return new Purchase(this.config, response);
   }
