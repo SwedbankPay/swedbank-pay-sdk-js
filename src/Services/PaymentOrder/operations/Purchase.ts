@@ -10,7 +10,7 @@ export class Purchase extends PaymentOrderResponse {
     config: MerchantConfig,
     response: PaymentOrderResponse,
   ) {
-    let superResponse = {
+    const superResponse = {
       payment: response.paymentOrder,
       operations: response.operations
     }
