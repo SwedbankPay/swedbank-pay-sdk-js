@@ -1,57 +1,56 @@
-[@swedbank-pay/sdk](../README.md) › [Purchase](purchase.md)
+[@swedbank-pay/sdk](../README.md) › [PaymentOrderResponse](paymentorderresponse.md)
 
-# Class: Purchase
+# Class: PaymentOrderResponse
 
 ## Hierarchy
 
   ↳ [Payment](payment.md)
 
-  ↳ [PaymentOrderResponse](paymentorderresponse.md)
+  ↳ **PaymentOrderResponse**
 
-  ↳ **Purchase**
+  ↳ [Purchase](purchase.md)
 
 ## Index
 
 ### Constructors
 
-* [constructor](purchase.md#constructor)
+* [constructor](paymentorderresponse.md#constructor)
 
 ### Properties
 
-* [amount](purchase.md#amount)
-* [config](purchase.md#config)
-* [created](purchase.md#created)
-* [description](purchase.md#description)
-* [id](purchase.md#id)
-* [initiatingSystemUserAgent](purchase.md#initiatingsystemuseragent)
-* [instrument](purchase.md#instrument)
-* [language](purchase.md#language)
-* [number](purchase.md#number)
-* [operations](purchase.md#operations)
-* [payerReference](purchase.md#payerreference)
-* [paymentOrder](purchase.md#paymentorder)
-* [remainingCancellationAmount](purchase.md#remainingcancellationamount)
-* [remainingCaptureAmount](purchase.md#remainingcaptureamount)
-* [remainingReversalAmount](purchase.md#remainingreversalamount)
-* [state](purchase.md#state)
-* [updated](purchase.md#updated)
-* [userAgent](purchase.md#useragent)
+* [amount](paymentorderresponse.md#amount)
+* [config](paymentorderresponse.md#config)
+* [created](paymentorderresponse.md#created)
+* [description](paymentorderresponse.md#description)
+* [id](paymentorderresponse.md#id)
+* [initiatingSystemUserAgent](paymentorderresponse.md#initiatingsystemuseragent)
+* [instrument](paymentorderresponse.md#instrument)
+* [language](paymentorderresponse.md#language)
+* [number](paymentorderresponse.md#number)
+* [operations](paymentorderresponse.md#operations)
+* [payerReference](paymentorderresponse.md#payerreference)
+* [paymentOrder](paymentorderresponse.md#paymentorder)
+* [remainingCancellationAmount](paymentorderresponse.md#remainingcancellationamount)
+* [remainingCaptureAmount](paymentorderresponse.md#remainingcaptureamount)
+* [remainingReversalAmount](paymentorderresponse.md#remainingreversalamount)
+* [state](paymentorderresponse.md#state)
+* [updated](paymentorderresponse.md#updated)
+* [userAgent](paymentorderresponse.md#useragent)
 
 ### Methods
 
-* [GenericResource](purchase.md#genericresource)
-* [getOperations](purchase.md#getoperations)
-* [getPrices](purchase.md#getprices)
-* [getRedirectAuthorization](purchase.md#getredirectauthorization)
-* [getUrl](purchase.md#geturl)
-* [request](purchase.md#request)
-* [runOperation](purchase.md#runoperation)
+* [GenericResource](paymentorderresponse.md#genericresource)
+* [getOperations](paymentorderresponse.md#getoperations)
+* [getPrices](paymentorderresponse.md#getprices)
+* [getUrl](paymentorderresponse.md#geturl)
+* [request](paymentorderresponse.md#request)
+* [runOperation](paymentorderresponse.md#runoperation)
 
 ## Constructors
 
 ###  constructor
 
-\+ **new Purchase**(`config`: MerchantConfig, `response`: object): *[Purchase](purchase.md)*
+\+ **new PaymentOrderResponse**(`config`: MerchantConfig, `response`: object): *[PaymentOrderResponse](paymentorderresponse.md)*
 
 *Inherited from [Payment](payment.md).[constructor](payment.md#constructor)*
 
@@ -68,7 +67,7 @@ Name | Type |
 `operations` | Operation[] |
 `payment` | [PaymentProperties](../interfaces/paymentproperties.md) |
 
-**Returns:** *[Purchase](purchase.md)*
+**Returns:** *[PaymentOrderResponse](paymentorderresponse.md)*
 
 ## Properties
 
@@ -78,8 +77,6 @@ Name | Type |
 
 *Inherited from [Payment](payment.md).[amount](payment.md#amount)*
 
-*Overrides [Payment](payment.md).[amount](payment.md#amount)*
-
 ___
 
 ###  config
@@ -87,8 +84,6 @@ ___
 • **config**: *MerchantConfig*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)*
-
-*Overrides [SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)*
 
 ___
 
@@ -98,8 +93,6 @@ ___
 
 *Inherited from [Payment](payment.md).[created](payment.md#created)*
 
-*Overrides [Payment](payment.md).[created](payment.md#created)*
-
 ___
 
 ###  description
@@ -107,8 +100,6 @@ ___
 • **description**: *string*
 
 *Inherited from [Payment](payment.md).[description](payment.md#description)*
-
-*Overrides [Payment](payment.md).[description](payment.md#description)*
 
 ___
 
@@ -118,8 +109,6 @@ ___
 
 *Inherited from [Payment](payment.md).[id](payment.md#id)*
 
-*Overrides [Payment](payment.md).[id](payment.md#id)*
-
 ___
 
 ###  initiatingSystemUserAgent
@@ -127,8 +116,6 @@ ___
 • **initiatingSystemUserAgent**: *string*
 
 *Inherited from [Payment](payment.md).[initiatingSystemUserAgent](payment.md#initiatingsystemuseragent)*
-
-*Overrides [Payment](payment.md).[initiatingSystemUserAgent](payment.md#initiatingsystemuseragent)*
 
 ___
 
@@ -138,8 +125,6 @@ ___
 
 *Inherited from [Payment](payment.md).[instrument](payment.md#instrument)*
 
-*Overrides [Payment](payment.md).[instrument](payment.md#instrument)*
-
 ___
 
 ###  language
@@ -147,8 +132,6 @@ ___
 • **language**: *string*
 
 *Inherited from [Payment](payment.md).[language](payment.md#language)*
-
-*Overrides [Payment](payment.md).[language](payment.md#language)*
 
 ___
 
@@ -158,15 +141,11 @@ ___
 
 *Inherited from [Payment](payment.md).[number](payment.md#number)*
 
-*Overrides [Payment](payment.md).[number](payment.md#number)*
-
 ___
 
 ###  operations
 
 • **operations**: *Operation[]*
-
-*Inherited from [PaymentOrderResponse](paymentorderresponse.md).[operations](paymentorderresponse.md#operations)*
 
 ___
 
@@ -176,15 +155,11 @@ ___
 
 *Inherited from [Payment](payment.md).[payerReference](payment.md#payerreference)*
 
-*Overrides [Payment](payment.md).[payerReference](payment.md#payerreference)*
-
 ___
 
 ###  paymentOrder
 
 • **paymentOrder**: *PaymentOrderProperties*
-
-*Inherited from [PaymentOrderResponse](paymentorderresponse.md).[paymentOrder](paymentorderresponse.md#paymentorder)*
 
 ___
 
@@ -194,8 +169,6 @@ ___
 
 *Inherited from [Payment](payment.md).[remainingCancellationAmount](payment.md#remainingcancellationamount)*
 
-*Overrides [Payment](payment.md).[remainingCancellationAmount](payment.md#remainingcancellationamount)*
-
 ___
 
 ###  remainingCaptureAmount
@@ -203,8 +176,6 @@ ___
 • **remainingCaptureAmount**: *number*
 
 *Inherited from [Payment](payment.md).[remainingCaptureAmount](payment.md#remainingcaptureamount)*
-
-*Overrides [Payment](payment.md).[remainingCaptureAmount](payment.md#remainingcaptureamount)*
 
 ___
 
@@ -214,8 +185,6 @@ ___
 
 *Inherited from [Payment](payment.md).[remainingReversalAmount](payment.md#remainingreversalamount)*
 
-*Overrides [Payment](payment.md).[remainingReversalAmount](payment.md#remainingreversalamount)*
-
 ___
 
 ###  state
@@ -223,8 +192,6 @@ ___
 • **state**: *string*
 
 *Inherited from [Payment](payment.md).[state](payment.md#state)*
-
-*Overrides [Payment](payment.md).[state](payment.md#state)*
 
 ___
 
@@ -234,8 +201,6 @@ ___
 
 *Inherited from [Payment](payment.md).[updated](payment.md#updated)*
 
-*Overrides [Payment](payment.md).[updated](payment.md#updated)*
-
 ___
 
 ###  userAgent
@@ -244,8 +209,6 @@ ___
 
 *Inherited from [Payment](payment.md).[userAgent](payment.md#useragent)*
 
-*Overrides [Payment](payment.md).[userAgent](payment.md#useragent)*
-
 ## Methods
 
 ###  GenericResource
@@ -253,8 +216,6 @@ ___
 ▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)*
-
-*Overrides [SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)*
 
 **Type parameters:**
 
@@ -276,8 +237,6 @@ ___
 
 *Inherited from [Payment](payment.md).[getOperations](payment.md#getoperations)*
 
-*Overrides [Payment](payment.md).[getOperations](payment.md#getoperations)*
-
 **Returns:** *Operation[]*
 
 ___
@@ -288,17 +247,7 @@ ___
 
 *Inherited from [Payment](payment.md).[getPrices](payment.md#getprices)*
 
-*Overrides [Payment](payment.md).[getPrices](payment.md#getprices)*
-
 **Returns:** *Promise‹Price[]›*
-
-___
-
-###  getRedirectAuthorization
-
-▸ **getRedirectAuthorization**(): *string*
-
-**Returns:** *string*
 
 ___
 
@@ -307,8 +256,6 @@ ___
 ▸ **getUrl**(`env?`: "test" | "prod"): *string*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)*
-
-*Overrides [SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)*
 
 **Parameters:**
 
@@ -327,8 +274,6 @@ ___
 ▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)*
-
-*Overrides [SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)*
 
 **Type parameters:**
 
@@ -351,8 +296,6 @@ ___
 ▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)*
-
-*Overrides [SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)*
 
 **Type parameters:**
 

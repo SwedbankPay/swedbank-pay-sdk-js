@@ -1,8 +1,11 @@
 {
-  "name": "swedbank-pay",
-  "version": "1.0.0-alpha.2",
-  "description": "Typescript / Javascript Software Development Kit for the Swedbank Pay API Platform",
+  "name": "@swedbank-pay/sdk",
+  "version": "1.0.0-alpha.5",
+  "description": "TypeScript / JavaScript Software Development Kit for the Swedbank Pay API Platform",
   "main": "build/src/main.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "/build"
   ],
@@ -11,23 +14,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bjerkio/swedbank-pay-js.git"
+    "url": "https://github.com/SwedbankPay/swedbank-pay-sdk-js.git"
   },
   "devDependencies": {
-    "@types/jest": "~26.0.0",
+    "@types/jest": "~26.0.3",
     "@types/node": "~12.12.27",
     "@typescript-eslint/eslint-plugin": "~2.34.0",
     "@typescript-eslint/parser": "~2.34.0",
     "eslint": "~6.8.0",
     "eslint-config-prettier": "~6.11.0",
-    "eslint-plugin-jest": "~23.13.0",
+    "eslint-plugin-jest": "~23.20.0",
     "jest": "~25.5.0",
-    "nock": "^12.0.3",
-    "prettier": "~2.0.2",
+    "nock": "^13.0.0",
+    "prettier": "~2.1.0",
     "rimraf": "~3.0.2",
     "ts-jest": "~25.5.0",
     "tsutils": "~3.17.0",
-    "typedoc": "^0.17.3",
+    "typedoc": "^0.18.0",
     "typedoc-plugin-markdown": "^2.2.16",
     "typescript": "~3.9.2"
   },

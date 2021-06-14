@@ -6,7 +6,3 @@ export interface Operation {
   method: Method;
   contenType: string;
 }
-
-export interface GenericResource {
-  id: string;
-}

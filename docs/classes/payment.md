@@ -1,4 +1,4 @@
-[swedbank-pay - v0.0.0](../README.md) › [Payment](payment.md)
+[@swedbank-pay/sdk](../README.md) › [Payment](payment.md)
 
 # Class: Payment
 
@@ -9,6 +9,8 @@
   ↳ **Payment**
 
   ↳ [Purchase](purchase.md)
+
+  ↳ [PaymentOrderResponse](paymentorderresponse.md)
 
 ## Index
 
@@ -29,7 +31,7 @@
 * [language](payment.md#language)
 * [number](payment.md#number)
 * [payerReference](payment.md#payerreference)
-* [price](payment.md#private-price)
+* [prices](payment.md#private-prices)
 * [remainingCancellationAmount](payment.md#remainingcancellationamount)
 * [remainingCaptureAmount](payment.md#remainingcaptureamount)
 * [remainingReversalAmount](payment.md#remainingreversalamount)
@@ -40,7 +42,6 @@
 ### Methods
 
 * [GenericResource](payment.md#genericresource)
-* [abort](payment.md#abort)
 * [getOperations](payment.md#getoperations)
 * [getPrices](payment.md#getprices)
 * [getUrl](payment.md#geturl)
@@ -138,9 +139,9 @@ ___
 
 ___
 
-### `Private` price
+### `Private` prices
 
-• **price**: *GenericResource*
+• **prices**: *GenericResource*
 
 ___
 
@@ -182,7 +183,7 @@ ___
 
 ###  GenericResource
 
-▸ **GenericResource**<**T**>(`id?`: string): *Promise‹T›*
+▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)*
 
@@ -197,14 +198,6 @@ Name | Type |
 `id?` | string |
 
 **Returns:** *Promise‹T›*
-
-___
-
-###  abort
-
-▸ **abort**(): *Promise‹object›*
-
-**Returns:** *Promise‹object›*
 
 ___
 
@@ -244,7 +237,7 @@ ___
 
 ###  request
 
-▸ **request**<**T**>(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)*
 
@@ -266,7 +259,7 @@ ___
 
 ###  runOperation
 
-▸ **runOperation**<**T**>(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)*
 
