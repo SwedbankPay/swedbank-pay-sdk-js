@@ -1,8 +1,10 @@
-name: Push
+name: Release
 on:
   push:
     branches:
-      - main
+      - master
+      - next
+      - alpha
 
 jobs:
   build:
@@ -39,3 +41,13 @@ jobs:
     - run: npx codecov
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    - name: Semantic Release
+      uses: cycjimmy/semantic-release-action@v2
+      with:
+        semantic_version: 17.0.7
+        extra_plugins: |
+          @semantic-release/changelog@5.0.1
+          @semantic-release/git
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
