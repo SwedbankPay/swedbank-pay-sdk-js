@@ -3,21 +3,6 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# 1.0.0 (2020-12-23)
-
-
-### Bug Fixes
-
-* **package.json:** Change to SwedbankPay NPM organizationThis is a chore change, but due to semantic release it needs to trigger a release. ([9f43355](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/9f433550a3de3b75191c398eb6fbaf0758a41b06))
-* Add Typescript Declarations ([faba3a3](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/faba3a36a4f29c753464c037712d308f630a3a15))
-* reduce package size ([96eba7b](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/96eba7bc41757aa7040275f192c899c2a2c2b49f))
-* release issues ([b4bc299](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/b4bc299eeb11c0b82993267a05f6140f3e3ddda5))
-* **package.json:** add main ([426302f](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/426302ffed1fa1006be28bef4195a50a0cd51702))
-
-
-### Features
-
-* **CreditCard:** Add method for Credit Card ([1492d4e](https://github.com/SwedbankPay/swedbank-pay-sdk-js/commit/1492d4e97ce74442eb3213a824d1e0ac535d61b3))
 
 # [1.0.0-alpha.5](https://github.com/SwedbankPay/swedbank-pay-sdk-js/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2020-06-17)
 
