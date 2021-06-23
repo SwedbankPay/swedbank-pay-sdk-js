@@ -1,38 +1,38 @@
 {
   "plugins": [
-		"@semantic-release/commit-analyzer",
-		"@semantic-release/release-notes-generator",
-		[
-			"@semantic-release/changelog",
-			{
-				"changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
-			}
-		],
-		[
-			"@semantic-release/npm",
-			{
-				"tarballDir": "pack"
-			}
-		],
-		[
-			"@semantic-release/github",
-			{
-				"assets": "pack/*.tgz"
-			}
-		],
-		[
-			"@semantic-release/git",
-			{
-				"message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-			}
-		]
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file. See\n[Conventional Commits](https://conventionalcommits.org) for commit guidelines."
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "tarballDir": "pack"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": "pack/*.tgz"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
   ],
-  "defaultBranch": "main",
   "branches": [
     "+([0-9])?(.{+([0-9]),x}).x",
-    "main",
+    "master",
+    "next",
     {
-      "name": "develop",
+      "name": "alpha",
       "prerelease": true
     }
   ]
