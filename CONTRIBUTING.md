@@ -28,7 +28,7 @@ Example: `docs: add linux setup instructions`
 ## Documentation
 
 Most of the documentation are automatically generated. We utilize `typedoc` that uses tags inline
-with classes in order to generate.
+with classes in order to generate the documentation.
 The nice thing about this is that documentation will be visible
 when using Typescript in editors as well.
 
