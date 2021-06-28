@@ -1,5 +1,5 @@
 export enum InvoiceType {
-    Unknown = default,
+    Unknown = 0,
     PayExFinancingNo,
     PayExFinancingFi,
     PayExFinancingSe

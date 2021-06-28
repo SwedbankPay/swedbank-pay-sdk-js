@@ -1,3 +1,8 @@
+import { Address } from "cluster";
+import { AccountInfo } from "../../accountInfo";
+import { EmailAddress } from "../../emailAddress";
+import { Msisdn } from "../../msisdn";
+
 export interface Cardholder {
     accountInfo: AccountInfo;
     billingAddress: Address;

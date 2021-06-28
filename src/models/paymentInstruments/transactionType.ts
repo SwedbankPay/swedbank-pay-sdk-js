@@ -1,5 +1,5 @@
 export enum TransactionType {
-    Unknown = default,
+    Unknown = 0,
     Authorization,
     Capture,
     Reversal,

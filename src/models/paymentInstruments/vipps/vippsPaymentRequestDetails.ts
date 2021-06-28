@@ -1,3 +1,12 @@
+import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
+import { Currency } from "../../currency";
+import { Language } from "../../language";
+import { Metadata } from "../../MetaData";
+import { Operation } from "../../Operation";
+import { Urls } from "../../urls";
+import { PaymentIntent } from "../paymentIntent";
+import { Price } from "../price";
+
 export interface VippsPaymentRequestDetails {
     currency: Currency;
     description: string;

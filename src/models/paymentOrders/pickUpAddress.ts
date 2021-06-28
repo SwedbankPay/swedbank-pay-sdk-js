@@ -1,3 +1,5 @@
+import { CountryCode } from "../countryCode";
+
 export interface PickUpAddress {
     city: string;
     coAddress: string;

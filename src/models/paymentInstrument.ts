@@ -1,5 +1,5 @@
 export enum PaymentInstrument {
-    Unknown = default,
+    Unknown = 0,
     Invoice,
     MobilePay,
     CreditCard,

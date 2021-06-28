@@ -1,3 +1,5 @@
+import { Amount } from "../../amount";
+
 export interface MobilePayReversalTransaction {
     amount: Amount;
     description: string;

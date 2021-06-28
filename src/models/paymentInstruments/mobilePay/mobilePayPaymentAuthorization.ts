@@ -1,3 +1,5 @@
+import { AuthorizationTransaction } from "../authorizationTransaction";
+
 export interface MobilePayPaymentAuthorization {
     acquirerStan: string;
     acquirerTerminalId: string;

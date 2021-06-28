@@ -1,3 +1,12 @@
+import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
+import { Amount } from "../../amount";
+import { Currency } from "../../currency";
+import { Language } from "../../language";
+import { Metadata } from "../../MetaData";
+import { Operation } from "../../Operation";
+import { Urls } from "../../urls";
+import { PaymentIntent } from "../paymentIntent";
+
 export interface CardPaymentVerifyRequestDetails {
     operation: Operation;
     intent: PaymentIntent;

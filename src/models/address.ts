@@ -1,3 +1,7 @@
+import { CountryCode } from "./countryCode";
+import { EmailAddress } from "./emailAddress";
+import { Msisdn } from "./msisdn";
+
 export interface Address {
     city: string;
     coAddress: string;

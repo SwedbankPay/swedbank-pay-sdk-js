@@ -1,3 +1,5 @@
+import { Amount } from "../../amount";
+
 export interface ReversalTransaction {
     amount: Amount;
     description: string;

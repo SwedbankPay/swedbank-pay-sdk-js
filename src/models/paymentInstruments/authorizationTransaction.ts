@@ -1,3 +1,7 @@
+import { Amount } from "../amount";
+import { HttpOperation } from "../httpOperation";
+import { State } from "../state";
+
 export interface AuthorizationTransaction {
     amount: Amount;
     created: string;
@@ -8,7 +12,7 @@ export interface AuthorizationTransaction {
     failedReason: string;
     isOperational: boolean;
     number: number;
-    operations: OperationList;
+    operations: HttpOperation[];
     payeeReference: string;
     state: State;
     type: string;

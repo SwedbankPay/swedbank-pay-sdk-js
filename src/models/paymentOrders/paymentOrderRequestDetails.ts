@@ -1,3 +1,15 @@
+import { OrderItem } from "../../Services/PaymentOrder/models/OrderItem";
+import { PayeeInfo } from "../../Services/PaymentOrder/models/PayeeInfo";
+import { RiskIndicator } from "../../Services/PaymentOrder/models/RiskIndicator";
+import { Amount } from "../amount";
+import { Currency } from "../currency";
+import { Language } from "../language";
+import { Metadata } from "../MetaData";
+import { Operation } from "../Operation";
+import { Urls } from "../urls";
+import { Payer } from "./payer";
+import { PaymentOrderPaymentOptionsItems } from "./paymentOrderPaymentOptionsItems";
+
 export interface PaymentOrderRequestDetails {
     amount: Amount;
     currency: Currency;

@@ -1,3 +1,6 @@
+import { OrderItem } from "../../Services/PaymentOrder/models/OrderItem";
+import { Amount } from "../amount";
+
 export interface PaymentOrderCaptureTransaction {
     amount: Amount;
     description: string;

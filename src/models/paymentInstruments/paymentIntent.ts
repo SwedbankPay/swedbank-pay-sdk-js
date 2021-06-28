@@ -1,5 +1,5 @@
 export enum PaymentIntent {
-    Unknown = default,
+    Unknown = 0,
     Authorization,
     Sale,
     AutoCapture

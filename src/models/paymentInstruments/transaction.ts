@@ -1,3 +1,10 @@
+import { Amount } from "../amount";
+import { HttpOperation } from "../httpOperation";
+import { Identifiable } from "../identifiable";
+import { Problem } from "../problem";
+import { State } from "../state";
+import { TransactionType } from "./transactionType";
+
 export interface Transaction extends Identifiable {
     created: string;
     updated: string;
@@ -6,7 +13,7 @@ export interface Transaction extends Identifiable {
     description: string;
     isOperational: boolean;
     number: number;
-    operations: OperationList;
+    operations: HttpOperation[];
     payeeReference: string;
     state: State;
     type: TransactionType;
