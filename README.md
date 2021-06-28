@@ -1,10 +1,5 @@
 ![Swedbank Pay Javascript / Typescript SDK][banner]
 
-![Build & Deploy][build-deploy]
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bjerkio/swedbank-pay-js.svg?logo=lgtm&logoWidth=18)][language-grade]
-[![codecov](https://codecov.io/gh/bjerkio/swedbank-pay-js/branch/master/graph/badge.svg)][code-coverage]
-[![Maintainability](https://api.codeclimate.com/v1/badges/04b50822a61583ccdb5f/maintainability)][maintainability]
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=bjerkio/swedbank-pay-js&identifier=253005089)][dependabot](https://dependabot.com)
 ![Build & Deploy][build-badge]
 [![NPM version][npm-badge]][npm]
 [![Language grade: JavaScript][lgtm-badge]][lgtm]
@@ -66,27 +61,22 @@ agreement][cla].
 
 [banner]:               https://repository-images.githubusercontent.com/253005089/71a47e00-b15a-11ea-837e-bd2edf92c6ea
 [build-badge]:          https://github.com/SwedbankPay/swedbank-pay-sdk-js/workflows/Build%20&%20Deploy/badge.svg
-[build-deploy]:         https://github.com/bjerkio/swedbank-pay-js/workflows/Build%20&%20Deploy/badge.svg
 [cla-badge]:            https://cla-assistant.io/readme/badge/SwedbankPay/jekyll-plantuml-docker
 [cla]:                  https://cla-assistant.io/SwedbankPay/swedbank-pay-sdk-js
 [coc-badge]:            https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg
 [coc]:                  ./CODE_OF_CONDUCT.md
-[code-coverage]:        https://codecov.io/gh/bjerkio/swedbank-pay-js
 [codeclimate-badge]:    https://api.codeclimate.com/v1/badges/26db1d69e388b2f03bc0/maintainability
 [codeclimate]:          https://codeclimate.com/github/SwedbankPay/swedbank-pay-sdk-js/maintainability
 [codecov-badge]:        https://codecov.io/gh/SwedbankPay/swedbank-pay-sdk-js/branch/master/graph/badge.svg
 [codecov]:              https://codecov.io/gh/SwedbankPay/swedbank-pay-sdk-js
 [dependabot-badge]:     https://api.dependabot.com/badges/status?host=github&repo=SwedbankPay/swedbank-pay-sdk-js&identifier=253005089
 [dependabot]:           https://dependabot.com
-[dependabot]:           https://dependabot.com
 [developer-portal]:     https://developer.swedbankpay.com/
 [examples]:             ./examples/
 [github]:               https://github.com/SwedbankPay/swedbank-pay-sdk-js
-[language-grade]:       https://lgtm.com/projects/g/bjerkio/swedbank-pay-js/context:javascript
 [lgtm-badge]:           https://img.shields.io/lgtm/grade/javascript/g/SwedbankPay/swedbank-pay-sdk-js.svg?logo=lgtm&logoWidth=18
 [lgtm]:                 https://lgtm.com/projects/g/SwedbankPay/swedbank-pay-sdk-js/context:javascript
 [license]:              https://opensource.org/licenses/Apache-2.0
-[maintainability]:      https://codeclimate.com/github/bjerkio/swedbank-pay-js/maintainability
 [milestone-1.0.0]:      https://github.com/SwedbankPay/swedbank-pay-sdk-js/milestone/1
 [npm-badge]:            https://img.shields.io/npm/v/@swedbank-pay/sdk
 [npm]:                  https://www.npmjs.com/package/@swedbank-pay/sdk
