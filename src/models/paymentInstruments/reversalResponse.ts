@@ -1,4 +1,4 @@
 export interface ReversalResponse {
-    payment: Uri;
+    payment: URL;
     reversal: TransactionResponse;
 }

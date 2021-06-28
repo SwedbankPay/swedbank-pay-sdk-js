@@ -1,4 +1,4 @@
 export interface CardPaymentAuthorizationResponse {
     authorization: CardPaymentAuthorization;
-    payment: Uri;
+    payment: URL;
 }

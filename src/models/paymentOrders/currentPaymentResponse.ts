@@ -1,5 +1,5 @@
 export interface CurrentPaymentResponse {
-    paymentOrder: Uri;
+    paymentOrder: URL;
     menuElementName: string;
     payment: CurrentPayment;
 }

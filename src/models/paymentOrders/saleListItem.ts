@@ -1,5 +1,5 @@
 export interface SaleListItem {
-    id: Uri;
+    id: URL;
     created: string;
     updated: string;
     type: PaymentType;

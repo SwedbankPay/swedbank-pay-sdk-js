@@ -1,4 +1,4 @@
 export interface SwishPaymentSaleResponse {
-    payment: Uri;
+    payment: URL;
     sale: SwishPaymentSale;
 }

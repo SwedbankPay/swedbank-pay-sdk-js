@@ -1,6 +1,6 @@
 export interface HttpOperation {
     contentType: string;
-    href: Uri;
+    href: URL;
     method: HttpMethod;
     rel: LinkRelation;
     request: HttpRequestMessage;

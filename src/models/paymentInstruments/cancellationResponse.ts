@@ -1,4 +1,4 @@
 export interface CancellationResponse {
-    payment: Uri;
+    payment: URL;
     cancellation: TransactionResponse;
 }

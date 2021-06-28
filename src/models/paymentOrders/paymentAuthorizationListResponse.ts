@@ -1,4 +1,4 @@
 export interface PaymentAuthorizationListResponse {
-    id: Uri;
+    id: URL;
     authorizationList: PaymentAuthorization[];
 }

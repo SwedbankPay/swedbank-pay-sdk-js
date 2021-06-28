@@ -1,5 +1,5 @@
 export interface LegalAddress {
-    id: Uri;
+    id: URL;
     addressee: string;
     coAddress: string;
     streetAddress: string;

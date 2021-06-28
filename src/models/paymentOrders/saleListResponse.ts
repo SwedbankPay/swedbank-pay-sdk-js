@@ -1,4 +1,4 @@
 export interface SaleListResponse {
-    id: Uri;
+    id: URL;
     saleList: SaleListItem[];
 }

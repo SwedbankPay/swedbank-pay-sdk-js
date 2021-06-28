@@ -1,4 +1,4 @@
 export interface VippsPaymentAuthorizationResponse {
-    payment: Uri;
+    payment: URL;
     authorization: VippsPaymentAuthorization;
 }

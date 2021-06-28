@@ -1,4 +1,4 @@
 export interface CaptureResponse {
-    payment: Uri;
+    payment: URL;
     capture: Transaction;
 }

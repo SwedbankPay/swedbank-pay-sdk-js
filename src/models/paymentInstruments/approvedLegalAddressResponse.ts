@@ -1,4 +1,4 @@
 export interface ApprovedLegalAddressResponse {
-    payment: Uri;
+    payment: URL;
     approvedLegalAddress: LegalAddress;
 }

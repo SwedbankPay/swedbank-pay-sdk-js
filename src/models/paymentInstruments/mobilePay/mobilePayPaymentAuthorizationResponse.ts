@@ -1,4 +1,4 @@
 export interface MobilePayPaymentAuthorizationResponse {
     authorization: MobilePayPaymentAuthorization;
-    payment: Uri;
+    payment: URL;
 }

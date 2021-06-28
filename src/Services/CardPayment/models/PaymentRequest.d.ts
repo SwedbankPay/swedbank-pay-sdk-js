@@ -32,7 +32,7 @@ export interface PaymentRequestResource {
   operation: 'Purchase' | 'Recur' | 'Payout' | 'Verify';
   /**
    * The intent of the payment identifies how and when the charge will be effectuated.
-   * This determine the type transactions used during the payment process.
+   * This determine the type transactions used dURLng the payment process.
    *
    * `Authorization`: Reserves the amount, and is followed by a cancellation or capture
    * of funds.

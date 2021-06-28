@@ -1,9 +1,9 @@
 export interface Urls {
-    callbackUrl: Uri;
-    cancelUrl: Uri;
-    completeUrl: Uri;
-    hostUrls: Uri[];
-    logoUrl: Uri;
-    paymentUrl: Uri;
-    termsOfServiceUrl: Uri;
+    callbackUrl: URL;
+    cancelUrl: URL;
+    completeUrl: URL;
+    hostUrls: URL[];
+    logoUrl: URL;
+    paymentUrl: URL;
+    termsOfServiceUrl: URL;
 }
