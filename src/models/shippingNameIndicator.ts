@@ -1,3 +1,4 @@
-export interface ShippingNameIndicator extends TypeSafeEnum<ShippingNameIndicator> {
-
+export enum ShippingNameIndicator {
+    AccountNameIdenticalToShippingName = "01",
+    AccountNameDifferentFromShippingName = "02",
 }

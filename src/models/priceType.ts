@@ -1,5 +1,5 @@
 export enum PriceType {
-    Unknown = default,
+    Unknown = 0,
     CreditCard,
     Visa,
     MasterCard,

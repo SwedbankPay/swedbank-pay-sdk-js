@@ -1,3 +1,4 @@
-export interface SuspiciousAccountActivity extends TypeSafeEnum<SuspiciousAccountActivity> {
-
+export enum SuspiciousAccountActivity {
+    NoSuspiciousActivityObserved = "01",
+    SuspiciousActivityObserved = "02",
 }

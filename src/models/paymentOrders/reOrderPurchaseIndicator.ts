@@ -1,3 +1,4 @@
-export interface ReOrderPurchaseIndicator extends TypeSafeEnum<ReOrderPurchaseIndicator> {
-
+export enum  ReOrderPurchaseIndicator {
+    MerchandiseAvailable = "01",
+    ReOrderPurchaseIndicator = "02"
 }

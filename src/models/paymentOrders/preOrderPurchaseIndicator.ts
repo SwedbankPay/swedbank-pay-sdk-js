@@ -1,3 +1,4 @@
-export interface PreOrderPurchaseIndicator extends TypeSafeEnum<PreOrderPurchaseIndicator> {
-
+export enum PreOrderPurchaseIndicator {
+    MerchandiseAvailable = "01",
+    FutureAvailability = "02",
 }

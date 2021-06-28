@@ -1,3 +1,5 @@
-export interface PaymentOrderLanguage extends TypeSafeEnum<PaymentOrderLanguage> {
-
+export enum PaymentOrderLanguage {
+    Swedish = "sv-SE",
+    Norwegian = "nb-NO",
+    English = "en-US",
 }
