@@ -30,7 +30,7 @@ export class SwedbankBase {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
-        'user-agent': `bjerkio@swedbank-pay-js/0.0.0`,
+        'user-agent': `swedbank@swedbank-pay-js/0.0.0`,
       },
       responseType: 'json',
       json: body,
@@ -47,7 +47,7 @@ export class SwedbankBase {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
-        'user-agent': `bjerkio@swedbank-pay-js/0.0.0`,
+        'user-agent': `swedbank@swedbank-pay-js/0.0.0`,
       },
       responseType: 'json',
       json: body,

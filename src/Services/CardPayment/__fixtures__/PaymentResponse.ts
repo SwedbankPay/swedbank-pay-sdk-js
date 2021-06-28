@@ -15,7 +15,7 @@ export default {
     },
     amount: 0,
     description: 'This is a test purchase.',
-    initiatingSystemUserAgent: 'bjerkio@swedbank-pay-js/0.0.0',
+    initiatingSystemUserAgent: 'swedbank@swedbank-pay-js/0.0.0',
     userAgent: 'Mozilla/5.0',
     language: 'nb-NO',
     urls: {

@@ -1,4 +1,4 @@
-[swedbank-pay - v0.0.0](../README.md) › [SwedbankBase](swedbankbase.md)
+[@swedbank-pay/sdk](../README.md) › [SwedbankBase](swedbankbase.md)
 
 # Class: SwedbankBase
 
@@ -9,6 +9,8 @@
   ↳ [Payment](payment.md)
 
   ↳ [CardPayment](cardpayment.md)
+
+  ↳ [PaymentOrder](paymentorder.md)
 
 ## Index
 
@@ -55,7 +57,7 @@ Name | Type |
 
 ###  GenericResource
 
-▸ **GenericResource**<**T**>(`id?`: string): *Promise‹T›*
+▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
 
 **Type parameters:**
 
@@ -89,7 +91,7 @@ ___
 
 ###  request
 
-▸ **request**<**T**>(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 **Type parameters:**
 
@@ -109,7 +111,7 @@ ___
 
 ###  runOperation
 
-▸ **runOperation**<**T**>(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
 
 **Type parameters:**
 

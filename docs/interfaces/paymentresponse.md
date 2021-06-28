@@ -1,4 +1,4 @@
-[swedbank-pay - v0.0.0](../README.md) › [PaymentResponse](paymentresponse.md)
+[@swedbank-pay/sdk](../README.md) › [PaymentResponse](paymentresponse.md)
 
 # Interface: PaymentResponse
 
