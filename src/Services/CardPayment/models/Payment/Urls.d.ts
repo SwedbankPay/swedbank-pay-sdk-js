@@ -15,14 +15,14 @@ export interface Urls {
   completeUrl: string;
 
   /**
-   * The URI to redirect the payer to if the payment is canceled. Only used in
+   * The URL to redirect the payer to if the payment is canceled. Only used in
    * redirect scenarios. Can not be used simultaneously with paymentUrl; only
    * cancelUrl or paymentUrl can be used, not both.
    */
   cancelUrl: string;
 
   /**
-   * The URI that Swedbank Pay will redirect back to when the view-operation
+   * The URL that Swedbank Pay will redirect back to when the view-operation
    * needs to be loaded, to inspect and act on the current status of the payment.
    * Only used in Seamless Views. If both cancelUrl and paymentUrl is sent, the
    * paymentUrl will used.

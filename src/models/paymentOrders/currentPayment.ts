@@ -1,0 +1,42 @@
+import { Amount } from "../amount";
+import { Currency } from "../currency";
+import { Language } from "../language";
+import { Operation } from "../Operation";
+import { PaymentInstrument } from "../paymentInstrument";
+import { CancellationListResponse } from "../paymentInstruments/cancellationListResponse";
+import { CaptureListResponse } from "../paymentInstruments/captureListResponse";
+import { PaymentIntent } from "../paymentInstruments/paymentIntent";
+import { PriceListResponse } from "../paymentInstruments/priceListResponse";
+import { ReversalListResponse } from "../paymentInstruments/reversalListResponse";
+import { TransactionListResponse } from "../paymentInstruments/transactionListResponse";
+import { State } from "../state";
+import { Urls } from "../urls";
+import { PaymentAuthorizationResponse } from "./paymentAuthorizationResponse";
+import { PaymentOrderPayeeInfo } from "./paymentOrderPayeeInfo";
+import { SaleListResponse } from "./saleListResponse";
+
+export interface CurrentPayment {
+    amount: Amount;
+    authorizations: PaymentAuthorizationResponse;
+    cancellations: CancellationListResponse;
+    captures: CaptureListResponse;
+    created: string;
+    currency: Currency;
+    description: string;
+    instrument: PaymentInstrument;
+    intent: PaymentIntent;
+    language: Language;
+    number: number;
+    operation: Operation;
+    payeeInfo: PaymentOrderPayeeInfo;
+    payerReference: string;
+    paymentToken: string;
+    prices: PriceListResponse;
+    reversals: ReversalListResponse;
+    sales: SaleListResponse;
+    state: State;
+    transactions: TransactionListResponse;
+    updated: string;
+    urls: Urls;
+    userAgent: string;
+}
