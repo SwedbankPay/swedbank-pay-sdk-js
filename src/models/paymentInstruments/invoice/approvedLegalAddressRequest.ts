@@ -1,4 +1,4 @@
 export interface ApprovedLegalAddressRequest {
-    socialSecURLtyNumber: string;
+    socialSecurityNumber: string;
     zipCode: string;
 }
