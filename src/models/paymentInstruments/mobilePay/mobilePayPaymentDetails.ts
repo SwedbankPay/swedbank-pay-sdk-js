@@ -1,8 +1,7 @@
 import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
 import { Currency } from "../../currency";
 import { Language } from "../../language";
-import { Metadata } from "../../MetaData";
-import { Operation } from "../../Operation";
+import { Operation } from "../../operation";
 import { Urls } from "../../urls";
 import { PaymentIntent } from "../paymentIntent";
 import { PrefillInfo } from "../prefillInfo";

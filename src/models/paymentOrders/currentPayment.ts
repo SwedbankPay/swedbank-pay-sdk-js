@@ -1,7 +1,7 @@
 import { Amount } from "../amount";
 import { Currency } from "../currency";
 import { Language } from "../language";
-import { Operation } from "../Operation";
+import { Operation } from "../operation";
 import { PaymentInstrument } from "../paymentInstrument";
 import { CancellationListResponse } from "../paymentInstruments/cancellationListResponse";
 import { CaptureListResponse } from "../paymentInstruments/captureListResponse";

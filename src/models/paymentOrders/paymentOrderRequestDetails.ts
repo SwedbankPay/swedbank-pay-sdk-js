@@ -4,8 +4,7 @@ import { RiskIndicator } from "../../Services/PaymentOrder/models/RiskIndicator"
 import { Amount } from "../amount";
 import { Currency } from "../currency";
 import { Language } from "../language";
-import { Metadata } from "../MetaData";
-import { Operation } from "../Operation";
+import { Operation } from "../operation";
 import { Urls } from "../urls";
 import { Payer } from "./payer";
 import { PaymentOrderPaymentOptionsItems } from "./paymentOrderPaymentOptionsItems";

@@ -1,6 +1,6 @@
 import { OrderItem } from "../../Services/PaymentOrder/models/OrderItem";
 import { Amount } from "../amount";
-import { Operation } from "../Operation";
+import { Operation } from "../operation";
 
 export interface PaymentOrderUpdateRequestDetails {
     amount: Amount;
