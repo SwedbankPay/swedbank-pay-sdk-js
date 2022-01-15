@@ -16,7 +16,7 @@ export interface CardholderAccountInfo {
    * cardholder’s account with merchant.
    *
    * 01 (No account, guest)
-   * 02 (Created dURLng transaction)
+   * 02 (Created during transaction)
    * 03 (Less than 30 days)
    * 04 (30-60 days)
    * 05 (More than 60 days)
@@ -26,7 +26,7 @@ export interface CardholderAccountInfo {
    * Length of time since the cardholder’s account information with the merchant
    * was changed. Including billing etc.
    *
-   * 01 (Changed dURLng transaction)
+   * 01 (Changed during transaction)
    * 02 (Less than 30 days)
    * 03 (30-60 days)
    * 04 (More than 60 days)
@@ -37,7 +37,7 @@ export interface CardholderAccountInfo {
    * had a password change or account reset.
    *
    * 01 (No change)
-   * 02 (Changed dURLng transaction)
+   * 02 (Changed during transaction)
    * 03 (Less than 30 days)
    * 04 (30-60 days)
    * 05 (More than 60 days)
