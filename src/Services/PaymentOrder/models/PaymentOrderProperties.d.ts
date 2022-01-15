@@ -1,5 +1,5 @@
 import { GenericResource } from "../../../models/GenericResource";
-import { MetaData } from "../../../models/MetaData";
+import { MetaData } from "../../../models/MetaData-resource";
 import { PaymentProperties } from "../../../models/Payment";
 import { OrderItem } from "./OrderItem";
 import { PayeeInfo } from "./PayeeInfo";

@@ -1,5 +1,5 @@
 import { Amount } from "../../amount";
-import { Operation } from "../../Operation";
+import { Operation } from "../../operation";
 
 export interface TrustlyReversalTransaction {
     transactionActivity: Operation;

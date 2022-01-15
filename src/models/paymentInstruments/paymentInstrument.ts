@@ -3,6 +3,7 @@ import { Amount } from "../amount";
 import { Currency } from "../currency";
 import { Identifiable } from "../identifiable";
 import { Language } from "../language";
+import { MetaData } from "../MetaData-resource";
 import { Operation } from "../operation";
 import { State } from "../state";
 import { Urls } from "../urls";
@@ -39,5 +40,5 @@ export interface PaymentInstrument extends Identifiable {
     userAgent: string;
     vatAmount: Amount;
     reversals: ReversalListResponse;
-    metadata: Metadata;
+    metadata: MetaData;
 }

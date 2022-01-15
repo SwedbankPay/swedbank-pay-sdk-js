@@ -1,6 +1,7 @@
 import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
 import { Currency } from "../../currency";
 import { Language } from "../../language";
+import { MetaData } from "../../MetaData-resource";
 import { Operation } from "../../operation";
 import { Urls } from "../../urls";
 import { PaymentIntent } from "../paymentIntent";
@@ -19,5 +20,5 @@ export interface MobilePayPaymentDetails {
     prices: Price[];
     urls: Urls;
     userAgent: string;
-    metadata: Metadata;
+    metadata: MetaData;
 }

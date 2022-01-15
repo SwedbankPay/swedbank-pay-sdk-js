@@ -3,7 +3,7 @@ import { Amount } from "../amount";
 import { Currency } from "../currency";
 import { Identifiable } from "../identifiable";
 import { Language } from "../language";
-import { Metadata } from "../MetaData";
+import { MetaData } from "../MetaData-resource";
 import { State } from "../state";
 import { Urls } from "../urls";
 import { CurrentPaymentResponse } from "./currentPaymentResponse";
@@ -17,7 +17,7 @@ export interface PaymentOrder extends Identifiable {
     currentPayment: CurrentPaymentResponse;
     description: string;
     language: Language;
-    metadata: Metadata;
+    metadata: MetaData;
     operation: string;
     orderItems: OrderItemListResponse;
     payeeInfo: PayeeInfo;

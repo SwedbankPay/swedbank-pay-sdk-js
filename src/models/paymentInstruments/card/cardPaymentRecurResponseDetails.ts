@@ -2,6 +2,7 @@ import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
 import { Amount } from "../../amount";
 import { Currency } from "../../currency";
 import { Identifiable } from "../../identifiable";
+import { MetaData } from "../../MetaData-resource";
 import { Operation } from "../../operation";
 import { State } from "../../state";
 import { Urls } from "../../urls";
@@ -30,5 +31,5 @@ export interface CardPaymentRecurResponseDetails extends Identifiable {
     authorizations: CardPaymentAuthorization;
     urls: Urls;
     payeeInfo: PayeeInfo;
-    metaData: Metadata;
+    metaData: MetaData;
 }

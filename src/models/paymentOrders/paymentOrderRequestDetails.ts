@@ -4,6 +4,7 @@ import { RiskIndicator } from "../../Services/PaymentOrder/models/RiskIndicator"
 import { Amount } from "../amount";
 import { Currency } from "../currency";
 import { Language } from "../language";
+import { MetaData } from "../MetaData-resource";
 import { Operation } from "../operation";
 import { Urls } from "../urls";
 import { Payer } from "./payer";
@@ -16,7 +17,7 @@ export interface PaymentOrderRequestDetails {
     generateRecurrenceToken: boolean;
     items: PaymentOrderPaymentOptionsItems[];
     language: Language;
-    metadata: Metadata;
+    metadata: MetaData;
     operation: Operation;
     orderItems: OrderItem[];
     payeeInfo: PayeeInfo;
