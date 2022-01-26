@@ -1,5 +1,5 @@
 import { Amount } from "../generics/amount";
-import { HttpOperation } from "../httpOperation";
+import { HttpOperation } from "../generics/httpOperation";
 import { Identifiable } from "../identifiable";
 import { Problem } from "../problem";
 import { State } from "../enums/state";

@@ -1,4 +1,4 @@
-import { HttpOperation } from "../httpOperation";
+import { HttpOperation } from "../generics/httpOperation";
 import OperationsBase from "../operationsBase";
 
 export interface ConsumerOperations extends OperationsBase {
