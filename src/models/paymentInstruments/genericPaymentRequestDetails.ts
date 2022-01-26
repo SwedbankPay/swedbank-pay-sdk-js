@@ -4,8 +4,21 @@ import { Type } from 'class-transformer';
 import { Price } from './price';
 import { PaymentIntent } from './paymentIntent';
 import { Operation } from '../enums/operation';
+import { Currency } from '../currency';
+import { Language } from '../language';
+import { Urls } from '../generics/urls';
+import { PayeeInfo } from '../generics/payeeInfo';
 
 export class GenericPaymentRequestDetails extends BaseModel {
+    @v.IsEnum(Operation)
+    operation: Operation;
+
+    @v.IsEnum(PaymentIntent)
+    intent: PaymentIntent;
+
+    @v.IsCurrency()
+    currency: Currency;
+
     @v.IsString()
     description: string;
 
@@ -14,9 +27,18 @@ export class GenericPaymentRequestDetails extends BaseModel {
     @Type(() => Price)
     prices: Price[];
 
-    @v.IsEnum(PaymentIntent)
-    intent: PaymentIntent;
+    @v.IsString()
+    userAgent: string;
 
-    @v.IsEnum(Operation)
-    operation: Operation;
+    @v.ValidateNested()
+    @Type(() => Language)
+    language: Language;
+
+    @v.ValidateNested()
+    @Type(() => Urls)
+    urls: Urls;
+
+    @v.ValidateNested()
+    @Type(() => PayeeInfo)
+    payeeInfo: PayeeInfo;
 }
