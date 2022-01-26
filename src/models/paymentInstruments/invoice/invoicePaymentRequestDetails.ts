@@ -3,7 +3,7 @@ import { Currency } from "../../currency";
 import { Language } from "../../language";
 import { MetaData } from "../../generics/MetaData-resource";
 import { Operation } from "../../enums/operation";
-import { Urls } from "../../urls";
+import { Urls } from "../../generics/urls";
 import { PaymentIntent } from "../paymentIntent";
 import { PrefillInfo } from "../prefillInfo";
 import { Price } from "../price";

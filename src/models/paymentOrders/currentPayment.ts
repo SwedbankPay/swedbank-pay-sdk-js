@@ -10,7 +10,7 @@ import { PriceListResponse } from "../paymentInstruments/priceListResponse";
 import { ReversalListResponse } from "../paymentInstruments/reversalListResponse";
 import { TransactionListResponse } from "../paymentInstruments/transactionListResponse";
 import { State } from "../enums/state";
-import { Urls } from "../urls";
+import { Urls } from "../generics/urls";
 import { PaymentAuthorizationResponse } from "./paymentAuthorizationResponse";
 import { PaymentOrderPayeeInfo } from "./paymentOrderPayeeInfo";
 import { SaleListResponse } from "./saleListResponse";

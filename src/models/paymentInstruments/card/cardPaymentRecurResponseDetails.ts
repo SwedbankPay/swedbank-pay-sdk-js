@@ -5,7 +5,7 @@ import { Identifiable } from "../../identifiable";
 import { MetaData } from "../../generics/MetaData-resource";
 import { Operation } from "../../enums/operation";
 import { State } from "../../enums/state";
-import { Urls } from "../../urls";
+import { Urls } from "../../generics/urls";
 import { PaymentInstrument } from "../paymentInstrument";
 import { PriceListResponse } from "../priceListResponse";
 import { TransactionListResponse } from "../transactionListResponse";

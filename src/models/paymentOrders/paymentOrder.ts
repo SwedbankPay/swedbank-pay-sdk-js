@@ -5,7 +5,7 @@ import { Identifiable } from "../identifiable";
 import { Language } from "../language";
 import { MetaData } from "../generics/MetaData-resource";
 import { State } from "../enums/state";
-import { Urls } from "../urls";
+import { Urls } from "../generics/urls";
 import { CurrentPaymentResponse } from "./currentPaymentResponse";
 import { OrderItemListResponse } from "./orderItemListResponse";
 import { PayerResponse } from "./payerResponse";
