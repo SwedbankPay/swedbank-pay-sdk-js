@@ -3,7 +3,7 @@ import { MerchantConfig } from '../../MerchantConfig';
 import { PaymentOrderResponse } from './models/PaymentOrderResponse';
 import { PaymentOrderProperties } from "./models/PaymentOrderProperties";
 import { PaymentOrderRequest } from './models/PaymentOrderRequest';
-import { Operation } from '../../models/Operation-resource';
+import { Operation } from '../../models/generics/Operation-resource';
 import { Purchase, PurchaseInput } from './operations/Purchase';
 
 export class PaymentOrder extends SwedbankBase {

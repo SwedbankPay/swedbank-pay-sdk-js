@@ -1,5 +1,5 @@
 import { HttpOperation } from "../generics/httpOperation";
-import OperationsBase from "../operationsBase";
+import OperationsBase from "../generics/operationsBase";
 
 export interface ConsumerOperations extends OperationsBase {
     redirectConsumerIdentification: HttpOperation;
