@@ -1,6 +1,6 @@
 import { Amount } from "../amount";
 import { PaymentType } from "../paymentInstruments/paymentType";
-import { State } from "../state";
+import { State } from "../enums/state";
 
 export interface SaleListItem {
     id: URL;

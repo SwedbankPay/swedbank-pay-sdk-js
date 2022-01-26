@@ -1,5 +1,5 @@
-import { HttpMethod } from "./HttpMethod";
-import { LinkRelation } from "./linkRelation";
+import { HttpMethod } from "./enums/HttpMethod";
+import { LinkRelation } from "./enums/linkRelation";
 
 export interface HttpOperation {
     contentType: string;

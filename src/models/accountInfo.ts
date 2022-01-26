@@ -1,9 +1,9 @@
-import { AccountAgeIndicator } from "./accountAgeIndicator";
-import { AccountChangeIndicator } from "./accountChangeIndicator";
-import { AccountPwdChangeIndicator } from "./accountPwdChangeIndicator";
-import { ShippingAddressUsageIndicator } from "./shippingAddressUsageIndicator";
-import { ShippingNameIndicator } from "./shippingNameIndicator";
-import { SuspiciousAccountActivity } from "./suspiciousAccountActivity";
+import { AccountAgeIndicator } from "./enums/accountAgeIndicator";
+import { AccountChangeIndicator } from "./enums/accountChangeIndicator";
+import { AccountPwdChangeIndicator } from "./enums/accountPwdChangeIndicator";
+import { ShippingAddressUsageIndicator } from "./enums/shippingAddressUsageIndicator";
+import { ShippingNameIndicator } from "./enums/shippingNameIndicator";
+import { SuspiciousAccountActivity } from "./enums/suspiciousAccountActivity";
 
 export interface AccountInfo {
     accountAgeIndicator: AccountAgeIndicator;

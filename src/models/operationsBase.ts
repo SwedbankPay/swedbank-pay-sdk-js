@@ -1,5 +1,5 @@
 import { HttpOperation } from "./httpOperation";
-import { LinkRelation } from "./linkRelation";
+import { LinkRelation } from "./enums/linkRelation";
 
 export default interface OperationsBase {
     keys: LinkRelation[];

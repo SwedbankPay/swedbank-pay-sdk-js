@@ -1,5 +1,5 @@
 import { Url } from "url";
-import { GenericResource } from "../../../models/GenericResource";
+import { GenericResource } from "../../../models/generics/GenericResource";
 
 export interface OrderItem extends GenericResource {
   /**

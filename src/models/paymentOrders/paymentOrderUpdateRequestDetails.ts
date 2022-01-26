@@ -1,6 +1,6 @@
 import { OrderItem } from "../../Services/PaymentOrder/models/OrderItem";
 import { Amount } from "../amount";
-import { Operation } from "../operation";
+import { Operation } from "../enums/operation";
 
 export interface PaymentOrderUpdateRequestDetails {
     amount: Amount;

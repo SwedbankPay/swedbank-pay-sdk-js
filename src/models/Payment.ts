@@ -2,7 +2,7 @@ import { Price } from '../Services/CardPayment/models/Payment/Price';
 import { SwedbankBase } from '../SwedbankBase';
 import { MerchantConfig } from '../MerchantConfig';
 import { Operation } from './Operation-resource';
-import { GenericResource } from './GenericResource';
+import { GenericResource } from './generics/GenericResource';
 
 export interface PaymentResponse {
   payment: PaymentProperties;

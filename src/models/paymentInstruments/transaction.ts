@@ -2,8 +2,8 @@ import { Amount } from "../amount";
 import { HttpOperation } from "../httpOperation";
 import { Identifiable } from "../identifiable";
 import { Problem } from "../problem";
-import { State } from "../state";
-import { TransactionType } from "./transactionType";
+import { State } from "../enums/state";
+import { TransactionType } from "../enums/transactionType";
 
 export interface Transaction extends Identifiable {
     created: string;

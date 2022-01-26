@@ -1,7 +1,7 @@
 import { Amount } from "../amount";
 import { Identifiable } from "../identifiable";
 import { PaymentType } from "../paymentInstruments/paymentType";
-import { State } from "../state";
+import { State } from "../enums/state";
 
 export interface PaymentAuthorizationResponse extends Identifiable {
     created: string;

@@ -1,6 +1,6 @@
 import { Amount } from "../amount";
 import { HttpOperation } from "../httpOperation";
-import { State } from "../state";
+import { State } from "../enums/state";
 
 export interface AuthorizationTransaction {
     amount: Amount;
