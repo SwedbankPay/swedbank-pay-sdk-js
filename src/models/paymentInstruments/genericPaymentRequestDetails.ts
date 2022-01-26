@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
-import { Price } from './price';
 import { BaseModel } from '../generics/baseModel';
+import { Price } from './price';
 
 export class GenericPaymentRequestDetails extends BaseModel {
     @v.IsString()
