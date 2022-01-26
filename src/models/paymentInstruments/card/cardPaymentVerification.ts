@@ -1,5 +1,5 @@
 import { Identifiable } from "../../identifiable";
-import { Problem } from "../../problem";
+import { Problem } from "../../generics/problem";
 import { VerifyTransaction } from "./verifyTransaction";
 
 export interface CardPaymentVerification extends Identifiable {

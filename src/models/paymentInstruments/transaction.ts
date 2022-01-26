@@ -1,7 +1,7 @@
 import { Amount } from "../generics/amount";
 import { HttpOperation } from "../generics/httpOperation";
 import { Identifiable } from "../identifiable";
-import { Problem } from "../problem";
+import { Problem } from "../generics/problem";
 import { State } from "../enums/state";
 import { TransactionType } from "../enums/transactionType";
 

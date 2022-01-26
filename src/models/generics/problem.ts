@@ -1,7 +1,7 @@
 import { ProblemItem } from "./problemItem";
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { BaseModel } from './generics/baseModel';
+import { BaseModel } from './baseModel';
 
 export class Problem extends BaseModel {
     @v.IsString()
