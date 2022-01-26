@@ -1,4 +1,4 @@
-import { Identifiable } from "../../identifiable";
+import { Identifiable } from "../../generics/identifiable";
 import { PaymentInstrument } from "../paymentInstrument";
 import { VippsPaymentAuthorizationListResponse } from "./vippsPaymentAuthorizationListResponse";
 

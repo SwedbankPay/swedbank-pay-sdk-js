@@ -1,4 +1,4 @@
-import { Identifiable } from "../../identifiable";
+import { Identifiable } from "../../generics/identifiable";
 import { Problem } from "../../generics/problem";
 import { VerifyTransaction } from "./verifyTransaction";
 

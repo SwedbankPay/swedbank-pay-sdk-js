@@ -1,4 +1,4 @@
-import { Identifiable } from "../../identifiable";
+import { Identifiable } from "../../generics/identifiable";
 import { Transaction } from "../transaction";
 
 export interface SwishPaymentSale extends Identifiable {

@@ -1,7 +1,7 @@
 import { Address } from "cluster";
 import { AccountInfo } from "../accountInfo";
 import { EmailAddress } from "../emailAddress";
-import { Identifiable } from "../identifiable";
+import { Identifiable } from "../generics/identifiable";
 import { Msisdn } from "../msisdn";
 import { NationalIdentifier } from "./nationalIdentifier";
 
