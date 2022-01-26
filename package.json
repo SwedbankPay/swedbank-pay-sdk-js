@@ -43,7 +43,7 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Bjerk AS <office@bjerk.io>",
+  "author": "Swedbank Pay <opensource@swedbankpay.com>",
   "license": "MIT",
   "dependencies": {
     "class-transformer": "^0.5.1",
