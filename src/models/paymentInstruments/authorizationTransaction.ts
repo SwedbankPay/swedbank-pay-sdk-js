@@ -1,4 +1,4 @@
-import { Amount } from "../amount";
+import { Amount } from "../generics/amount";
 import { HttpOperation } from "../httpOperation";
 import { State } from "../enums/state";
 

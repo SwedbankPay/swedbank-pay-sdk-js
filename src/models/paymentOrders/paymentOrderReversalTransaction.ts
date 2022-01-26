@@ -1,5 +1,5 @@
 import { OrderItem } from "../../Services/PaymentOrder/models/OrderItem";
-import { Amount } from "../amount";
+import { Amount } from "../generics/amount";
 
 export interface PaymentOrderReversalTransaction {
     amount: Amount;

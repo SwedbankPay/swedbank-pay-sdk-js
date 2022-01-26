@@ -1,5 +1,5 @@
 import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
-import { Amount } from "../../amount";
+import { Amount } from "../../generics/amount";
 import { Currency } from "../../currency";
 import { Language } from "../../language";
 import { MetaData } from "../../generics/MetaData-resource";

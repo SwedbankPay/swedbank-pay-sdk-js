@@ -8,4 +8,3 @@ export class GenericPaymentRequestDetails extends BaseModel {
     @v.ValidateNested()
     prices: Price
 }
-

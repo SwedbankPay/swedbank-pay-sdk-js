@@ -1,4 +1,4 @@
-import { Amount } from "../amount";
+import { Amount } from "../generics/amount";
 import { PaymentType } from "../paymentInstruments/paymentType";
 import { State } from "../enums/state";
 

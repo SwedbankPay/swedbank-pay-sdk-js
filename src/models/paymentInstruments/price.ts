@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
 import { BaseModel } from '../generics/baseModel';
-import { Amount } from "../amount";
+import { Amount } from "../generics/amount";
 import { PriceType } from "../enums/priceType";
 import { ValidateNested } from 'class-validator';
 

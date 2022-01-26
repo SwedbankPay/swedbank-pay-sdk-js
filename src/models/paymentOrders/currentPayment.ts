@@ -1,4 +1,4 @@
-import { Amount } from "../amount";
+import { Amount } from "../generics/amount";
 import { Currency } from "../currency";
 import { Language } from "../language";
 import { Operation } from "../enums/operation";

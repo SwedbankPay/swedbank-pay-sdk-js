@@ -1,4 +1,4 @@
-import { Amount } from "../../amount";
+import { Amount } from "../../generics/amount";
 
 export interface VippsReversalTransaction {
     amount: Amount;

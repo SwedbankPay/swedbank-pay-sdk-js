@@ -1,4 +1,4 @@
-import { Amount } from "../../amount";
+import { Amount } from "../../generics/amount";
 
 export interface MobilePayReversalTransaction {
     amount: Amount;
