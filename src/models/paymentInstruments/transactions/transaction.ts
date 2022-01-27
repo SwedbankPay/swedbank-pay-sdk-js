@@ -1,9 +1,9 @@
-import { Amount } from "../generics/amount";
-import { HttpOperation } from "../generics/httpOperation";
-import { Identifiable } from "../generics/identifiable";
-import { Problem } from "../generics/problem";
-import { State } from "../enums/state";
-import { TransactionType } from "../enums/transactionType";
+import { Amount } from "../../generics/amount";
+import { HttpOperation } from "../../generics/httpOperation";
+import { Identifiable } from "../../generics/identifiable";
+import { Problem } from "../../generics/problem";
+import { State } from "../../enums/state";
+import { TransactionType } from "../../enums/transactionType";
 
 export interface Transaction extends Identifiable {
     created: string;
