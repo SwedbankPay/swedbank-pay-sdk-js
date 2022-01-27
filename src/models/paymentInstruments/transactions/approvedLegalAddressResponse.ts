@@ -1,4 +1,4 @@
-import { LegalAddress } from "./legalAddress";
+import { LegalAddress } from "../legalAddress";
 
 export interface ApprovedLegalAddressResponse {
     payment: URL;
