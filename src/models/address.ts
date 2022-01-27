@@ -6,7 +6,6 @@ import { Msisdn } from "./msisdn";
 import { Type } from 'class-transformer';
 
 export class Address extends BaseModel{
-
     @v.IsString()
     city: string;
     
