@@ -8,7 +8,7 @@ import { State } from "../../enums/state";
 import { Urls } from "../../generics/urls";
 import { PaymentInstrument } from "../paymentInstrument";
 import { PriceListResponse } from "../priceListResponse";
-import { TransactionListResponse } from "../transactionListResponse";
+import { TransactionListResponse } from "../transactions/transactionListResponse";
 import { CardPaymentAuthorization } from "./cardPaymentAuthorization";
 
 export interface CardPaymentRecurResponseDetails extends Identifiable {

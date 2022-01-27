@@ -1,4 +1,4 @@
-import { Transaction } from "../transaction";
+import { Transaction } from "../transactions/transaction";
 
 export interface VerifyTransaction extends Transaction {
     activities: URL;

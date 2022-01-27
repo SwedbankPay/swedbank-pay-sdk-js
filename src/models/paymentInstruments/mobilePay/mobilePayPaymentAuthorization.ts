@@ -1,4 +1,4 @@
-import { AuthorizationTransaction } from "../authorizationTransaction";
+import { AuthorizationTransaction } from "../transactions/authorizationTransaction";
 
 export interface MobilePayPaymentAuthorization {
     acquirerStan: string;

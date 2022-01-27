@@ -7,12 +7,12 @@ import { MetaData } from "../generics/MetaData-resource";
 import { Operation } from "../enums/operation";
 import { State } from "../enums/state";
 import { Urls } from "../generics/urls";
-import { CancellationListResponse } from "./cancellationListResponse";
-import { CaptureListResponse } from "./captureListResponse";
+import { CancellationListResponse } from "./transactions/cancellationListResponse";
+import { CaptureListResponse } from "./transactions/captureListResponse";
 import { PaymentIntent } from "./paymentIntent";
 import { PriceListResponse } from "./priceListResponse";
-import { ReversalListResponse } from "./reversalListResponse";
-import { TransactionListResponse } from "./transactionListResponse";
+import { ReversalListResponse } from "./transactions/reversalListResponse";
+import { TransactionListResponse } from "./transactions/transactionListResponse";
 
 export interface PaymentInstrument extends Identifiable {
     amount: Amount;
