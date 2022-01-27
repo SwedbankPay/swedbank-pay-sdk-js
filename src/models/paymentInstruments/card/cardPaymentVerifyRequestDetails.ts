@@ -5,7 +5,7 @@ import { Language } from "../../language";
 import { MetaData } from "../../generics/MetaData-resource";
 import { Operation } from "../../enums/operation";
 import { Urls } from "../../generics/urls";
-import { PaymentIntent } from "../paymentIntent";
+import { PaymentIntent } from "../enums/paymentIntent";
 
 export interface CardPaymentVerifyRequestDetails {
     operation: Operation;

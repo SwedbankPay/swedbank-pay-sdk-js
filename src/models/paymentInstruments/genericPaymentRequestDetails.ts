@@ -2,7 +2,7 @@ import * as v from 'class-validator';
 import { BaseModel } from '../generics/baseModel';
 import { Type } from 'class-transformer';
 import { Price } from './price';
-import { PaymentIntent } from './paymentIntent';
+import { PaymentIntent } from './enums/paymentIntent';
 import { Operation } from '../enums/operation';
 import { Currency } from '../currency';
 import { Language } from '../language';

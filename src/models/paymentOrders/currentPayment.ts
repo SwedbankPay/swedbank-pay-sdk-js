@@ -5,7 +5,7 @@ import { Operation } from "../enums/operation";
 import { PaymentInstrument } from "../enums/paymentInstrument";
 import { CancellationListResponse } from "../paymentInstruments/transactions/cancellationListResponse";
 import { CaptureListResponse } from "../paymentInstruments/transactions/captureListResponse";
-import { PaymentIntent } from "../paymentInstruments/paymentIntent";
+import { PaymentIntent } from "../paymentInstruments/enums/paymentIntent";
 import { PriceListResponse } from "../paymentInstruments/priceListResponse";
 import { ReversalListResponse } from "../paymentInstruments/transactions/reversalListResponse";
 import { TransactionListResponse } from "../paymentInstruments/transactions/transactionListResponse";

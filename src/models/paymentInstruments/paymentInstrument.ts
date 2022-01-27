@@ -9,7 +9,7 @@ import { State } from "../enums/state";
 import { Urls } from "../generics/urls";
 import { CancellationListResponse } from "./transactions/cancellationListResponse";
 import { CaptureListResponse } from "./transactions/captureListResponse";
-import { PaymentIntent } from "./paymentIntent";
+import { PaymentIntent } from "./enums/paymentIntent";
 import { PriceListResponse } from "./priceListResponse";
 import { ReversalListResponse } from "./transactions/reversalListResponse";
 import { TransactionListResponse } from "./transactions/transactionListResponse";
