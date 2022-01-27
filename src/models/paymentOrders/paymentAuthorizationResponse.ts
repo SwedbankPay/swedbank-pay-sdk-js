@@ -1,6 +1,6 @@
 import { Amount } from "../generics/amount";
 import { Identifiable } from "../generics/identifiable";
-import { PaymentType } from "../paymentInstruments/paymentType";
+import { PaymentType } from "../paymentInstruments/enums/paymentType";
 import { State } from "../enums/state";
 
 export interface PaymentAuthorizationResponse extends Identifiable {

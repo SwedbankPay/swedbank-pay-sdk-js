@@ -1,5 +1,5 @@
 import { Amount } from "../generics/amount";
-import { PaymentType } from "../paymentInstruments/paymentType";
+import { PaymentType } from "../paymentInstruments/enums/paymentType";
 import { State } from "../enums/state";
 
 export interface SaleListItem {
