@@ -1,7 +1,7 @@
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { BaseModel } from "../generics/baseModel"
-import { Amount } from '../generics/amount';
+import { BaseModel } from "../../generics/baseModel"
+import { Amount } from '../../generics/amount';
 
 export class CaptureTransaction extends BaseModel {
     @Type(() => transactionModel)
