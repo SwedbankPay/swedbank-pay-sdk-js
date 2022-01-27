@@ -2,13 +2,12 @@ import * as v from 'class-validator';
 import { BaseModel } from '../generics/baseModel';
 import { Amount } from "../generics/amount";
 import { PriceType } from "../enums/priceType";
-import { ValidateNested } from 'class-validator';
 
 export class Price extends BaseModel {
     @v.ValidateNested()
     amount: Amount;
     
-    @ValidateNested()
+    @v.ValidateNested()
     vatAmount: Amount;
 
     @v.IsEnum(PriceType)
