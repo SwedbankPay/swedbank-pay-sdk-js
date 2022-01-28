@@ -30,8 +30,9 @@ export class Transaction extends Identifiable {
     @v.IsNumber()
     number: number;
     
-    // TODO: Figure out how to validate content of Array
     @v.IsArray()
+    @v.ValidateNested()
+    @Type(() => HttpOperation)
     operations: HttpOperation[];
     
     @v.IsString()
