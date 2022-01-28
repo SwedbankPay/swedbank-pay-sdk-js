@@ -34,8 +34,9 @@ export class AuthorizationTransaction extends BaseModel{
     @v.IsNumber()
     number: number;
 
-    // TODO: figure how to validate array content
     @v.IsArray()
+    @v.ValidateNested()
+    @Type(() => HttpOperation)
     operations: HttpOperation[];
 
     @v.IsString()
