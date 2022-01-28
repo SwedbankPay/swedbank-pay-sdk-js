@@ -1,6 +1,9 @@
+import * as v from 'class-validator';
 import { Identifiable } from "../../generics/identifiable";
 import { Transaction } from "./transaction";
 
-export interface TransactionListResponse extends Identifiable {
+export class TransactionListResponse extends Identifiable {
+    // TODO: Add validation for array content
+    @v.IsArray()
     transactionList: Transaction[];
 }
