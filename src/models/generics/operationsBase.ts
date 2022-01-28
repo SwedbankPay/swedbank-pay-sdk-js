@@ -6,9 +6,11 @@ import { LinkRelation } from "../enums/linkRelation";
 
 export default class OperationsBase extends BaseModel {
     @v.IsArray()
+    @v.IsEnum(LinkRelation)
     keys: LinkRelation[];
 
     @v.IsArray()
+    @v.ValidateNested()
     @Type(() => HttpOperation)
     values: HttpOperation[];
 
