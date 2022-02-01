@@ -1,6 +1,5 @@
-import { Identifiable } from "../../generics/identifiable";
 import { PaymentAuthorization } from "../paymentAuthorization";
 
-export interface CardPaymentAuthorization extends Identifiable, PaymentAuthorization {
+export class CardPaymentAuthorization extends PaymentAuthorization {
 
 }
