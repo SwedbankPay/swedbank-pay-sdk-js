@@ -1,6 +1,11 @@
 import { Identifiable } from "../../generics/identifiable";
 import { PaymentAuthorization } from "../paymentAuthorization";
+import * as v from 'class-validator';
+import { Type } from "class-transformer";
 
-export interface CardPaymentAuthorizationListResponse extends Identifiable {
+
+export class CardPaymentAuthorizationListResponse extends Identifiable {
+    @v.ValidateNested()
+    @Type(() => PaymentAuthorization)
     authorizationList: PaymentAuthorization[];
 }
