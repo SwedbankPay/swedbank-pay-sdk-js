@@ -5,6 +5,7 @@ import { Type } from "class-transformer";
 
 
 export class CardPaymentAuthorizationListResponse extends Identifiable {
+    @v.IsArray()
     @v.ValidateNested()
     @Type(() => PaymentAuthorization)
     authorizationList: PaymentAuthorization[];
