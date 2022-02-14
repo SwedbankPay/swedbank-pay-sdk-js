@@ -1,9 +1,9 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { BaseModel } from '../../generics/baseModel';
+import { Identifiable } from '../../generics/identifiable';
 import { Transaction } from "./transaction";
 
-export class CaptureResponse extends BaseModel {
+export class CaptureResponse extends Identifiable {
     @v.IsUrl()
     payment: URL;
 
