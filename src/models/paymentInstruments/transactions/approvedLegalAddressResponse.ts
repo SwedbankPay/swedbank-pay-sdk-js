@@ -1,12 +1,9 @@
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { BaseModel } from '../../generics/baseModel';
 import { LegalAddress } from "./legalAddress";
+import { Identifiable } from '../../generics/identifiable';
 
-export class ApprovedLegalAddressResponse extends BaseModel{
-    @v.IsUrl()
-    payment: URL;
-
+export class ApprovedLegalAddressResponse extends Identifiable{
     @v.ValidateNested()
     @Type(() => LegalAddress)
     approvedLegalAddress: LegalAddress;
