@@ -67,15 +67,15 @@ export class GetPaymentResponse extends Identifiable {
 
     @v.ValidateNested()
     @Type(() => AuthorizationListResponse)
-    authorizations: AuthorizationListResponse;
+    authorizations?: AuthorizationListResponse;
 
     @v.ValidateNested()
     @Type(() => SaleListResponse)
-    sales: SaleListResponse;
+    sales?: SaleListResponse;
 
     @v.ValidateNested()
     @Type(() => CancellationListResponse)
-    cancellations: CancellationListResponse;
+    cancellations?: CancellationListResponse;
 
     @v.IsArray()
     @v.IsUrl()
