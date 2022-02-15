@@ -1,5 +1,5 @@
 import { Identifiable } from "../../generics/identifiable";
-import { PaymentAuthorization } from "../paymentAuthorization";
+import { CardPaymentAuthorizationResponse } from "./cardPaymentAuthorizationResponse";
 import * as v from 'class-validator';
 import { Type } from "class-transformer";
 
@@ -7,6 +7,6 @@ import { Type } from "class-transformer";
 export class CardPaymentAuthorizationListResponse extends Identifiable {
     @v.IsArray()
     @v.ValidateNested()
-    @Type(() => PaymentAuthorization)
-    authorizationList: PaymentAuthorization[];
+    @Type(() => CardPaymentAuthorizationResponse)
+    authorizationList: CardPaymentAuthorizationResponse[];
 }
