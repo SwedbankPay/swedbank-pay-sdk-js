@@ -5,6 +5,7 @@ import { Type } from "class-transformer";
 
 export class CardPaymentVerifications extends Identifiable {
     @v.IsArray()
+    @v.ValidateNested()
     @Type(() => CardPaymentVerification)
     verificationList: CardPaymentVerification[];
 }
