@@ -1,5 +1,7 @@
 import { Transaction } from "../transactions/transaction";
+import * as v from 'class-validator'
 
-export interface VerifyTransaction extends Transaction {
+export class VerifyTransaction extends Transaction {
+    @v.IsUrl()
     activities: URL;
 }
