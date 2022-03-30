@@ -3,7 +3,7 @@ import { Type } from 'class-transformer';
 import { BaseModel } from "../../generics/baseModel"
 import { Amount } from '../../generics/amount';
 
-export class CaptureTransaction extends BaseModel {
+export class ReversalTransaction extends BaseModel {
     @Type(() => transactionModel)
     @v.ValidateNested()
     transaction: transactionModel
