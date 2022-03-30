@@ -8,6 +8,7 @@ import { Currency } from '../currency';
 import { Language } from '../language';
 import { Urls } from '../generics/urls';
 import { PayeeInfo } from '../generics/payeeInfo';
+import { MetaData } from '../generics/MetaData-resource';
 
 export class GenericPaymentRequestDetails extends BaseModel {
     @v.IsEnum(Operation)
@@ -41,4 +42,8 @@ export class GenericPaymentRequestDetails extends BaseModel {
     @v.ValidateNested()
     @Type(() => PayeeInfo)
     payeeInfo: PayeeInfo;
+
+    @v.ValidateNested()
+    @Type(() => MetaData)
+    metaData: MetaData;
 }
