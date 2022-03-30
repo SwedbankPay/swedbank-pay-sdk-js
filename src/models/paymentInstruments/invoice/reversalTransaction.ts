@@ -1,9 +1,11 @@
-import { Amount } from "../../generics/amount";
+import { ReversalTransaction } from '../transactions/reversalTransaction'
+import * as v from 'class-validator'
+import { InvoiceType } from './invoicePaymentInvoiceType'
 
-export interface ReversalTransaction {
-    amount: Amount;
-    description: string;
-    payeeReference: string;
-    vatAmount: Amount;
-    receiptReference: string;
+export class ReversalRequestDetails extends ReversalTransaction {
+    @v.IsEnum(InvoiceType)
+    activity: InvoiceType;
+
+    @v.IsString()
+    receiptReference?: string;
 }
