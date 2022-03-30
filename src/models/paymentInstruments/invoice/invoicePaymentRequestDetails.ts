@@ -1,27 +1,22 @@
-import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
-import { Currency } from "../../currency";
-import { Language } from "../../language";
-import { MetaData } from "../../generics/MetaData-resource";
-import { Operation } from "../../enums/operation";
-import { Urls } from "../../generics/urls";
-import { PaymentIntent } from "../enums/paymentIntent";
+import * as v from 'class-validator';
 import { PrefillInfo } from "../prefillInfo";
-import { Price } from "../price";
+import { GenericPaymentRequestDetails } from "../genericPaymentRequestDetails";
+import { Type } from 'class-transformer';
 
-export interface InvoicePaymentRequestDetails {
-    currency: Currency;
-    description: string;
+export class InvoicePaymentRequestDetails extends GenericPaymentRequestDetails{
+    @v.IsBoolean()
     generatePaymentToken: boolean;
+    
+    @v.IsBoolean()
     generateRecurrenceToken: boolean;
-    intent: PaymentIntent;
-    language: Language;
-    metadata: MetaData;
-    operation: Operation;
-    payeeInfo: PayeeInfo;
+
+    @v.IsString()
     payerReference: string;
+
+    @v.IsString()
     paymentToken: string;
-    prices: Price[];
-    urls: Urls;
-    userAgent: string;
+
+    @v.ValidateNested()
+    @Type(() => PrefillInfo)
     prefillInfo: PrefillInfo;
 }
