@@ -1,22 +1,10 @@
-import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
-import { Currency } from "../../currency";
-import { Language } from "../../language";
-import { Operation } from "../../enums/operation";
-import { Urls } from "../../generics/urls";
-import { PaymentIntent } from "../enums/paymentIntent";
-import { Price } from "../price";
+import * as v from 'class-validator';
 import { TrustlyPrefillInfo } from "./trustlyPrefillInfo";
+import { GenericPaymentRequestDetails } from "../genericPaymentRequestDetails";
+import { Type } from 'class-transformer';
 
-export interface TrustlyPaymentDetails {
-    currency: Currency;
-    description: string;
-    intent: PaymentIntent;
-    language: Language;
-    operation: Operation;
-    payeeInfo: PayeeInfo;
-    payerReference: string;
-    prices: Price[];
-    urls: Urls;
-    userAgent: string;
+export class TrustlyPaymentDetails extends GenericPaymentRequestDetails{
+    @v.ValidateNested()
+    @Type(() => TrustlyPrefillInfo)
     prefillInfo: TrustlyPrefillInfo;
 }
