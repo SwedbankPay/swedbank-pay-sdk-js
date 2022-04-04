@@ -1,5 +1,4 @@
-import { SwishPaymentReversalTransaction } from "./swishPaymentReversalTransaction";
+import { ReversalTransaction } from "../transactions/reversalTransaction";
 
-export interface SwishPaymentReversalRequest {
-    transaction: SwishPaymentReversalTransaction;
+export class SwishPaymentReversalRequest extends  ReversalTransaction{
 }
