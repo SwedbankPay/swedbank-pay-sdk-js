@@ -1,5 +1,6 @@
-import { MobilePayReversalTransaction } from "./mobilePayReversalTransaction";
+import { BaseModel } from "../../generics/baseModel";
+import { ReversalTransaction } from "../transactions/reversalTransaction";
 
-export interface MobilePayPaymentReversalRequest {
-    transaction: MobilePayReversalTransaction;
+export class MobilePayPaymentReversalRequest extends BaseModel {
+    transaction: ReversalTransaction;
 }
