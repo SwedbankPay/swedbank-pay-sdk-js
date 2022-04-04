@@ -1,5 +1,6 @@
+import { BaseModel } from "../../generics/baseModel";
 import { Msisdn } from "../../msisdn";
 
-export interface SwishPaymentSaleTransaction {
+export class SwishPaymentSaleTransaction extends BaseModel{
     msisdn: Msisdn;
 }
