@@ -1,7 +1,10 @@
-import { Identifiable } from "../../generics/identifiable";
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { PaymentInstrument } from "../paymentInstrument";
 import { SwishSaleListResponse } from "./swishSaleListResponse";
 
-export interface SwishPayment extends Identifiable, PaymentInstrument {
+export class SwishPayment extends PaymentInstrument {
+    @v.ValidateNested()
+    @Type(() => SwishSaleListResponse)
     sales: SwishSaleListResponse;
 }
