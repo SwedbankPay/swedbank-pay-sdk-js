@@ -1,8 +1,4 @@
-import { Amount } from "../../generics/amount";
+import { ReversalResponse } from "../transactions/reversalResponse";
 
-export interface SwishPaymentReversalTransaction {
-    amount: Amount;
-    description: string;
-    payeeReference: string;
-    vatAmount: Amount;
+export class SwishPaymentReversalTransaction extends ReversalResponse{
 }
