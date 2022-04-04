@@ -1,5 +1,11 @@
+import { BaseModel } from "../../generics/baseModel";
 import { MobilePayPaymentAuthorization } from "./mobilePayPaymentAuthorization";
+import * as v from 'class-validator';
+import { Type } from "class-transformer";
 
-export interface MobilePayPaymentAuthorizationListResponse {
+export class MobilePayPaymentAuthorizationListResponse extends BaseModel{
+    @v.IsArray()
+    @v.ValidateNested()
+    @Type(() => MobilePayPaymentAuthorization)
     authorizationList: MobilePayPaymentAuthorization[];
 }
