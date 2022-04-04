@@ -1,3 +1,5 @@
-export interface MobilePayResource {
+import { BaseModel } from "../../generics/baseModel";
+
+export class MobilePayResource extends BaseModel {
 
 }
