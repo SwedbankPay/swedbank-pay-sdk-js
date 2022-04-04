@@ -1,4 +1,4 @@
-export interface TrustlyPaymentCancelTransaction {
-    description: string;
-    payeeReference: string;
+import { CancelTransaction } from "../transactions/cancelTransaction";
+
+export class TrustlyPaymentCancelTransaction extends CancelTransaction{
 }
