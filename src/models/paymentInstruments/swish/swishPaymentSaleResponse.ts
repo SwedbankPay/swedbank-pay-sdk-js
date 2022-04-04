@@ -1,6 +1,4 @@
-import { SwishPaymentSale } from "./swishPaymentSale";
+import { SaleResponse } from "../transactions/saleResponse";
 
-export interface SwishPaymentSaleResponse {
-    payment: URL;
-    sale: SwishPaymentSale;
+export class SwishPaymentSaleResponse extends SaleResponse{
 }
