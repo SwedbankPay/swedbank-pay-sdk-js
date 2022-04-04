@@ -1,26 +1,7 @@
-import { PayeeInfo } from "../../../Services/PaymentOrder/models/PayeeInfo";
-import { Currency } from "../../currency";
-import { Language } from "../../language";
-import { MetaData } from "../../generics/MetaData-resource";
-import { Operation } from "../../enums/operation";
-import { Urls } from "../../generics/urls";
-import { PaymentIntent } from "../enums/paymentIntent";
-import { PrefillInfo } from "../prefillInfo";
-import { Price } from "../price";
-import { SwishRequestData } from "./swishRequestData";
+import * as v from 'class-validator';
+import { GenericPaymentRequestDetails } from "../genericPaymentRequestDetails";
 
-export interface SwishPaymentRequestDetails {
-    currency: Currency;
-    description: string;
-    intent: PaymentIntent;
-    language: Language;
-    operation: Operation;
-    payeeInfo: PayeeInfo;
+export class SwishPaymentRequestDetails extends GenericPaymentRequestDetails{
+    @v.IsString()
     payerReference: string;
-    prefillInfo: PrefillInfo;
-    prices: Price[];
-    swish: SwishRequestData;
-    urls: Urls;
-    userAgent: string;
-    metadata: MetaData;
 }
