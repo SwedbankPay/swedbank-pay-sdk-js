@@ -1,4 +1,4 @@
-import { PaymentAuthorization } from "../paymentInstruments/paymentAuthorization";
+import { PaymentAuthorization } from "../../paymentInstruments/paymentAuthorization";
 
 export interface PaymentAuthorizationListResponse {
     id: URL;
