@@ -1,4 +1,4 @@
-export interface CancelTransaction {
-    description: string;
-    payeeReference: string;
+import { CancelTransaction } from "../transactions/cancelTransaction";
+
+export class CancelTransactionDetails extends CancelTransaction{
 }
