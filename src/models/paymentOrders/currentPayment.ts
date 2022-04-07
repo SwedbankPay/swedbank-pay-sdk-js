@@ -11,7 +11,7 @@ import { ReversalListResponse } from "../paymentInstruments/transactions/reversa
 import { TransactionListResponse } from "../paymentInstruments/transactions/transactionListResponse";
 import { State } from "../enums/state";
 import { Urls } from "../generics/urls";
-import { PaymentAuthorizationResponse } from "./paymentAuthorizationResponse";
+import { PaymentAuthorizationResponse } from "./response models/paymentAuthorizationResponse";
 import { PaymentOrderPayeeInfo } from "./paymentOrderPayeeInfo";
 import { SaleListResponse } from "./saleListResponse";
 
