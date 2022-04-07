@@ -1,4 +1,4 @@
-import { CurrentPayment } from "./currentPayment";
+import { CurrentPayment } from "../currentPayment";
 
 export interface CurrentPaymentResponse {
     paymentOrder: URL;
