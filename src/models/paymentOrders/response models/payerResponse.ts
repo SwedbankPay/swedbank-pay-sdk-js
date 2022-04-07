@@ -1,9 +1,9 @@
 import { Address } from "cluster";
-import { AccountInfo } from "../accountInfo";
-import { EmailAddress } from "../emailAddress";
-import { Identifiable } from "../generics/identifiable";
-import { Msisdn } from "../msisdn";
-import { NationalIdentifier } from "./nationalIdentifier";
+import { AccountInfo } from "../../accountInfo";
+import { EmailAddress } from "../../emailAddress";
+import { Identifiable } from "../../generics/identifiable";
+import { Msisdn } from "../../msisdn";
+import { NationalIdentifier } from "../nationalIdentifier";
 
 export interface PayerResponse extends Identifiable {
     accountInfo: AccountInfo;
