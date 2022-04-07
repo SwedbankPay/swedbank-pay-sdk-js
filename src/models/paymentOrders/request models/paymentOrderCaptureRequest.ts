@@ -1,4 +1,4 @@
-import { PaymentOrderCaptureTransaction } from "../paymentOrderCaptureTransaction";
+import { PaymentOrderCaptureTransaction } from "./paymentOrderCaptureTransaction";
 
 export interface PaymentOrderCaptureRequest {
     transaction: PaymentOrderCaptureTransaction;
