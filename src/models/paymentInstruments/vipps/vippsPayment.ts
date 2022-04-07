@@ -1,7 +1,10 @@
-import { Identifiable } from "../../generics/identifiable";
 import { PaymentInstrument } from "../paymentInstrument";
 import { VippsPaymentAuthorizationListResponse } from "./vippsPaymentAuthorizationListResponse";
+import * as v from 'class-validator';
+import { Type } from "class-transformer";
 
-export interface VippsPayment extends Identifiable, PaymentInstrument {
+export class VippsPayment extends PaymentInstrument {
+    @v.ValidateNested()
+    @Type(() => VippsPaymentAuthorizationListResponse)
     authorizations: VippsPaymentAuthorizationListResponse;
 }
