@@ -1,10 +1,5 @@
-import { CountryCode } from "../countryCode";
+import { Address } from "../address";
 
-export interface PickUpAddress {
-    city: string;
-    coAddress: string;
-    countryCode: CountryCode;
+export class PickUpAddress extends Address{
     name: string;
-    streetAddress: string;
-    zipCode: string;
 }
