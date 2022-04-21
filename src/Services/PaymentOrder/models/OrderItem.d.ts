@@ -1,15 +1,15 @@
 import { Url } from "url";
-import { GenericResource } from "../../../models/generics/GenericResource";
 import * as v from 'class-validator';
+import { BaseModel } from "../../../models/generics/baseModel";
 
-export class OrderItem extends GenericResource {
+export class OrderItem extends BaseModel {
   /**
    * A reference that identifies the order item.
    * This is a reference in your system.
    * Max lenght of 50 characters
    */
    @v.IsString()
-   reference: string;
+   reference?: string;
   /**
    * The name of the order item.
    */
@@ -99,8 +99,8 @@ export class OrderItem extends GenericResource {
 declare enum OrderItemType {
   PRODUCT = "PRODUCT",
   SERVICE = "SERVICE",
-  SHIPPING_FEE = "",
-  PAYMENT_FEE = "",
-  VALUE_CODE = "",
-  OTHER = ""
+  SHIPPING_FEE = "SHIPPING_FEE",
+  PAYMENT_FEE = "PAYMENT_FEE",
+  VALUE_CODE = "VALUE_CODE",
+  OTHER = "OTHER"
 }
