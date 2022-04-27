@@ -2,6 +2,15 @@ import { Url } from "url";
 import * as v from 'class-validator';
 import { BaseModel } from "../../../models/generics/baseModel";
 
+declare enum OrderItemType {
+  PRODUCT = "PRODUCT",
+  SERVICE = "SERVICE",
+  SHIPPING_FEE = "SHIPPING_FEE",
+  PAYMENT_FEE = "PAYMENT_FEE",
+  VALUE_CODE = "VALUE_CODE",
+  OTHER = "OTHER"
+}
+
 export class OrderItem extends BaseModel {
   /**
    * A reference that identifies the order item.
@@ -94,13 +103,4 @@ export class OrderItem extends BaseModel {
    */
   @v.IsNumber()
   vatPercent: number;
-}
-
-declare enum OrderItemType {
-  PRODUCT = "PRODUCT",
-  SERVICE = "SERVICE",
-  SHIPPING_FEE = "SHIPPING_FEE",
-  PAYMENT_FEE = "PAYMENT_FEE",
-  VALUE_CODE = "VALUE_CODE",
-  OTHER = "OTHER"
 }
