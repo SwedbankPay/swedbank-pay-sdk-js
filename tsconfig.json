@@ -19,11 +19,15 @@
     "noImplicitThis": false,
     "strictNullChecks": false,
     "declaration": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "types": ["node"]
   },
   "include": [
     "src/**/*",
     "examples/**/*",
     "__tests__/**/*"
+  ],
+  "exclude": [
+    "build/**/*"
   ]
 }
