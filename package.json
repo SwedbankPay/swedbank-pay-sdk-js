@@ -47,6 +47,7 @@
   "author": "Swedbank Pay <opensource@swedbankpay.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/mocha": "^9.1.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "got": "^11.0.2",
