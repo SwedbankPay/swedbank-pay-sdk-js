@@ -1,4 +1,3 @@
-//TODO: Figure out how to convert this from C# to TS
 export enum LinkRelation {
     UpdatePaymentOrderUpdateOrder = "update-paymentorder-updateorder",
     CreatePaymentOrderCapture = "create-paymentorder-capture",
