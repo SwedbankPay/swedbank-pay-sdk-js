@@ -3,16 +3,6 @@ import { CaptureTransaction } from "../transactions/captureTransaction";
 import * as v from 'class-validator'
 import { Type } from "class-transformer";
 
-export class InvoicePaymentCaptureReqest extends CaptureTransaction{
-    @v.IsArray()
-    @Type(() => ItemDescription)
-    itemDescriptions: ItemDescription[];
-
-    @v.IsArray()
-    @Type(() => vatSummary)
-    vatSummary: vatSummary[];
-}
-
 class ItemDescription extends BaseModel {
     @v.IsNumber()
     amount: number;
@@ -21,7 +11,7 @@ class ItemDescription extends BaseModel {
     description: string;
 }
 
-class vatSummary extends BaseModel {
+class VatSummary extends BaseModel {
     
     @v.IsNumber()
     amount: number;
@@ -31,4 +21,14 @@ class vatSummary extends BaseModel {
     
     @v.IsNumber()
     vatAmount: number;
+}
+
+export class InvoicePaymentCaptureReqest extends CaptureTransaction{
+    @v.IsArray()
+    @Type(() => ItemDescription)
+    itemDescriptions: ItemDescription[];
+
+    @v.IsArray()
+    @Type(() => VatSummary)
+    vatSummary: VatSummary[];
 }
