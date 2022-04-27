@@ -20,7 +20,7 @@
     "strictNullChecks": false,
     "declaration": true,
     "experimentalDecorators": true,
-    "types": ["node", "jest", "mocha"]
+    "types": ["node", "jest"]
   },
   "include": [
     "src/**/*",
