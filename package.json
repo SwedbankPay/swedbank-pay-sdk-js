@@ -10,7 +10,7 @@
     "/build"
   ],
   "engines": {
-    "node": ">= 12.13 <13"
+    "node": ">= 12.13"
   },
   "repository": {
     "type": "git",
