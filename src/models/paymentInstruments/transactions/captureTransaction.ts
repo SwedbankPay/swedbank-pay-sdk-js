@@ -3,14 +3,7 @@ import { Type } from 'class-transformer';
 import { BaseModel } from "../../generics/baseModel"
 import { Amount } from '../../generics/amount';
 
-export class CaptureTransaction extends BaseModel {
-    @Type(() => transactionModel)
-    @v.ValidateNested()
-    transaction: transactionModel
-
-}
-
-class transactionModel extends BaseModel {
+class TransactionModel extends BaseModel {
     @v.ValidateNested()
     @Type(() => Amount)
     amount: Amount;
@@ -24,4 +17,11 @@ class transactionModel extends BaseModel {
 
     @v.IsString()
     payeeReference: string;
+}
+
+export class CaptureTransaction extends BaseModel {
+    @Type(() => TransactionModel)
+    @v.ValidateNested()
+    transaction: TransactionModel
+
 }
