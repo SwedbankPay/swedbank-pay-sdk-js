@@ -1,6 +1,5 @@
-import { Method } from 'got';
+import { Methods } from '../enums/methods';
 import * as v from 'class-validator';
-import { Type } from 'class-transformer';
 import { BaseModel } from './baseModel';
 
 export class Operation extends BaseModel {
@@ -10,8 +9,8 @@ export class Operation extends BaseModel {
   @v.IsString()
   href: string;
   
-  // TODO: find how to set type is method
-  method: Method;
+  @v.IsEnum(Methods)
+  method: Methods;
 
   @v.IsString()
   contenType: string;
