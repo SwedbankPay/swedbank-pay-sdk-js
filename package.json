@@ -1,6 +1,6 @@
 {
   "name": "@swedbank-pay/sdk",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "TypeScript / JavaScript Software Development Kit for the Swedbank Pay API Platform",
   "main": "build/src/main.js",
   "publishConfig": {
@@ -40,7 +40,7 @@
     "generate-docs": "typedoc --mode file --readme none --plugin typedoc-plugin-markdown --hideSources --out docs src",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint --ext .ts,.tsx",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
