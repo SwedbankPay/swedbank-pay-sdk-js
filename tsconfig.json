@@ -18,11 +18,16 @@
     "noImplicitAny": false,
     "noImplicitThis": false,
     "strictNullChecks": false,
-    "declaration": true
+    "declaration": true,
+    "experimentalDecorators": true,
+    "types": ["node", "jest"]
   },
   "include": [
     "src/**/*",
     "examples/**/*",
     "__tests__/**/*"
+  ],
+  "exclude": [
+    "build/"
   ]
 }
