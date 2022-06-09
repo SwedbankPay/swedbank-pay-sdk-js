@@ -18,4 +18,8 @@ export interface MerchantConfig {
    * Used to run in test-mode. The requests will be sent to Payex' Test API.
    */
   testMode?: boolean;
+  /**
+   * Override for PayEx API. Replaces testMode to customise environment.
+   */
+  callbackOverride?: string;
 }
