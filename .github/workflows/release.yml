@@ -24,14 +24,16 @@ jobs:
       - name: Building 🔨
         run: yarn run build
 
-      - uses: GoogleCloudPlatform/release-please-action@v3
+      - name: Release? 🤔
+        uses: GoogleCloudPlatform/release-please-action@v3
         id: release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
           package-name: "@swedbank-pay/sdk"
 
-      - if: ${{ steps.release.outputs.release_created }}
+      - name: Releasing 🚀
+        if: ${{ steps.release.outputs.release_created }}
         run: yarn npm publish
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
