@@ -1,41 +1,43 @@
-name: Push
+name: Workflow
 on:
+  pull_request:
   push:
     branches:
       - main
 
 jobs:
-  build:
+  workflow:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2.1.5
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
 
-    - uses: actions/cache@v2.1.6
-      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+    - name: Use Node LTS ✨
+      uses: actions/setup-node@v3
       with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
-    - run: yarn install
-    - run: yarn run lint
-    - run: yarn run build
-    - run: yarn test
+        node-version: lts/*
+        cache: yarn
+
+    - name: Installing dependencies 📦️
+      run: yarn install
+
+    - name: Linting code 💚
+      run: yarn run lint
+
+    - name: Formatting code 💅
+      run: yarn run format:check
+
+    - name: Building 🔨
+      run: yarn run build
+
+    - name: Testing 🧪
+      run: yarn test
       env:
         CI: true
-    - run: npx codecov
+
+    - name: Sending reporting data 📝
+      run: npx codecov
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
