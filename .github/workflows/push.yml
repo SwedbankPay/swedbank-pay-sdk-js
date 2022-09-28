@@ -37,7 +37,5 @@ jobs:
       env:
         CI: true
 
-    - name: Sending reporting data 📝
-      run: npx codecov
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    - name: Sending reports to Codecov 📝
+      uses: codecov/codecov-action@v3
