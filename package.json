@@ -24,7 +24,7 @@
     "@bjerk/eslint-config": "^2.2.2",
     "@cobraz/prettier": "^2.0.0",
     "@types/babel__core": "^7.1.19",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^29.1.0",
     "@types/node": "~12.20.0",
     "@typescript-eslint/eslint-plugin": "~5.38.1",
     "@typescript-eslint/parser": "~5.38.1",
