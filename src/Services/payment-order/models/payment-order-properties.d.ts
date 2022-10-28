@@ -1,4 +1,4 @@
-import { GenericResource } from '../../../models/generics/GenericResource';
+import { GenericResource } from '../../../models/generics/generic-resource';
 import { MetaData } from '../../../models/generics/MetaData-resource';
 import { PaymentProperties } from '../../../models/payment';
 import { OrderItem } from './order-item';

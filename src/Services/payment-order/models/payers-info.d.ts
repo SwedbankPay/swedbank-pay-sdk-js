@@ -1,4 +1,4 @@
-import { GenericResource } from '../../../models/generics/GenericResource';
+import { GenericResource } from '../../../models/generics/generic-resource';
 import { AccountInfo } from './account-info';
 import { Address } from './address';
 import { NationalIdentifier } from './national-identifier';
