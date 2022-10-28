@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { LinkRelation } from '../enums/linkRelation';
+import { LinkRelation } from '../enums/link-relation';
 import { BaseModel } from './base-model';
 import { HttpOperation } from './http-operation';
 

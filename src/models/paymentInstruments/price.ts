@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { PriceType } from '../enums/priceType';
+import { PriceType } from '../enums/price-type';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
 

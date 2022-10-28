@@ -1,10 +1,10 @@
 import * as v from 'class-validator';
-import { AccountAgeIndicator } from './enums/accountAgeIndicator';
-import { AccountChangeIndicator } from './enums/accountChangeIndicator';
-import { AccountPwdChangeIndicator } from './enums/accountPwdChangeIndicator';
-import { ShippingAddressUsageIndicator } from './enums/shippingAddressUsageIndicator';
-import { ShippingNameIndicator } from './enums/shippingNameIndicator';
-import { SuspiciousAccountActivity } from './enums/suspiciousAccountActivity';
+import { AccountAgeIndicator } from './enums/account-age-indicator';
+import { AccountChangeIndicator } from './enums/account-change-indicator';
+import { AccountPwdChangeIndicator } from './enums/account-pwd-change-indicator';
+import { ShippingAddressUsageIndicator } from './enums/shipping-address-usage-indicator';
+import { ShippingNameIndicator } from './enums/shipping-name-indicator';
+import { SuspiciousAccountActivity } from './enums/suspicious-account-activity';
 import { BaseModel } from './generics/base-model';
 
 export class AccountInfo extends BaseModel {

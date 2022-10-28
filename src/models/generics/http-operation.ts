@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
-import { HttpMethod } from '../enums/HttpMethod';
-import { LinkRelation } from '../enums/linkRelation';
+import { HttpMethod } from '../enums/http-method';
+import { LinkRelation } from '../enums/link-relation';
 import { BaseModel } from './base-model';
 
 export class HttpOperation extends BaseModel {

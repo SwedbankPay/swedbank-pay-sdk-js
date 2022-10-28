@@ -2,7 +2,7 @@ import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { Currency } from '../currency';
 import { Operation } from '../enums/operation';
-import { PaymentInstrument } from '../enums/paymentInstrument';
+import { PaymentInstrument } from '../enums/payment-instrument';
 import { State } from '../enums/state';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';

@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { State } from '../../enums/state';
-import { TransactionType } from '../../enums/transactionType';
+import { TransactionType } from '../../enums/transaction-type';
 import { Amount } from '../../generics/amount';
 import { HttpOperation } from '../../generics/http-operation';
 import { Identifiable } from '../../generics/identifiable';
