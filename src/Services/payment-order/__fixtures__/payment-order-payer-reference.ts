@@ -1,4 +1,4 @@
-export const payment_order_payer_reference = {
+export const PaymentOrderPayerReference = {
   paymentorder: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce',
   payer: {
     id: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce/payer',

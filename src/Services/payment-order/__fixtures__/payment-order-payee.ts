@@ -1,4 +1,4 @@
-export const payment_order_payee = {
+export const PaymentOrderPayee = {
   payment: '/psp/paymentorders/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1',
   payeeInfo: {
     id: '/psp/paymentorders/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1/payeeInfo',

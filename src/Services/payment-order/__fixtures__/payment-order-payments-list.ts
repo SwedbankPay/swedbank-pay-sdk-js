@@ -1,4 +1,4 @@
-export const payment_order_Payments_list = {
+export const PaymentOrderPaymentsList = {
   paymentorder: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce',
   payments: {
     id: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce/payments',

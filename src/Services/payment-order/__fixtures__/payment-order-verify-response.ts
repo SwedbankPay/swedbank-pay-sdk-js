@@ -1,4 +1,4 @@
-export const payment_order_verify_response = {
+export const PaymentOrderVerifyResponse = {
   payment: {
     id: '/psp/paymentorders/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1',
     number: 1234567890,

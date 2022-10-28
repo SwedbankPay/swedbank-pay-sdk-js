@@ -1,6 +1,6 @@
 import { PaymentOrderRequest } from '../models/payment-order-request';
 
-export const payment_order_request_example = {
+export const PaymentOrderRequestExample = {
   paymentorder: {
     operation: 'Purchase',
     currency: 'NOK',

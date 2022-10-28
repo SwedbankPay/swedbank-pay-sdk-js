@@ -1,4 +1,4 @@
-export const payment_order_error_in_input_reference = {
+export const PaymentOrderErrorInInputReference = {
   type: 'https://api.payex.com/psp/errordetail/<resource>/inputerror',
   title: 'There was an input error',
   detail: 'Please correct the errors and retry the request',

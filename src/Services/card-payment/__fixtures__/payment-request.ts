@@ -1,5 +1,6 @@
-import { PaymentRequest } from '../models/payment-request';
-export const payment_request = {
+import * as requestModel from "../models/payment-request";
+
+export const PaymentRequest = {
   payment: {
     operation: 'Purchase',
     intent: 'Authorization',
@@ -32,4 +33,4 @@ export const payment_request = {
       subsite: 'mySubsite',
     },
   },
-} as PaymentRequest;
+} as requestModel.PaymentRequest;

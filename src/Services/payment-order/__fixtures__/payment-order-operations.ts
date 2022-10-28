@@ -1,4 +1,4 @@
-export const payment_order_operations = {
+export const PaymentOrderOperations = {
   paymentOrder: {
     id: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce',
   },

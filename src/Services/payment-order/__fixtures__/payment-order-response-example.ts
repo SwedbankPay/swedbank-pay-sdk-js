@@ -1,4 +1,4 @@
-export const payment_order_response_example = {
+export const PaymentOrderResponseExample = {
   paymentOrder: {
     id: '/psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce',
     created: '2018-09-14T13:21:29.3182115Z',

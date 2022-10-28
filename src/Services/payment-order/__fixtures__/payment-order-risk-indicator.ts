@@ -1,4 +1,4 @@
-export const payment_order_risk_incdicator = {
+export const PaymentOrderRiskIndicator = {
   paymentorder: {
     operation: 'Purchase',
     intent: 'Authorization',
