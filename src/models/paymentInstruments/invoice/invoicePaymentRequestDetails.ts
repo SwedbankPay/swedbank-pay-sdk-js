@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { GenericPaymentRequestDetails } from '../genericPaymentRequestDetails';
-import { PrefillInfo } from '../prefillInfo';
+import { PrefillInfo } from '../prefill-info';
 
 export class InvoicePaymentRequestDetails extends GenericPaymentRequestDetails{
     @v.IsBoolean()
