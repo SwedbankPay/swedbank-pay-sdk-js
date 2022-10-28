@@ -4,7 +4,7 @@ import { Currency } from '../../currency';
 import { Operation } from '../../enums/operation';
 import { MetaData } from '../../generics/MetaData-resource';
 import { Amount } from '../../generics/amount';
-import { PayeeInfo } from '../../generics/payeeInfo';
+import { PayeeInfo } from '../../generics/payee-info';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
 import { PaymentIntent } from '../enums/payment-intent';

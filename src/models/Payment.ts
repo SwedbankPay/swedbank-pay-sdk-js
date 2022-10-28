@@ -1,6 +1,6 @@
 import { MerchantConfig } from '../MerchantConfig';
 import { Price } from '../Services/CardPayment/models/Payment/Price';
-import { SwedbankBase } from '../SwedbankBase';
+import { SwedbankBase } from '../Swedbank-base';
 import { GenericResource } from './generics/GenericResource';
 import { Operation } from './generics/Operation-resource';
 

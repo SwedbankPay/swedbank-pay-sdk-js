@@ -6,7 +6,7 @@ import { State } from '../../enums/state';
 import { Amount } from '../../generics/amount';
 import { Identifiable } from '../../generics/identifiable';
 import { MetaData } from '../../generics/meta-data';
-import { PayeeInfo } from '../../generics/payeeInfo';
+import { PayeeInfo } from '../../generics/payee-info';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
 import { PaymentIntent } from '../enums/payment-intent';
