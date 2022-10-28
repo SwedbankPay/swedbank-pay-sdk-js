@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../../models/generics/base-model';
-import { Address } from './Address';
+import { Address } from './address-';
 
 export class RiskIndicator extends BaseModel {
   /**

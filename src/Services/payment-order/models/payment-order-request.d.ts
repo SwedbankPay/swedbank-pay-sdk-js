@@ -1,8 +1,8 @@
 import { Urls } from '../../card-payment/models/Payment/urls';
-import { OrderItem } from './OrderItem';
-import { PayeeInfo } from './PayeeInfo';
-import { PayerInfo } from './PayerInfo';
-import { RiskIndicator } from './RiskIndicator';
+import { OrderItem } from './order-item';
+import { PayeeInfo } from './payee-info';
+import { PayerInfo } from './payer-info';
+import { RiskIndicator } from './risk-indicator';
 
 export interface PaymentOrderRequest {
   paymentorder: PaymentOrderRequestResource

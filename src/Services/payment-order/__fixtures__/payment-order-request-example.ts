@@ -1,4 +1,4 @@
-import { PaymentOrderRequest } from '../models/PaymentOrderRequest';
+import { PaymentOrderRequest } from '../models/payment-order-request';
 
 export default {
     paymentorder: {

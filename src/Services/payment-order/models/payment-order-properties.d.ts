@@ -1,9 +1,9 @@
 import { GenericResource } from '../../../models/generics/GenericResource';
 import { MetaData } from '../../../models/generics/MetaData-resource';
 import { PaymentProperties } from '../../../models/payment';
-import { OrderItem } from './OrderItem';
-import { PayeeInfo } from './PayeeInfo';
-import { PayersInfo } from './PayersInfo';
+import { OrderItem } from './order-item';
+import { PayeeInfo } from './payee-info';
+import { PayersInfo } from './payers-info';
 
 
 export interface PaymentOrderProperties extends PaymentProperties{  

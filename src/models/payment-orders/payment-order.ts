@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { PayeeInfo } from '../../Services/payment-order/models/PayeeInfo';
+import { PayeeInfo } from '../../Services/payment-order/models/payee-info';
 import { Currency } from '../currency';
 import { State } from '../enums/state';
 import { MetaData } from '../generics/MetaData-resource';

@@ -1,6 +1,6 @@
 import { MerchantConfig } from '../../../merchant-config';
-import { PaymentOrderRequestResource } from '../models/PaymentOrderRequest';
-import { PaymentOrderResponse } from '../models/PaymentOrderResponse';
+import { PaymentOrderRequestResource } from '../models/payment-order-request';
+import { PaymentOrderResponse } from '../models/payment-order-response';
 
 export type PurchaseInput = Omit<PaymentOrderRequestResource, 'operation'>;
 
