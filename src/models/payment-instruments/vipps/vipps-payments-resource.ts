@@ -1,5 +1,3 @@
 import { BaseModel } from '../../generics/base-model';
 
-export class VippsResource extends BaseModel{
-
-}
+export class VippsResource extends BaseModel {}

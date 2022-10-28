@@ -3,7 +3,6 @@ import { AccountInfo } from './account-info';
 import { Address } from './address';
 import { NationalIdentifier } from './national-identifier';
 
-
 export interface PayersInfo extends GenericResource {
   accountInfo: AccountInfo;
   billingAddress: Address;

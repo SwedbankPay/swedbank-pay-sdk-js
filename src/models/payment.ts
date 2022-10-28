@@ -82,7 +82,8 @@ export class Payment extends SwedbankBase {
     this.state = response.payment.state;
     this.amount = response.payment.amount;
     this.remainingCaptureAmount = response.payment.remainingCaptureAmount;
-    this.remainingCancellationAmount = response.payment.remainingCancellationAmount;
+    this.remainingCancellationAmount =
+      response.payment.remainingCancellationAmount;
     this.remainingReversalAmount = response.payment.remainingReversalAmount;
     this.description = response.payment.description;
     this.payerReference = response.payment.payerReference;
@@ -117,5 +118,4 @@ export class Payment extends SwedbankBase {
   getOperations(): Operation[] {
     return this._operations;
   }
-
 }

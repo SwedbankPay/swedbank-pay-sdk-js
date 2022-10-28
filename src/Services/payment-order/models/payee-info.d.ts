@@ -1,7 +1,7 @@
 import * as v from 'class-validator';
 import { BaseModel } from '../../../models/generics/base-model';
 
-export class PayeeInfo extends BaseModel{
+export class PayeeInfo extends BaseModel {
   /**
    * The payeeId, this is usually the Merchant ID (you). Found by accessing
    * the Admin Portal.

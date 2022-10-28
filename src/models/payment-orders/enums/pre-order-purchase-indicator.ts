@@ -1,4 +1,4 @@
 export enum PreOrderPurchaseIndicator {
-    MerchandiseAvailable = '01',
-    FutureAvailability = '02',
+  MerchandiseAvailable = '01',
+  FutureAvailability = '02',
 }

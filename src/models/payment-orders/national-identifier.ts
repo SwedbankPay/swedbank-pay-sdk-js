@@ -3,11 +3,11 @@ import * as v from 'class-validator';
 import { CountryCode } from '../country-code';
 import { BaseModel } from '../generics/base-model';
 
-export class NationalIdentifier extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => CountryCode)
-    countryCode: CountryCode;
+export class NationalIdentifier extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => CountryCode)
+  countryCode: CountryCode;
 
-    @v.IsString()
-    socialSecurityNumber: string;
+  @v.IsString()
+  socialSecurityNumber: string;
 }

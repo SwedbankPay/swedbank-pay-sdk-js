@@ -13,82 +13,81 @@ import { CurrentPaymentResponse } from './response models/current-payment-respon
 import { PayerResponse } from './response models/payer-response';
 
 export class PaymentOrder extends Identifiable {
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.IsString()
-    created: string;
+  @v.IsString()
+  created: string;
 
-    @v.ValidateNested()
-    @Type(() => Currency)
-    currency: Currency;
+  @v.ValidateNested()
+  @Type(() => Currency)
+  currency: Currency;
 
-    @v.ValidateNested()
-    @Type(() => CurrentPaymentResponse)
-    currentPayment: CurrentPaymentResponse;
+  @v.ValidateNested()
+  @Type(() => CurrentPaymentResponse)
+  currentPayment: CurrentPaymentResponse;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 
-    @v.ValidateNested()
-    @Type(() => Language)
-    language: Language;
+  @v.ValidateNested()
+  @Type(() => Language)
+  language: Language;
 
-    @v.ValidateNested()
-    @Type(() => MetaData)
-    metadata: MetaData;
+  @v.ValidateNested()
+  @Type(() => MetaData)
+  metadata: MetaData;
 
-    @v.IsString()
-    operation: string;
+  @v.IsString()
+  operation: string;
 
-    @v.ValidateNested()
-    @Type(() => OrderItemListResponse)
-    orderItems: OrderItemListResponse;
+  @v.ValidateNested()
+  @Type(() => OrderItemListResponse)
+  orderItems: OrderItemListResponse;
 
-    @v.ValidateNested()
-    @Type(() => PayeeInfo)
-    payeeInfo: PayeeInfo;
+  @v.ValidateNested()
+  @Type(() => PayeeInfo)
+  payeeInfo: PayeeInfo;
 
-    @v.ValidateNested()
-    @Type(() => PayerResponse)
-    payers: PayerResponse;
+  @v.ValidateNested()
+  @Type(() => PayerResponse)
+  payers: PayerResponse;
 
-    @v.ValidateNested()
-    @Type(() => Identifiable)
-    payments: Identifiable;
-    
-    @v.ValidateNested()
-    @Type(() => Amount)
-    remainingCancelAmount: Amount;
-    
-    @v.ValidateNested()
-    @Type(() => Amount)
-    remainingCaptureAmount: Amount;
-    
-    @v.ValidateNested()
-    @Type(() => Amount)
-    remainingReversalAmount: Amount;
+  @v.ValidateNested()
+  @Type(() => Identifiable)
+  payments: Identifiable;
 
+  @v.ValidateNested()
+  @Type(() => Amount)
+  remainingCancelAmount: Amount;
 
-    @v.ValidateNested()
-    @Type(() => Identifiable)
-    settings: Identifiable;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  remainingCaptureAmount: Amount;
 
-    @v.IsEnum(State)
-    state: State;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  remainingReversalAmount: Amount;
 
-    @v.IsString()
-    updated: string;
+  @v.ValidateNested()
+  @Type(() => Identifiable)
+  settings: Identifiable;
 
-    @v.ValidateNested()
-    @Type(() => Urls)
-    urls: Urls;
+  @v.IsEnum(State)
+  state: State;
 
-    @v.IsString()
-    userAgent: string;
-    
-    @v.ValidateNested()
-    @Type(() => Amount)
-    vatAmount: Amount;
+  @v.IsString()
+  updated: string;
+
+  @v.ValidateNested()
+  @Type(() => Urls)
+  urls: Urls;
+
+  @v.IsString()
+  userAgent: string;
+
+  @v.ValidateNested()
+  @Type(() => Amount)
+  vatAmount: Amount;
 }

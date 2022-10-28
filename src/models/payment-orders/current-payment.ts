@@ -19,86 +19,85 @@ import { PaymentOrderPayeeInfo } from './payment-order-payee-info';
 import { PaymentAuthorizationResponse } from './response models/payment-authorization-response';
 import { SaleListResponse } from './sale-list-response';
 
-export class CurrentPayment extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+export class CurrentPayment extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.ValidateNested()
-    @Type(() =>CardPaymentAuthorizationResponse)
-    authorizations: PaymentAuthorizationResponse;
-    
-    @v.ValidateNested()
-    @Type(() => CancellationListResponse)
-    cancellations: CancellationListResponse;
-    
-    @v.ValidateNested()
-    @Type(() => CaptureListResponse)
-    captures: CaptureListResponse;
+  @v.ValidateNested()
+  @Type(() => CardPaymentAuthorizationResponse)
+  authorizations: PaymentAuthorizationResponse;
 
-    @v.IsString()
-    created: string;
+  @v.ValidateNested()
+  @Type(() => CancellationListResponse)
+  cancellations: CancellationListResponse;
 
-    @v.ValidateNested()
-    @Type(() => Currency)
-    currency: Currency;
+  @v.ValidateNested()
+  @Type(() => CaptureListResponse)
+  captures: CaptureListResponse;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  created: string;
 
-    @v.IsEnum(PaymentInstrument)
-    instrument: PaymentInstrument;
-    
-    @v.IsEnum(PaymentIntent)
-    intent: PaymentIntent;
+  @v.ValidateNested()
+  @Type(() => Currency)
+  currency: Currency;
 
-    @v.ValidateNested()
-    @Type(() => Language)
-    language: Language;
+  @v.IsString()
+  description: string;
 
-    @v.IsNumber()
-    number: number;
-    
-    @v.IsEnum(Operation)
-    operation: Operation;
+  @v.IsEnum(PaymentInstrument)
+  instrument: PaymentInstrument;
 
-    @v.ValidateNested()
-    @Type(() => PaymentOrderPayeeInfo)
-    payeeInfo: PaymentOrderPayeeInfo;
+  @v.IsEnum(PaymentIntent)
+  intent: PaymentIntent;
 
-    @v.IsString()
-    payerReference: string;
+  @v.ValidateNested()
+  @Type(() => Language)
+  language: Language;
 
-    @v.IsString()
-    paymentToken: string;
+  @v.IsNumber()
+  number: number;
 
-    @v.ValidateNested()
-    @Type(() => PriceListResponse)
-    prices: PriceListResponse;
+  @v.IsEnum(Operation)
+  operation: Operation;
 
-    
-    @v.ValidateNested()
-    @Type(() => ReversalListResponse)
-    reversals: ReversalListResponse;
-    
-    @v.ValidateNested()
-    @Type(() =>SaleListResponse)
-    sales: SaleListResponse;
-    
-    @v.IsEnum(State)
-    state: State;
-    
-    @v.ValidateNested()
-    @Type(() =>TransactionListResponse)
-    transactions: TransactionListResponse;
+  @v.ValidateNested()
+  @Type(() => PaymentOrderPayeeInfo)
+  payeeInfo: PaymentOrderPayeeInfo;
 
-    @v.IsString()
-    updated: string;
-    
-    @v.ValidateNested()
-    @Type(() =>Urls)
-    urls: Urls;
-    
-    @v.IsString()
-    userAgent: string;
+  @v.IsString()
+  payerReference: string;
+
+  @v.IsString()
+  paymentToken: string;
+
+  @v.ValidateNested()
+  @Type(() => PriceListResponse)
+  prices: PriceListResponse;
+
+  @v.ValidateNested()
+  @Type(() => ReversalListResponse)
+  reversals: ReversalListResponse;
+
+  @v.ValidateNested()
+  @Type(() => SaleListResponse)
+  sales: SaleListResponse;
+
+  @v.IsEnum(State)
+  state: State;
+
+  @v.ValidateNested()
+  @Type(() => TransactionListResponse)
+  transactions: TransactionListResponse;
+
+  @v.IsString()
+  updated: string;
+
+  @v.ValidateNested()
+  @Type(() => Urls)
+  urls: Urls;
+
+  @v.IsString()
+  userAgent: string;
 }

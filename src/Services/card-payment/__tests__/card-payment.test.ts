@@ -1,6 +1,6 @@
 import nock = require('nock');
 import { payment_request } from '../__fixtures__/payment-request';
-import {payment_response} from '../__fixtures__/payment-response';
+import { payment_response } from '../__fixtures__/payment-response';
 import { CardPayment } from '../card-payment';
 import { Purchase } from '../operations/purchase';
 
@@ -12,7 +12,6 @@ nock('https://api.payex.com/psp')
 const testScope = nock('https://api.payex.com')
   .get('/test-resource')
   .reply(200, payment_response);
-
 
 describe('CardPayment', () => {
   let card: CardPayment;

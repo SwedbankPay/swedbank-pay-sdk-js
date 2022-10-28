@@ -21,7 +21,7 @@ export class RiskIndicator extends BaseModel {
    * 04 (Two-day or more shipping)
    */
   @v.IsString()
-  @v.Matches(0[1-4])
+  @v.Matches((0)[1 - 4])
   deliveryTimeFrameIndicator?: '01' | '02' | '03' | '04';
   /**
    * For a pre-ordered purchase. The expected date that the
@@ -40,7 +40,7 @@ export class RiskIndicator extends BaseModel {
    * 02 (Future availability)
    */
   @v.IsString()
-  @v.Matches(0[1-2])
+  @v.Matches((0)[1 - 2])
   preOrderPurchaseIndicator?: '01' | '02';
   /**
    * Indicates shipping method chosen for the transaction.
@@ -54,7 +54,7 @@ export class RiskIndicator extends BaseModel {
    * 07 (Other, e.g. gaming, digital service)
    */
   @v.IsString()
-  @v.Matches(0[1-7])
+  @v.Matches((0)[1 - 7])
   shipIndicator?: '01' | '02' | '03' | '04' | '05' | '06' | '07';
   /**
    * true if this is a purchase of a gift card.
@@ -69,7 +69,7 @@ export class RiskIndicator extends BaseModel {
    * 02 (Future availability)
    */
   @v.IsString()
-  @v.Matches(0[1-2])
+  @v.Matches((0)[1 - 2])
   reOrderPurchaseIndicator?: '01' | '02';
   /**
    * If shipIndicator is set to 04, then prefill this with the payers

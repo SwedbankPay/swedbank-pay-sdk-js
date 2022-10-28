@@ -13,63 +13,63 @@ import { Language } from '../../language';
 import { Payer } from '../payer';
 import { PaymentOrderPaymentOptionsItems } from '../payment-order-payment-options-items';
 
-export class PaymentOrderRequestDetails extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+export class PaymentOrderRequestDetails extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.ValidateNested()
-    @Type(() => Currency)
-    currency: Currency;
+  @v.ValidateNested()
+  @Type(() => Currency)
+  currency: Currency;
 
-    @v.IsString()
-    description: string;
-    
-    @v.IsBoolean()
-    generateRecurrenceToken: boolean;
+  @v.IsString()
+  description: string;
 
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => PaymentOrderPaymentOptionsItems)
-    items: PaymentOrderPaymentOptionsItems[];
+  @v.IsBoolean()
+  generateRecurrenceToken: boolean;
 
-    @v.ValidateNested()
-    @v.ValidateNested()
-    language: Language;
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => PaymentOrderPaymentOptionsItems)
+  items: PaymentOrderPaymentOptionsItems[];
 
-    @v.ValidateNested()
-    @Type(() => MetaData)
-    metadata: MetaData;
+  @v.ValidateNested()
+  @v.ValidateNested()
+  language: Language;
 
-    @v.IsEnum(Operation)
-    operation: Operation;
+  @v.ValidateNested()
+  @Type(() => MetaData)
+  metadata: MetaData;
 
-    @v.ValidateNested()
-    @Type(() => OrderItem)
-    orderItems: OrderItem[];
+  @v.IsEnum(Operation)
+  operation: Operation;
 
-    @v.ValidateNested()
-    @Type(() => PayeeInfo)
-    payeeInfo: PayeeInfo;
+  @v.ValidateNested()
+  @Type(() => OrderItem)
+  orderItems: OrderItem[];
 
-    @v.ValidateNested()
-    @Type(() => Payer)
-    payer: Payer;
+  @v.ValidateNested()
+  @Type(() => PayeeInfo)
+  payeeInfo: PayeeInfo;
 
-    @v.ValidateNested()
-    @Type(() => RiskIndicator)
-    riskIndicator: RiskIndicator;
+  @v.ValidateNested()
+  @Type(() => Payer)
+  payer: Payer;
 
-    @v.IsUrl()
-    urls: Urls;
+  @v.ValidateNested()
+  @Type(() => RiskIndicator)
+  riskIndicator: RiskIndicator;
 
-    @v.IsString()
-    userAgent: string;
+  @v.IsUrl()
+  urls: Urls;
 
-    @v.ValidateNested()
-    @Type(() => Amount)
-    vatAmount: Amount;
+  @v.IsString()
+  userAgent: string;
 
-    @v.IsBoolean()
-    disablePaymentMenu?: boolean;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  vatAmount: Amount;
+
+  @v.IsBoolean()
+  disablePaymentMenu?: boolean;
 }

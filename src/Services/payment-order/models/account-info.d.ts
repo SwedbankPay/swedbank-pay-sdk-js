@@ -1,4 +1,3 @@
-
 export interface AccountInfo {
   accountAgeIndicator: string;
   accountChangeIndicator: string;

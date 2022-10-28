@@ -5,36 +5,36 @@ import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
 import { PaymentType } from '../payment-instruments/enums/payment-type';
 
-export class SaleListItem extends BaseModel{
-    @v.IsUrl()
-    id: URL;
+export class SaleListItem extends BaseModel {
+  @v.IsUrl()
+  id: URL;
 
-    @v.IsString()
-    created: string;
+  @v.IsString()
+  created: string;
 
-    @v.IsString()
-    updated: string;
+  @v.IsString()
+  updated: string;
 
-    @v.IsEnum(PaymentType)
-    type: PaymentType;
+  @v.IsEnum(PaymentType)
+  type: PaymentType;
 
-    @v.IsEnum(State)
-    state: State;
+  @v.IsEnum(State)
+  state: State;
 
-    @v.IsNumber()
-    number: number;
+  @v.IsNumber()
+  number: number;
 
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.ValidateNested()
-    @Type(() => Amount)
-    vatAmount: Amount;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  vatAmount: Amount;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 
-    @v.IsString()
-    payeeReference: string;
+  @v.IsString()
+  payeeReference: string;
 }

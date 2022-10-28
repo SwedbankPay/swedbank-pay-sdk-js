@@ -4,23 +4,23 @@ import { OrderItem } from '../../Services/payment-order/models/order-item';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
 
-export class PaymentOrderReversalTransaction extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+export class PaymentOrderReversalTransaction extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 
-    @v.ValidateNested()
-    @v.IsArray()
-    @Type(() => OrderItem)
-    orderItems?: OrderItem[];
+  @v.ValidateNested()
+  @v.IsArray()
+  @Type(() => OrderItem)
+  orderItems?: OrderItem[];
 
-    @v.IsString()
-    payeeReference: string;
+  @v.IsString()
+  payeeReference: string;
 
-    @v.ValidateNested()
-    @Type(() => Amount)
-    vatAmount: Amount;
+  @v.ValidateNested()
+  @Type(() => Amount)
+  vatAmount: Amount;
 }

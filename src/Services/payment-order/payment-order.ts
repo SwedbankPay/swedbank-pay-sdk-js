@@ -19,7 +19,7 @@ export class PaymentOrder extends SwedbankBase {
     const payment = await this.request<PaymentOrderResponse>(
       'psp/paymentorders',
       item,
-      'POST'
+      'POST',
     );
     return payment.body;
   }
@@ -28,17 +28,14 @@ export class PaymentOrder extends SwedbankBase {
     const request = {
       paymentorder: {
         operation: 'Purchase',
-        ...item
-      }
+        ...item,
+      },
     } as PaymentOrderRequest;
 
-    const response = await this.create(
-      request
-    );
+    const response = await this.create(request);
 
     return new Purchase(this.config, response);
   }
-
 
   async get(id: string): Promise<PaymentOrderResponse> {
     const payment = await this.request<PaymentOrderResponse>(id);

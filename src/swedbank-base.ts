@@ -3,7 +3,7 @@ import { MerchantConfig } from './merchant-config';
 
 export class SwedbankBase {
   config: MerchantConfig;
-  
+
   private apiUrls = {
     test: 'https://api.externalintegration.payex.com',
     prod: 'https://api.payex.com',

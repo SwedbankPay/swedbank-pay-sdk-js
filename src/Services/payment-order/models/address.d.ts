@@ -1,7 +1,7 @@
 import * as v from 'class-validator';
 import { BaseModel } from '../../../models/generics/base-model';
 
-export class Address extends BaseModel{
+export class Address extends BaseModel {
   /**
    * The name of the adressee.
    */

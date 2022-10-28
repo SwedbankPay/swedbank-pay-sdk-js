@@ -8,7 +8,7 @@ declare enum OrderItemType {
   SHIPPING_FEE = 'SHIPPING_FEE',
   PAYMENT_FEE = 'PAYMENT_FEE',
   VALUE_CODE = 'VALUE_CODE',
-  OTHER = 'OTHER'
+  OTHER = 'OTHER',
 }
 
 export class OrderItem extends BaseModel {
@@ -17,13 +17,13 @@ export class OrderItem extends BaseModel {
    * This is a reference in your system.
    * Max lenght of 50 characters
    */
-   @v.IsString()
-   reference?: string;
+  @v.IsString()
+  reference?: string;
   /**
    * The name of the order item.
    */
-   @v.IsString()
-   name: string;
+  @v.IsString()
+  name: string;
   /**
    * The type of the order item. PAYMENT_FEE is the amount you are charged with
    * when you are paying with invoice.
@@ -44,13 +44,13 @@ export class OrderItem extends BaseModel {
   /**
    * The URL to a page that can display the purchased item, product or similar.
    */
-   @v.IsUrl()
+  @v.IsUrl()
   itemUrl?: Url;
   /**
    * The URL to an image of the order item.
    */
-   @v.IsUrl()
-   imageUrl?: Url;
+  @v.IsUrl()
+  imageUrl?: Url;
   /**
    * A textual description of this item.
    * Max 40 characters.
@@ -65,8 +65,8 @@ export class OrderItem extends BaseModel {
   /**
    * The 4 decimal precision quantity of orderItem being purchased.
    */
-   @v.IsNumber()
-   quantity: number;
+  @v.IsNumber()
+  quantity: number;
   /**
    * The unit of the quantity, such as pcs, grams, or similar.
    * This is a free-text field and is used for your own book keeping.
@@ -85,7 +85,7 @@ export class OrderItem extends BaseModel {
   @v.IsNumber()
   discountPrice?: number;
   /**
-   * The amount (including VAT, if any) to charge the payer, entered in the 
+   * The amount (including VAT, if any) to charge the payer, entered in the
    * lowest monetary unit of the selected currency.
    * E.g.: 10000 = 100.00 EUR.
    */

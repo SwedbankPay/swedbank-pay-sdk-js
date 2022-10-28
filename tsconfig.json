@@ -23,12 +23,6 @@
     "types": ["node", "jest"],
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*",
-    "examples/**/*",
-    "__tests__/**/*"
-  ],
-  "exclude": [
-    "build/"
-  ]
+  "include": ["src/**/*", "examples/**/*", "__tests__/**/*"],
+  "exclude": ["build/"]
 }

@@ -5,9 +5,8 @@ import { PayerInfo } from './payer-info';
 import { RiskIndicator } from './risk-indicator';
 
 export interface PaymentOrderRequest {
-  paymentorder: PaymentOrderRequestResource
+  paymentorder: PaymentOrderRequestResource;
 }
-
 
 export interface PaymentOrderRequestResource {
   /**
@@ -27,7 +26,7 @@ export interface PaymentOrderRequestResource {
    */
   operation: 'Purchase' | 'Recur' | 'Verify';
   /**
-   * The intent of the payment identifies how and when the charge will be 
+   * The intent of the payment identifies how and when the charge will be
    * effectuated.
    * This determine the type transactions used during the payment process.
    *
@@ -39,9 +38,9 @@ export interface PaymentOrderRequestResource {
    */
   currency: 'NOK' | 'SEK' | 'DKK' | 'USD' | 'EUR';
   /**
-   * The amount (including VAT, if any) to charge the payer, 
+   * The amount (including VAT, if any) to charge the payer,
    * entered in the lowest monetary unit of the selected currency.
-   * 
+   *
    * E.g.: 10000 = 100.00 EUR.
    */
   amount: number;
@@ -49,7 +48,7 @@ export interface PaymentOrderRequestResource {
    * The amount of VAT to charge the payer, entered in the lowest monetary
    * unit ofthe selected currency.
    * E.g.: 10000 = 100.00 EUR
-   * 
+   *
    * If the amount given includes VAT, vatAmount may be displayed for the user
    * in the payment page.
    * Set to 0 (zero) if there is no VAT amount charged.
@@ -75,7 +74,7 @@ export interface PaymentOrderRequestResource {
   /**
    * 'CreditCard', 'Invoice-PayExFinancingNo', 'Invoice-PayExFinancingSe',
    * 'Invoice-PayMonthlyInvoiceSe','Vipps', 'Swish' and/or 'CreditAccount'.
-   * 
+   *
    * Limits the options available to the consumer in the payment menu.
    * Default value is all supported payment instruments.
    * Usage of this field requires an agreement with Swedbank Pay.
@@ -108,4 +107,3 @@ export interface PaymentOrderRequestResource {
    */
   riskIndicator?: RiskIndicator;
 }
-

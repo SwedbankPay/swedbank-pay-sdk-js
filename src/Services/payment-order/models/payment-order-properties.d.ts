@@ -5,8 +5,7 @@ import { OrderItem } from './order-item';
 import { PayeeInfo } from './payee-info';
 import { PayersInfo } from './payers-info';
 
-
-export interface PaymentOrderProperties extends PaymentProperties{  
+export interface PaymentOrderProperties extends PaymentProperties {
   currency: string;
   currentPayment: GenericResource;
   metadata: MetaData;

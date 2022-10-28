@@ -1,10 +1,10 @@
-import * as v from 'class-validator'
+import * as v from 'class-validator';
 import { BaseModel } from '../../generics/base-model';
 
-export class PaymentOrderCancelTransaction extends BaseModel{
-    @v.IsString()
-    description: string;
+export class PaymentOrderCancelTransaction extends BaseModel {
+  @v.IsString()
+  description: string;
 
-    @v.IsString()
-    payeeReference: string;
+  @v.IsString()
+  payeeReference: string;
 }

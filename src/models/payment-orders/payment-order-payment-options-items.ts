@@ -5,16 +5,16 @@ import { BaseModel } from '../generics/base-model';
 import { Invoice } from './invoice';
 import { Swish } from './swish';
 
-export class PaymentOrderPaymentOptionsItems extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => CreditCardOptions)
-    creditCard: CreditCardOptions;
+export class PaymentOrderPaymentOptionsItems extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => CreditCardOptions)
+  creditCard: CreditCardOptions;
 
-    @v.ValidateNested()
-    @Type(() => Invoice)
-    invoice: Invoice;
+  @v.ValidateNested()
+  @Type(() => Invoice)
+  invoice: Invoice;
 
-    @v.ValidateNested()
-    @Type(() => Swish)
-    swish: Swish;
+  @v.ValidateNested()
+  @Type(() => Swish)
+  swish: Swish;
 }

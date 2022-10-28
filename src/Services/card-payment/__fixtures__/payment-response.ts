@@ -10,8 +10,7 @@ export const payment_response = {
     state: 'Ready',
     currency: 'NOK',
     prices: {
-      id:
-        '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/prices',
+      id: '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/prices',
     },
     amount: 0,
     description: 'This is a test purchase.',
@@ -22,26 +21,22 @@ export const payment_response = {
       id: '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/urls',
     },
     payeeInfo: {
-      id:
-        '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/payeeinfo',
+      id: '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/payeeinfo',
     },
     metadata: {
-      id:
-        '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/metadata',
+      id: '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/metadata',
     },
   },
   operations: [
     {
       method: 'PATCH',
-      href:
-        'https://api.payex.com/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28',
+      href: 'https://api.payex.com/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28',
       rel: 'update-payment-abort',
       contentType: 'application/json',
     },
     {
       method: 'GET',
-      href:
-        'https://psp-ecommerce.payex.com/creditcardv2/payments/authorize/122fd2460cc4a6417603277d503703b71dfe5d1221f432846de4e39ca9873832',
+      href: 'https://psp-ecommerce.payex.com/creditcardv2/payments/authorize/122fd2460cc4a6417603277d503703b71dfe5d1221f432846de4e39ca9873832',
       rel: 'redirect-authorization',
       contentType: 'text/html',
     },

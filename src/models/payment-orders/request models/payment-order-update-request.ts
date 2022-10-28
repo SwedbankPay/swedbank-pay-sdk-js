@@ -4,8 +4,7 @@ import { BaseModel } from '../../generics/base-model';
 import { PaymentOrderUpdateRequestDetails } from './payment-order-update-request-details';
 
 export class PaymentOrderUpdateRequest extends BaseModel {
-
-    @v.ValidateNested()
-    @Type(() => PaymentOrderUpdateRequestDetails)
-    paymentOrder: PaymentOrderUpdateRequestDetails;
+  @v.ValidateNested()
+  @Type(() => PaymentOrderUpdateRequestDetails)
+  paymentOrder: PaymentOrderUpdateRequestDetails;
 }

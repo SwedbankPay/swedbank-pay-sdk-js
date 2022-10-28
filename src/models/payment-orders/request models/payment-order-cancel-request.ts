@@ -4,7 +4,7 @@ import { BaseModel } from '../../generics/base-model';
 import { PaymentOrderCancelTransaction } from './payment-order-cancel-transaction';
 
 export class PaymentOrderCancelRequest extends BaseModel {
-    @v.ValidateNested()
-    @Type(() => PaymentOrderCancelTransaction)
-    transaction: PaymentOrderCancelTransaction;
+  @v.ValidateNested()
+  @Type(() => PaymentOrderCancelTransaction)
+  transaction: PaymentOrderCancelTransaction;
 }
