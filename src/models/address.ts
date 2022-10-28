@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { CountryCode } from './countryCode';
+import { CountryCode } from './countr-code';
 import { EmailAddress } from './email-address';
 import { BaseModel } from './generics/baseModel';
 import { Msisdn } from './msisdn';
