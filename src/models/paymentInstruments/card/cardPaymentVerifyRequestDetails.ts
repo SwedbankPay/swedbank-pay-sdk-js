@@ -7,7 +7,7 @@ import { Amount } from '../../generics/amount';
 import { PayeeInfo } from '../../generics/payeeInfo';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
-import { PaymentIntent } from '../enums/paymentIntent';
+import { PaymentIntent } from '../enums/payment-intent';
 
 export class CardPaymentVerifyRequestDetails {
     @v.IsEnum(Operation)

@@ -9,7 +9,7 @@ import { MetaData } from '../../generics/metadata';
 import { PayeeInfo } from '../../generics/payeeInfo';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
-import { PaymentIntent } from '../enums/paymentIntent';
+import { PaymentIntent } from '../enums/payment-intent';
 import { Price } from '../price';
 import { AuthorizationListResponse } from './authorization-list-response';
 import { CancellationListResponse } from './cancellation-list-response';

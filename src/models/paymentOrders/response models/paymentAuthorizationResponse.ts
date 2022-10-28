@@ -3,7 +3,7 @@ import * as v from 'class-validator';
 import { State } from '../../enums/state';
 import { Amount } from '../../generics/amount';
 import { Identifiable } from '../../generics/identifiable';
-import { PaymentType } from '../../paymentInstruments/enums/paymentType';
+import { PaymentType } from '../../paymentInstruments/enums/payment-type';
 
 export class PaymentAuthorizationResponse extends Identifiable {
 

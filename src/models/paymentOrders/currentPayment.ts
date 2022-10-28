@@ -9,7 +9,7 @@ import { BaseModel } from '../generics/baseModel';
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
 import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/cardPaymentAuthorizationResponse';
-import { PaymentIntent } from '../paymentInstruments/enums/paymentIntent';
+import { PaymentIntent } from '../paymentInstruments/enums/payment-intent';
 import { PriceListResponse } from '../paymentInstruments/price-list-response';
 import { CancellationListResponse } from '../paymentInstruments/transactions/cancellation-list-response';
 import { CaptureListResponse } from '../paymentInstruments/transactions/capture-list-response';
