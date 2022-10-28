@@ -13,7 +13,7 @@ import { PaymentIntent } from '../enums/paymentIntent';
 import { Price } from '../price';
 import { AuthorizationListResponse } from './authorizationListResponse';
 import { CancellationListResponse } from './cancellationListResponse';
-import { SaleListResponse } from './saleListResponse';
+import { SaleListResponse } from './sale-list-response';
 import { TransactionListResponse } from './transaction-list-response';
 
 export class GetPaymentResponse extends Identifiable {
