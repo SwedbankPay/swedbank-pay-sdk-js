@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { CountryCode } from '../countr-code';
+import { CountryCode } from '../country-code';
 import { BaseModel } from '../generics/baseModel';
 
 export class NationalIdentifier extends BaseModel{
