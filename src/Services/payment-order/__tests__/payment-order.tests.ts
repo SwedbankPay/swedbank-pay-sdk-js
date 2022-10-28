@@ -2,7 +2,7 @@ import * as nock from 'nock';
 import { PaymentOrder } from '../payment-order';
 import PaymentOrderRequestExample from '../__fixtures__/payment-order-request-example';
 import PaymentOrderResponseExample from '../__fixtures__/payment-order-response-example';
-import { Purchase } from '../operations/purchase-';
+import { Purchase } from '../operations/purchase';
 
 nock('https://api.payex.com/psp')
   .persist()

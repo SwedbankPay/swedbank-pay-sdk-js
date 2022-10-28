@@ -4,7 +4,7 @@ import { SwedbankBase } from '../../swedbank-base';
 import { PaymentOrderProperties } from './models/payment-order-properties';
 import { PaymentOrderRequest } from './models/payment-order-request';
 import { PaymentOrderResponse } from './models/payment-order-response';
-import { Purchase, PurchaseInput } from './operations/purchase-';
+import { Purchase, PurchaseInput } from './operations/purchase';
 
 export class PaymentOrder extends SwedbankBase {
   paymentOrder: PaymentOrderProperties;

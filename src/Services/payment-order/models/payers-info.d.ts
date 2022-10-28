@@ -1,6 +1,6 @@
 import { GenericResource } from '../../../models/generics/GenericResource';
 import { AccountInfo } from './account-info';
-import { Address } from './address-';
+import { Address } from './address';
 import { NationalIdentifier } from './national-identifier';
 
 
