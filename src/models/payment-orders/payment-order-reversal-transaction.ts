@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { OrderItem } from '../../Services/PaymentOrder/models/OrderItem';
+import { OrderItem } from '../../Services/payment-order/models/OrderItem';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
 

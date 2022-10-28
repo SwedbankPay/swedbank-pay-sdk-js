@@ -1,8 +1,8 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { OrderItem } from '../../../Services/PaymentOrder/models/OrderItem';
-import { PayeeInfo } from '../../../Services/PaymentOrder/models/PayeeInfo';
-import { RiskIndicator } from '../../../Services/PaymentOrder/models/RiskIndicator';
+import { OrderItem } from '../../../Services/payment-order/models/OrderItem';
+import { PayeeInfo } from '../../../Services/payment-order/models/PayeeInfo';
+import { RiskIndicator } from '../../../Services/payment-order/models/RiskIndicator';
 import { Currency } from '../../currency';
 import { Operation } from '../../enums/operation';
 import { MetaData } from '../../generics/MetaData-resource';
