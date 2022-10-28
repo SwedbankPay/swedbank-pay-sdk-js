@@ -5,18 +5,18 @@ import { BaseModel } from './base-model';
 import { HttpOperation } from './http-operation';
 
 export class OperationsBase extends BaseModel {
-    @v.IsArray()
-    @v.IsEnum(LinkRelation)
-    keys: LinkRelation[];
+  @v.IsArray()
+  @v.IsEnum(LinkRelation)
+  keys: LinkRelation[];
 
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => HttpOperation)
-    values: HttpOperation[];
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => HttpOperation)
+  values: HttpOperation[];
 
-    @v.IsNumber()
-    count: number;
+  @v.IsNumber()
+  count: number;
 
-    @v.IsBoolean()
-    isReadOnly: boolean;
+  @v.IsBoolean()
+  isReadOnly: boolean;
 }

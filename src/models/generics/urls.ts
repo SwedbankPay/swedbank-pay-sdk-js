@@ -3,25 +3,25 @@ import * as v from 'class-validator';
 import { BaseModel } from './base-model';
 
 export class Urls extends BaseModel {
-    @v.IsUrl()
-    callbackUrl: URL;
+  @v.IsUrl()
+  callbackUrl: URL;
 
-    @v.IsUrl()
-    cancelUrl: URL;
+  @v.IsUrl()
+  cancelUrl: URL;
 
-    @v.IsUrl()
-    completeUrl: URL;
+  @v.IsUrl()
+  completeUrl: URL;
 
-    @v.IsArray()
-    @Type( () => URL)
-    hostUrls: URL[];
-    
-    @v.IsUrl()
-    logoUrl: URL;
+  @v.IsArray()
+  @Type(() => URL)
+  hostUrls: URL[];
 
-    @v.IsUrl()
-    paymentUrl: URL;
+  @v.IsUrl()
+  logoUrl: URL;
 
-    @v.IsUrl()
-    termsOfServiceUrl: URL;
+  @v.IsUrl()
+  paymentUrl: URL;
+
+  @v.IsUrl()
+  termsOfServiceUrl: URL;
 }

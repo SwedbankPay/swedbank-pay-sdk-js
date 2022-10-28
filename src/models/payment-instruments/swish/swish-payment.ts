@@ -4,7 +4,7 @@ import { PaymentInstrument } from '../payment-instrument';
 import { SwishSaleListResponse } from './swish-sale-list-response';
 
 export class SwishPayment extends PaymentInstrument {
-    @v.ValidateNested()
-    @Type(() => SwishSaleListResponse)
-    sales: SwishSaleListResponse;
+  @v.ValidateNested()
+  @Type(() => SwishSaleListResponse)
+  sales: SwishSaleListResponse;
 }

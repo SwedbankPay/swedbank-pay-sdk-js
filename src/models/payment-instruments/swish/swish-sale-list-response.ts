@@ -4,8 +4,8 @@ import { Identifiable } from '../../generics/identifiable';
 import { SwishSaleListItem } from './swish-sale-list-item';
 
 export class SwishSaleListResponse extends Identifiable {
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => SwishSaleListItem)
-    saleList: SwishSaleListItem[];
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => SwishSaleListItem)
+  saleList: SwishSaleListItem[];
 }

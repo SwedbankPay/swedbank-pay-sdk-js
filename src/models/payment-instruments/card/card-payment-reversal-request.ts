@@ -4,7 +4,7 @@ import { BaseModel } from '../../generics/base-model';
 import { CardPaymentReversalTransaction } from './card-payment-reversal-transaction';
 
 export class CardPaymentReversalRequest extends BaseModel {
-    @v.ValidateNested()
-    @Type(() => CardPaymentReversalTransaction)
-    transaction: CardPaymentReversalTransaction;
+  @v.ValidateNested()
+  @Type(() => CardPaymentReversalTransaction)
+  transaction: CardPaymentReversalTransaction;
 }

@@ -1,5 +1,3 @@
 import { BaseModel } from '../../generics/base-model';
 
-export class MobilePayResource extends BaseModel {
-
-}
+export class MobilePayResource extends BaseModel {}

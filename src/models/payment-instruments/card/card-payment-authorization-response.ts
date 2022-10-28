@@ -4,10 +4,10 @@ import { BaseModel } from '../../generics/base-model';
 import { CardPaymentAuthorization } from './card-payment-authorization';
 
 export class CardPaymentAuthorizationResponse extends BaseModel {
-    @v.ValidateNested()
-    @Type(() => CardPaymentAuthorization)
-    authorization: CardPaymentAuthorization;
+  @v.ValidateNested()
+  @Type(() => CardPaymentAuthorization)
+  authorization: CardPaymentAuthorization;
 
-    @v.IsUrl()
-    payment: URL;
+  @v.IsUrl()
+  payment: URL;
 }

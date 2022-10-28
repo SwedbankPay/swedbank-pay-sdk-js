@@ -1,6 +1,6 @@
 export enum InvoiceType {
-    Unknown = 0,
-    PayExFinancingNo,
-    PayExFinancingFi,
-    PayExFinancingSe
+  Unknown = 0,
+  PayExFinancingNo,
+  PayExFinancingFi,
+  PayExFinancingSe,
 }

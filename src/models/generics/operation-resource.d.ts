@@ -8,7 +8,7 @@ export class Operation extends BaseModel {
 
   @v.IsString()
   href: string;
-  
+
   @v.IsEnum(Methods)
   method: Methods;
 

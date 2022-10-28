@@ -11,39 +11,39 @@ import { PaymentIntent } from './enums/payment-intent';
 import { Price } from './price';
 
 export class GenericPaymentRequestDetails extends BaseModel {
-    @v.IsEnum(Operation)
-    operation: Operation;
+  @v.IsEnum(Operation)
+  operation: Operation;
 
-    @v.IsEnum(PaymentIntent)
-    intent: PaymentIntent;
+  @v.IsEnum(PaymentIntent)
+  intent: PaymentIntent;
 
-    @v.IsCurrency()
-    currency: Currency;
+  @v.IsCurrency()
+  currency: Currency;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 
-    @v.ValidateNested()
-    @v.IsArray()
-    @Type(() => Price)
-    prices: Price[];
+  @v.ValidateNested()
+  @v.IsArray()
+  @Type(() => Price)
+  prices: Price[];
 
-    @v.IsString()
-    userAgent: string;
+  @v.IsString()
+  userAgent: string;
 
-    @v.ValidateNested()
-    @Type(() => Language)
-    language: Language;
+  @v.ValidateNested()
+  @Type(() => Language)
+  language: Language;
 
-    @v.ValidateNested()
-    @Type(() => Urls)
-    urls: Urls;
+  @v.ValidateNested()
+  @Type(() => Urls)
+  urls: Urls;
 
-    @v.ValidateNested()
-    @Type(() => PayeeInfo)
-    payeeInfo: PayeeInfo;
+  @v.ValidateNested()
+  @Type(() => PayeeInfo)
+  payeeInfo: PayeeInfo;
 
-    @v.ValidateNested()
-    @Type(() => MetaData)
-    metaData: MetaData;
+  @v.ValidateNested()
+  @Type(() => MetaData)
+  metaData: MetaData;
 }

@@ -1,4 +1,4 @@
 export enum ShippingNameIndicator {
-    AccountNameIdenticalToShippingName = '01',
-    AccountNameDifferentFromShippingName = '02',
+  AccountNameIdenticalToShippingName = '01',
+  AccountNameDifferentFromShippingName = '02',
 }

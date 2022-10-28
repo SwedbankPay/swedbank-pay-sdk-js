@@ -3,16 +3,15 @@ import * as v from 'class-validator';
 import { BaseModel } from '../../generics/base-model';
 
 class TransactionModel extends BaseModel {
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 
-    @v.IsString()
-    payeeReference: string;
+  @v.IsString()
+  payeeReference: string;
 }
 
 export class CancelTransaction extends BaseModel {
-    @Type(() => TransactionModel)
-    @v.ValidateNested()
-    transaction: TransactionModel
-
+  @Type(() => TransactionModel)
+  @v.ValidateNested()
+  transaction: TransactionModel;
 }

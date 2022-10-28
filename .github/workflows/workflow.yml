@@ -7,35 +7,34 @@ on:
 
 jobs:
   workflow:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-    - name: Use Node LTS ✨
-      uses: actions/setup-node@v3
-      with:
-        node-version: lts/*
-        cache: yarn
+      - name: Use Node LTS ✨
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: yarn
 
-    - name: Installing dependencies 📦️
-      run: yarn install
+      - name: Installing dependencies 📦️
+        run: yarn install
 
-    - name: Linting code 💚
-      run: yarn run lint
+      - name: Linting code 💚
+        run: yarn run lint
 
-    - name: Formatting code 💅
-      run: yarn run format:check
+      - name: Formatting code 💅
+        run: yarn run format:check
 
-    - name: Building 🔨
-      run: yarn run build
+      - name: Building 🔨
+        run: yarn run build
 
-    - name: Testing 🧪
-      run: yarn test
-      env:
-        CI: true
+      - name: Testing 🧪
+        run: yarn test
+        env:
+          CI: true
 
-    - name: Sending reports to Codecov 📝
-      uses: codecov/codecov-action@v3
+      - name: Sending reports to Codecov 📝
+        uses: codecov/codecov-action@v3

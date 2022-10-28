@@ -4,8 +4,8 @@ import { Identifiable } from '../generics/identifiable';
 import { Price } from './price';
 
 export class PriceListResponse extends Identifiable {
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => Price)
-    priceList: Price[];
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => Price)
+  priceList: Price[];
 }

@@ -1,4 +1,4 @@
 export enum SuspiciousAccountActivity {
-    NoSuspiciousActivityObserved = '01',
-    SuspiciousActivityObserved = '02',
+  NoSuspiciousActivityObserved = '01',
+  SuspiciousActivityObserved = '02',
 }

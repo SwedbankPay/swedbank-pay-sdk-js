@@ -1,4 +1,3 @@
 import { ReversalResponse } from '../transactions/reversal-response';
 
-export class MobilePayReversalTransaction extends ReversalResponse {
-}
+export class MobilePayReversalTransaction extends ReversalResponse {}

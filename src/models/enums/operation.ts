@@ -7,5 +7,5 @@ export enum Operation {
   FinancingConsumer = 'FinancingConsumer',
   Sale = 'Sale',
   href = 'href',
-  rel = 'rel'
+  rel = 'rel',
 }

@@ -1,4 +1,3 @@
 import { SaleResponse } from '../transactions/sale-response';
 
-export class SwishPaymentSaleResponse extends SaleResponse{
-}
+export class SwishPaymentSaleResponse extends SaleResponse {}

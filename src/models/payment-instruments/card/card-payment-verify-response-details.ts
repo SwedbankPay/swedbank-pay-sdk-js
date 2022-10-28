@@ -4,8 +4,8 @@ import { Identifiable } from '../../generics/identifiable';
 import { CardPaymentVerification } from './card-payment-verification';
 
 export class CardPaymentVerifyResponseDetails extends Identifiable {
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => CardPaymentVerification)
-    verificationList: CardPaymentVerification[];
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => CardPaymentVerification)
+  verificationList: CardPaymentVerification[];
 }

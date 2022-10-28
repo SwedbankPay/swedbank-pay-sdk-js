@@ -4,7 +4,7 @@ import { Identifiable } from '../../generics/identifiable';
 import { TransactionResponse } from './transaction-response';
 
 export class ReversalResponse extends Identifiable {
-    @v.ValidateNested()
-    @Type(() => TransactionResponse)
-    reversal: TransactionResponse;
+  @v.ValidateNested()
+  @Type(() => TransactionResponse)
+  reversal: TransactionResponse;
 }

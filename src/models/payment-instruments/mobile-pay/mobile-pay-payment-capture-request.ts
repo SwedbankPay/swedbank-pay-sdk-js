@@ -4,7 +4,7 @@ import { BaseModel } from '../../generics/base-model';
 import { CaptureTransaction } from '../transactions/capture-transaction';
 
 export class MobilePayPaymentCaptureRequest extends BaseModel {
-    @v.ValidateNested()
-    @Type(() => CaptureTransaction)
-    transaction: CaptureTransaction;
+  @v.ValidateNested()
+  @Type(() => CaptureTransaction)
+  transaction: CaptureTransaction;
 }

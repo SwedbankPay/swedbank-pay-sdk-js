@@ -4,26 +4,26 @@ import { BaseModel } from './base-model';
 import { ProblemItem } from './problem-item';
 
 export class Problem extends BaseModel {
-    @v.IsString()
-    action: string;
+  @v.IsString()
+  action: string;
 
-    @v.IsString()
-    detail: string;
+  @v.IsString()
+  detail: string;
 
-    @v.IsString()
-    instance: string;
+  @v.IsString()
+  instance: string;
 
-    @v.IsArray()
-    @v.ValidateNested()
-    @Type(() => ProblemItem)
-    problems: ProblemItem[];
+  @v.IsArray()
+  @v.ValidateNested()
+  @Type(() => ProblemItem)
+  problems: ProblemItem[];
 
-    @v.IsNumber()
-    status: number;
+  @v.IsNumber()
+  status: number;
 
-    @v.IsString()
-    title: string;
+  @v.IsString()
+  title: string;
 
-    @v.IsString()
-    type: string;
+  @v.IsString()
+  type: string;
 }

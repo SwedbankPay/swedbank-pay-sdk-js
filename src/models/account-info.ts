@@ -8,25 +8,24 @@ import { SuspiciousAccountActivity } from './enums/suspicious-account-activity';
 import { BaseModel } from './generics/base-model';
 
 export class AccountInfo extends BaseModel {
+  @v.IsEnum(AccountAgeIndicator)
+  accountAgeIndicator: AccountAgeIndicator;
 
-    @v.IsEnum(AccountAgeIndicator)
-    accountAgeIndicator: AccountAgeIndicator;
-    
-    @v.IsEnum(AccountChangeIndicator)
-    accountChangeIndicator: AccountChangeIndicator;
-    
-    @v.IsEnum(AccountPwdChangeIndicator)
-    accountPwdChangeIndicator: AccountPwdChangeIndicator;
-    
-    @v.IsBoolean()
-    addressMatchIndicator: boolean;
-    
-    @v.IsEnum(ShippingAddressUsageIndicator)
-    shippingAddressUsageIndicator: ShippingAddressUsageIndicator;
-    
-    @v.IsEnum(ShippingNameIndicator)
-    shippingNameIndicator: ShippingNameIndicator;
-    
-    @v.IsEnum(SuspiciousAccountActivity)
-    suspiciousAccountActivity: SuspiciousAccountActivity;
+  @v.IsEnum(AccountChangeIndicator)
+  accountChangeIndicator: AccountChangeIndicator;
+
+  @v.IsEnum(AccountPwdChangeIndicator)
+  accountPwdChangeIndicator: AccountPwdChangeIndicator;
+
+  @v.IsBoolean()
+  addressMatchIndicator: boolean;
+
+  @v.IsEnum(ShippingAddressUsageIndicator)
+  shippingAddressUsageIndicator: ShippingAddressUsageIndicator;
+
+  @v.IsEnum(ShippingNameIndicator)
+  shippingNameIndicator: ShippingNameIndicator;
+
+  @v.IsEnum(SuspiciousAccountActivity)
+  suspiciousAccountActivity: SuspiciousAccountActivity;
 }

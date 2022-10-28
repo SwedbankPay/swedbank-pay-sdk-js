@@ -3,11 +3,11 @@ import * as v from 'class-validator';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
 
-export class ItemDescription extends BaseModel{
-    @v.ValidateNested()
-    @Type(() => Amount)
-    amount: Amount;
+export class ItemDescription extends BaseModel {
+  @v.ValidateNested()
+  @Type(() => Amount)
+  amount: Amount;
 
-    @v.IsString()
-    description: string;
+  @v.IsString()
+  description: string;
 }

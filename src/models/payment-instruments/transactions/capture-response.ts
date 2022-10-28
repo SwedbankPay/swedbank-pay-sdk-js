@@ -4,10 +4,10 @@ import { Identifiable } from '../../generics/identifiable';
 import { Transaction } from './transaction';
 
 export class CaptureResponse extends Identifiable {
-    @v.IsUrl()
-    payment: URL;
+  @v.IsUrl()
+  payment: URL;
 
-    @v.ValidateNested()
-    @Type(() => Transaction)
-    capture: Transaction;
+  @v.ValidateNested()
+  @Type(() => Transaction)
+  capture: Transaction;
 }

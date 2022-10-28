@@ -1,9 +1,7 @@
 import nock = require('nock');
 import { SwedbankBase } from '../swedbank-base';
 
-const runOperationScope = nock('https://api.payex.com')
-  .get('/test')
-  .reply(200);
+const runOperationScope = nock('https://api.payex.com').get('/test').reply(200);
 
 const genericResourceScope = nock('https://api.payex.com')
   .get('/generic-resource')
@@ -50,7 +48,7 @@ describe('SwedbankBase', () => {
     const swedbank = new SwedbankBase({
       merchantToken: '',
       consumerIp: '1.2.3.4',
-      testMode: true
+      testMode: true,
     });
     const res = await swedbank.getUrl();
     // @ts-expect-error

@@ -5,34 +5,34 @@ import { EmailAddress } from './email-address';
 import { BaseModel } from './generics/base-model';
 import { Msisdn } from './msisdn';
 
-export class Address extends BaseModel{
-    @v.IsString()
-    city: string;
-    
-    @v.IsString()
-    coAddress: string;
-    
-    @v.ValidateNested()
-    @Type(() => CountryCode)
-    countryCode: CountryCode;
+export class Address extends BaseModel {
+  @v.IsString()
+  city: string;
 
-    @v.ValidateNested()
-    @Type(() => EmailAddress)
-    email: EmailAddress;
-    
-    @v.IsString()
-    firstName: string;
-    
-    @v.IsString()
-    lastName: string;
+  @v.IsString()
+  coAddress: string;
 
-    @v.ValidateNested()
-    @Type(() => Msisdn)
-    msisdn: Msisdn;
-    
-    @v.IsString()
-    streetAddress: string;
-    
-    @v.IsString()
-    zipCode: string;
+  @v.ValidateNested()
+  @Type(() => CountryCode)
+  countryCode: CountryCode;
+
+  @v.ValidateNested()
+  @Type(() => EmailAddress)
+  email: EmailAddress;
+
+  @v.IsString()
+  firstName: string;
+
+  @v.IsString()
+  lastName: string;
+
+  @v.ValidateNested()
+  @Type(() => Msisdn)
+  msisdn: Msisdn;
+
+  @v.IsString()
+  streetAddress: string;
+
+  @v.IsString()
+  zipCode: string;
 }
