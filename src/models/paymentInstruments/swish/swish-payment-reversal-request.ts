@@ -1,4 +1,4 @@
-import { ReversalTransaction } from '../transactions/reversalTransaction';
+import { ReversalTransaction } from '../transactions/reversal-transaction';
 
 export class SwishPaymentReversalRequest extends  ReversalTransaction{
 }

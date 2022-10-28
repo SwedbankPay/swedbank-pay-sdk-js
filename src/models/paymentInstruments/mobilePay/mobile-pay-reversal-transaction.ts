@@ -1,4 +1,4 @@
-import { ReversalResponse } from '../transactions/reversalResponse';
+import { ReversalResponse } from '../transactions/reversal-response';
 
 export class MobilePayReversalTransaction extends ReversalResponse {
 }

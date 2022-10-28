@@ -13,7 +13,7 @@ import { PaymentIntent } from '../paymentInstruments/enums/paymentIntent';
 import { PriceListResponse } from '../paymentInstruments/price-list-response';
 import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
 import { CaptureListResponse } from '../paymentInstruments/transactions/captureListResponse';
-import { ReversalListResponse } from '../paymentInstruments/transactions/reversalListResponse';
+import { ReversalListResponse } from '../paymentInstruments/transactions/reversal-list-response';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';
 import { PaymentOrderPayeeInfo } from './paymentOrderPayeeInfo';
 import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';

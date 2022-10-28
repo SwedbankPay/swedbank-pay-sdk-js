@@ -1,5 +1,5 @@
 import * as v from 'class-validator'
-import { ReversalTransaction } from '../transactions/reversalTransaction'
+import { ReversalTransaction } from '../transactions/reversal-transaction'
 import { InvoiceType } from './invoicePaymentInvoiceType'
 
 export class ReversalRequestDetails extends ReversalTransaction {

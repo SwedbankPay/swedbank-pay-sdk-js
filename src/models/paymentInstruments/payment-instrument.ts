@@ -13,7 +13,7 @@ import { PaymentIntent } from './enums/paymentIntent';
 import { PriceListResponse } from './price-list-response';
 import { CancellationListResponse } from './transactions/cancellationListResponse';
 import { CaptureListResponse } from './transactions/captureListResponse';
-import { ReversalListResponse } from './transactions/reversalListResponse';
+import { ReversalListResponse } from './transactions/reversal-list-response';
 import { TransactionListResponse } from './transactions/transaction-list-response';
 
 export class PaymentInstrument extends Identifiable {
