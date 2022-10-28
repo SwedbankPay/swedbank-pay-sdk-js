@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
-import { TransactionResponse } from './transactionResponse';
+import { TransactionResponse } from './transaction-response';
 
 export class CancellationResponse extends BaseModel{
     @v.IsUrl()

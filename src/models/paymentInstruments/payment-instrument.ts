@@ -14,7 +14,7 @@ import { PriceListResponse } from './price-list-response';
 import { CancellationListResponse } from './transactions/cancellationListResponse';
 import { CaptureListResponse } from './transactions/captureListResponse';
 import { ReversalListResponse } from './transactions/reversalListResponse';
-import { TransactionListResponse } from './transactions/transactionListResponse';
+import { TransactionListResponse } from './transactions/transaction-list-response';
 
 export class PaymentInstrument extends Identifiable {
     

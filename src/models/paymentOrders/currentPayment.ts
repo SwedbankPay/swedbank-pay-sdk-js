@@ -14,7 +14,7 @@ import { PriceListResponse } from '../paymentInstruments/price-list-response';
 import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
 import { CaptureListResponse } from '../paymentInstruments/transactions/captureListResponse';
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversalListResponse';
-import { TransactionListResponse } from '../paymentInstruments/transactions/transactionListResponse';
+import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';
 import { PaymentOrderPayeeInfo } from './paymentOrderPayeeInfo';
 import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';
 import { SaleListResponse } from './saleListResponse';

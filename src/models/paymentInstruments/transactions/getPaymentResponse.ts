@@ -14,7 +14,7 @@ import { Price } from '../price';
 import { AuthorizationListResponse } from './authorizationListResponse';
 import { CancellationListResponse } from './cancellationListResponse';
 import { SaleListResponse } from './saleListResponse';
-import { TransactionListResponse } from './transactionListResponse';
+import { TransactionListResponse } from './transaction-list-response';
 
 export class GetPaymentResponse extends Identifiable {
     @v.IsNumber()
