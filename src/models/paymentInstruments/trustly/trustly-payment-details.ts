@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { GenericPaymentRequestDetails } from '../generic-payment-request-details';
-import { TrustlyPrefillInfo } from './trustly-prefillInfo';
+import { TrustlyPrefillInfo } from './trustly-prefill-info';
 
 export class TrustlyPaymentDetails extends GenericPaymentRequestDetails{
     @v.ValidateNested()
