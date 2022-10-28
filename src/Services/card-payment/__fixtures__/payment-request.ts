@@ -1,5 +1,5 @@
 import { PaymentRequest } from '../models/payment-request';
-export default {
+export const payment_request = {
   payment: {
     operation: 'Purchase',
     intent: 'Authorization',

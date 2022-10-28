@@ -1,18 +1,18 @@
 import * as nock from 'nock';
-import PaymentOrderRequestExample from '../__fixtures__/payment-order-request-example';
-import PaymentOrderResponseExample from '../__fixtures__/payment-order-response-example';
+import { payment_order_request_example } from '../__fixtures__/payment-order-request-example';
+import { payment_order_response_example } from '../__fixtures__/payment-order-response-example';
 import { Purchase } from '../operations/purchase';
 import { PaymentOrder } from '../payment-order';
 
 nock('https://api.payex.com/psp')
   .persist()
   .post('/paymentorders')
-  .reply(200, PaymentOrderResponseExample);
+  .reply(200, payment_order_response_example);
 
 describe('PaymentOrder', () => {
   const merchantConfig = {
     merchantToken: 'test',
-    consumerIp: '1.2.3.4'
+    consumerIp: '1.2.3.4',
   };
   let paymentorder: PaymentOrder;
 
@@ -27,18 +27,22 @@ describe('PaymentOrder', () => {
     nock('https://api.payex.com')
       .persist()
       .get('/test')
-      .reply(200, PaymentOrderResponseExample);
+      .reply(200, payment_order_response_example);
     const response = await paymentorder.get('/test');
-    expect(response.paymentOrder).toBeTruthy()
+    expect(response.paymentOrder).toBeTruthy();
   });
-  it('should be able to create paymentOrder object', async () =>{
-    const response = await paymentorder.create(PaymentOrderRequestExample);
+  it('should be able to create paymentOrder object', async () => {
+    const response = await paymentorder.create(payment_order_request_example);
     expect(response).toBeTruthy();
-    expect(response.paymentOrder.id).toBe(PaymentOrderResponseExample.paymentOrder.id);
+    expect(response.paymentOrder.id).toBe(
+      payment_order_response_example.paymentOrder.id,
+    );
   });
   it('should be able to create a purchase', async () => {
-    const response = await paymentorder.createPurchase(PaymentOrderRequestExample.paymentorder);
+    const response = await paymentorder.createPurchase(
+      payment_order_request_example.paymentorder,
+    );
     expect(response).toBeTruthy();
     expect(response).toBeInstanceOf(Purchase);
   });
-})
+});

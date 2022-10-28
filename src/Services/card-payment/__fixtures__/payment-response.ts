@@ -1,4 +1,4 @@
-export default {
+export const payment_response = {
   payment: {
     id: '/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28',
     number: 10191467653,
