@@ -4,7 +4,7 @@ import { LinkRelation } from '../enums/link-relation';
 import { BaseModel } from './base-model';
 import { HttpOperation } from './http-operation';
 
-export default class OperationsBase extends BaseModel {
+export class OperationsBase extends BaseModel {
     @v.IsArray()
     @v.IsEnum(LinkRelation)
     keys: LinkRelation[];
