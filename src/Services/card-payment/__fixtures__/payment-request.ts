@@ -1,4 +1,4 @@
-import * as requestModel from "../models/payment-request";
+import * as requestModel from '../models/payment-request';
 
 export const PaymentRequest = {
   payment: {
