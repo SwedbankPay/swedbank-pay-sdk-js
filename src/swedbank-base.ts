@@ -2,12 +2,12 @@ import got, { Method, Response } from 'got';
 import { MerchantConfig } from './merchant-config';
 
 export class SwedbankBase {
+  config: MerchantConfig;
+  
   private apiUrls = {
     test: 'https://api.externalintegration.payex.com',
     prod: 'https://api.payex.com',
   };
-
-  config: MerchantConfig;
 
   constructor(config: MerchantConfig) {
     this.config = config;
@@ -26,7 +26,7 @@ export class SwedbankBase {
     body?: object,
     method?: Method,
   ): Promise<Response<T>> {
-    return await got<T>(path.replace(/^\/|\/$/g, ''), {
+    return got<T>(path.replace(/^\/|\/$/g, ''), {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
@@ -43,7 +43,7 @@ export class SwedbankBase {
     body?: object,
     method?: Method,
   ): Promise<Response<T>> {
-    return await got<T>(url.replace(/^\/|\/$/g, ''), {
+    return got<T>(url.replace(/^\/|\/$/g, ''), {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
