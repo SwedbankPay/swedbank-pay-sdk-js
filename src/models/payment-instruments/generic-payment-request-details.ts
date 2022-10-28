@@ -2,7 +2,7 @@ import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { Currency } from '../currency';
 import { Operation } from '../enums/operation';
-import { MetaData } from '../generics/MetaData-resource';
+import { MetaData } from '../generics/meta-data-resource';
 import { BaseModel } from '../generics/base-model';
 import { PayeeInfo } from '../generics/payee-info';
 import { Urls } from '../generics/urls';

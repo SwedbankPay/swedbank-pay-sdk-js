@@ -3,7 +3,7 @@ import * as v from 'class-validator';
 import { PayeeInfo } from '../../Services/payment-order/models/payee-info';
 import { Currency } from '../currency';
 import { State } from '../enums/state';
-import { MetaData } from '../generics/MetaData-resource';
+import { MetaData } from '../generics/meta-data-resource';
 import { Amount } from '../generics/amount';
 import { Identifiable } from '../generics/identifiable';
 import { Urls } from '../generics/urls';

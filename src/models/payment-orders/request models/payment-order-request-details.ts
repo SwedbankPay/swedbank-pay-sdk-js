@@ -5,7 +5,7 @@ import { PayeeInfo } from '../../../Services/payment-order/models/payee-info';
 import { RiskIndicator } from '../../../Services/payment-order/models/risk-indicator';
 import { Currency } from '../../currency';
 import { Operation } from '../../enums/operation';
-import { MetaData } from '../../generics/MetaData-resource';
+import { MetaData } from '../../generics/meta-data-resource';
 import { Amount } from '../../generics/amount';
 import { BaseModel } from '../../generics/base-model';
 import { Urls } from '../../generics/urls';

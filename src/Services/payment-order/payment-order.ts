@@ -1,5 +1,5 @@
 import { MerchantConfig } from '../../merchant-config';
-import { Operation } from '../../models/generics/Operation-resource';
+import { Operation } from '../../models/generics/-operation-resource';
 import { SwedbankBase } from '../../swedbank-base';
 import { PaymentOrderProperties } from './models/payment-order-properties';
 import { PaymentOrderRequest } from './models/payment-order-request';
