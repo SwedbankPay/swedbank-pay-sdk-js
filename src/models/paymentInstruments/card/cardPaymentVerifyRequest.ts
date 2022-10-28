@@ -1,6 +1,6 @@
-import { CardPaymentVerifyRequestDetails } from './cardPaymentVerifyRequestDetails';
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
+import { CardPaymentVerifyRequestDetails } from './cardPaymentVerifyRequestDetails';
 
 export class CardPaymentVerifyRequest {
     @v.ValidateNested()

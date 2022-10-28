@@ -1,11 +1,11 @@
+import { Type } from 'class-transformer';
 import * as v from 'class-validator';
+import { State } from '../../enums/state';
+import { TransactionType } from '../../enums/transactionType';
 import { Amount } from '../../generics/amount';
 import { HttpOperation } from '../../generics/httpOperation';
 import { Identifiable } from '../../generics/identifiable';
 import { Problem } from '../../generics/problem';
-import { State } from '../../enums/state';
-import { TransactionType } from '../../enums/transactionType';
-import { Type } from 'class-transformer';
 
 export class Transaction extends Identifiable {
     @v.IsString()

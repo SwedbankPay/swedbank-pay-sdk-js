@@ -1,17 +1,17 @@
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { OrderItem } from '../../../Services/PaymentOrder/models/OrderItem';
 import { PayeeInfo } from '../../../Services/PaymentOrder/models/PayeeInfo';
 import { RiskIndicator } from '../../../Services/PaymentOrder/models/RiskIndicator';
-import { Amount } from '../../generics/amount';
 import { Currency } from '../../currency';
-import { Language } from '../../language';
-import { MetaData } from '../../generics/MetaData-resource';
 import { Operation } from '../../enums/operation';
+import { MetaData } from '../../generics/MetaData-resource';
+import { Amount } from '../../generics/amount';
+import { BaseModel } from '../../generics/baseModel';
 import { Urls } from '../../generics/urls';
+import { Language } from '../../language';
 import { Payer } from '../payer';
 import { PaymentOrderPaymentOptionsItems } from '../paymentOrderPaymentOptionsItems';
-import { BaseModel } from '../../generics/baseModel';
-import * as v from 'class-validator';
-import { Type } from 'class-transformer';
 
 export class PaymentOrderRequestDetails extends BaseModel{
     @v.ValidateNested()

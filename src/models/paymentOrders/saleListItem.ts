@@ -1,9 +1,9 @@
-import { Amount } from '../generics/amount';
-import { PaymentType } from '../paymentInstruments/enums/paymentType';
-import { State } from '../enums/state';
-import { BaseModel } from '../generics/baseModel';
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
+import { State } from '../enums/state';
+import { Amount } from '../generics/amount';
+import { BaseModel } from '../generics/baseModel';
+import { PaymentType } from '../paymentInstruments/enums/paymentType';
 
 export class SaleListItem extends BaseModel{
     @v.IsUrl()

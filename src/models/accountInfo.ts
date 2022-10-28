@@ -1,11 +1,11 @@
 import * as v from 'class-validator';
-import { BaseModel } from './generics/baseModel';
 import { AccountAgeIndicator } from './enums/accountAgeIndicator';
 import { AccountChangeIndicator } from './enums/accountChangeIndicator';
 import { AccountPwdChangeIndicator } from './enums/accountPwdChangeIndicator';
 import { ShippingAddressUsageIndicator } from './enums/shippingAddressUsageIndicator';
 import { ShippingNameIndicator } from './enums/shippingNameIndicator';
 import { SuspiciousAccountActivity } from './enums/suspiciousAccountActivity';
+import { BaseModel } from './generics/baseModel';
 
 export class AccountInfo extends BaseModel {
 

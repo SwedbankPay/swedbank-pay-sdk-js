@@ -1,5 +1,5 @@
-import { Methods } from '../enums/methods';
 import * as v from 'class-validator';
+import { Methods } from '../enums/methods';
 import { BaseModel } from './baseModel';
 
 export class Operation extends BaseModel {

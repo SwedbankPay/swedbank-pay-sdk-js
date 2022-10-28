@@ -1,9 +1,9 @@
-import { SwedbankBase } from '../../SwedbankBase';
 import { MerchantConfig } from '../../MerchantConfig';
-import { PaymentOrderResponse } from './models/PaymentOrderResponse';
+import { SwedbankBase } from '../../SwedbankBase';
+import { Operation } from '../../models/generics/Operation-resource';
 import { PaymentOrderProperties } from './models/PaymentOrderProperties';
 import { PaymentOrderRequest } from './models/PaymentOrderRequest';
-import { Operation } from '../../models/generics/Operation-resource';
+import { PaymentOrderResponse } from './models/PaymentOrderResponse';
 import { Purchase, PurchaseInput } from './operations/Purchase';
 
 export class PaymentOrder extends SwedbankBase {

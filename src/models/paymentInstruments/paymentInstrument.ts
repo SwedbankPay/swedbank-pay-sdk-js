@@ -1,20 +1,20 @@
-import { PayeeInfo } from '../generics/payeeInfo'
-import { Amount } from '../generics/amount';
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { Currency } from '../currency';
-import { Identifiable } from '../generics/identifiable';
-import { Language } from '../language';
-import { MetaData } from '../generics/MetaData-resource';
 import { Operation } from '../enums/operation';
 import { State } from '../enums/state';
+import { MetaData } from '../generics/MetaData-resource';
+import { Amount } from '../generics/amount';
+import { Identifiable } from '../generics/identifiable';
+import { PayeeInfo } from '../generics/payeeInfo'
 import { Urls } from '../generics/urls';
-import { CancellationListResponse } from './transactions/cancellationListResponse';
-import { CaptureListResponse } from './transactions/captureListResponse';
+import { Language } from '../language';
 import { PaymentIntent } from './enums/paymentIntent';
 import { PriceListResponse } from './priceListResponse';
+import { CancellationListResponse } from './transactions/cancellationListResponse';
+import { CaptureListResponse } from './transactions/captureListResponse';
 import { ReversalListResponse } from './transactions/reversalListResponse';
 import { TransactionListResponse } from './transactions/transactionListResponse';
-import * as v from 'class-validator';
-import { Type } from 'class-transformer';
 
 export class PaymentInstrument extends Identifiable {
     

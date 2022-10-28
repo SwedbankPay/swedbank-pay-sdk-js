@@ -1,16 +1,16 @@
-import { PayeeInfo } from '../../Services/PaymentOrder/models/PayeeInfo';
-import { Amount } from '../generics/amount';
-import { Currency } from '../currency';
-import { Identifiable } from '../generics/identifiable';
-import { Language } from '../language';
-import { MetaData } from '../generics/MetaData-resource';
-import { State } from '../enums/state';
-import { Urls } from '../generics/urls';
-import { CurrentPaymentResponse } from './response models/currentPaymentResponse';
-import { OrderItemListResponse } from './orderItemListResponse';
-import { PayerResponse } from './response models/payerResponse';
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
+import { PayeeInfo } from '../../Services/PaymentOrder/models/PayeeInfo';
+import { Currency } from '../currency';
+import { State } from '../enums/state';
+import { MetaData } from '../generics/MetaData-resource';
+import { Amount } from '../generics/amount';
+import { Identifiable } from '../generics/identifiable';
+import { Urls } from '../generics/urls';
+import { Language } from '../language';
+import { OrderItemListResponse } from './orderItemListResponse';
+import { CurrentPaymentResponse } from './response models/currentPaymentResponse';
+import { PayerResponse } from './response models/payerResponse';
 
 export class PaymentOrder extends Identifiable {
     @v.ValidateNested()

@@ -1,7 +1,7 @@
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { CardPaymentReversalTransaction } from './cardPaymentReversalTransaction';
+import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
+import { CardPaymentReversalTransaction } from './cardPaymentReversalTransaction';
 
 export class CardPaymentReversalRequest extends BaseModel {
     @v.ValidateNested()

@@ -1,5 +1,5 @@
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
 import { CardPaymentAuthorization } from './cardPaymentAuthorization';
 

@@ -1,10 +1,10 @@
-import { Urls } from './Payment/Urls';
-import { Payee } from './Payment/Payee';
 import { Cardholder } from './Payment/Cardholder';
-import { RiskIndicator } from './Payment/RiskIndicator';
-import { PickupAddress } from './Payment/PickupAddress';
 import { CreditCardOptions } from './Payment/CreditCardOptions';
+import { Payee } from './Payment/Payee';
+import { PickupAddress } from './Payment/PickupAddress';
 import { Price } from './Payment/Price';
+import { RiskIndicator } from './Payment/RiskIndicator';
+import { Urls } from './Payment/Urls';
 
 export interface PaymentRequest {
   payment: PaymentRequestResource;

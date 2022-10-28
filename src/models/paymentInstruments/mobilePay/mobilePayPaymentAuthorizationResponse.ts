@@ -1,5 +1,5 @@
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { TransactionResponse } from '../transactions/transactionResponse';
 import { MobilePayPaymentAuthorization } from './mobilePayPaymentAuthorization';
 

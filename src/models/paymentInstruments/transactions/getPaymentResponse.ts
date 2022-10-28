@@ -4,17 +4,17 @@ import { Currency } from '../../currency';
 import { Operation } from '../../enums/operation';
 import { State } from '../../enums/state';
 import { Amount } from '../../generics/amount';
+import { Identifiable } from '../../generics/identifiable';
 import { MetaData } from '../../generics/metadata';
 import { PayeeInfo } from '../../generics/payeeInfo';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
-import { SaleListResponse } from './saleListResponse';
 import { PaymentIntent } from '../enums/paymentIntent';
 import { Price } from '../price';
-import { CancellationListResponse } from './cancellationListResponse';
-import { TransactionListResponse } from './transactionListResponse';
 import { AuthorizationListResponse } from './authorizationListResponse';
-import { Identifiable } from '../../generics/identifiable';
+import { CancellationListResponse } from './cancellationListResponse';
+import { SaleListResponse } from './saleListResponse';
+import { TransactionListResponse } from './transactionListResponse';
 
 export class GetPaymentResponse extends Identifiable {
     @v.IsNumber()

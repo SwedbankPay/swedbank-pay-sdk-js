@@ -1,5 +1,5 @@
-import * as v from 'class-validator';
 import { plainToInstance } from 'class-transformer';
+import * as v from 'class-validator';
 
 export class BaseModel {
     static make(data: unknown): BaseModel {

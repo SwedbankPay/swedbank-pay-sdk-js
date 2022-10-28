@@ -1,7 +1,7 @@
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
 import { TrustlyReversalTransaction } from './trustlyReversalTransaction';
-import * as v from 'class-validator';
-import { Type } from 'class-transformer';
 
 export class TrustlyPaymentReversalRequest extends BaseModel{
     @v.ValidateNested()

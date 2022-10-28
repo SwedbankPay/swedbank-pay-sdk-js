@@ -1,14 +1,14 @@
-import * as v from 'class-validator';
-import { BaseModel } from '../generics/baseModel';
 import { Type } from 'class-transformer';
-import { Price } from './price';
-import { PaymentIntent } from './enums/paymentIntent';
-import { Operation } from '../enums/operation';
+import * as v from 'class-validator';
 import { Currency } from '../currency';
-import { Language } from '../language';
-import { Urls } from '../generics/urls';
-import { PayeeInfo } from '../generics/payeeInfo';
+import { Operation } from '../enums/operation';
 import { MetaData } from '../generics/MetaData-resource';
+import { BaseModel } from '../generics/baseModel';
+import { PayeeInfo } from '../generics/payeeInfo';
+import { Urls } from '../generics/urls';
+import { Language } from '../language';
+import { PaymentIntent } from './enums/paymentIntent';
+import { Price } from './price';
 
 export class GenericPaymentRequestDetails extends BaseModel {
     @v.IsEnum(Operation)

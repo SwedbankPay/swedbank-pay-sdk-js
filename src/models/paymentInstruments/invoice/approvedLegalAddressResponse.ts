@@ -1,7 +1,7 @@
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { LegalAddress } from '../transactions/legalAddress';
+import * as v from 'class-validator';
 import { Identifiable } from '../../generics/identifiable';
+import { LegalAddress } from '../transactions/legalAddress';
 
 export class ApprovedLegalAddressResponse extends Identifiable{
     @v.ValidateNested()

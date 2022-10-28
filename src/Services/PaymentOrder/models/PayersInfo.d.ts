@@ -1,7 +1,7 @@
 import { GenericResource } from '../../../models/generics/GenericResource';
+import { AccountInfo } from './AccountInfo';
 import { Address } from './Address';
 import { NationalIdentifier } from './NationalIdentifier';
-import { AccountInfo } from './AccountInfo';
 
 
 export interface PayersInfo extends GenericResource {

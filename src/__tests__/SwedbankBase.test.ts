@@ -1,6 +1,6 @@
 /* eslint @typescript-eslint/ban-ts-ignore: 0 */
-import { SwedbankBase } from '../SwedbankBase';
 import * as nock from 'nock';
+import { SwedbankBase } from '../SwedbankBase';
 
 const runOperationScope = nock('https://api.payex.com')
   .get('/test')
@@ -37,13 +37,13 @@ describe('SwedbankBase', () => {
 
   it('should return test environment url', async () => {
     const res = await swedbankBase.getUrl('test');
-    // @ts-ignore
+    // @ts-expect-error
     expect(res).toBe(swedbankBase.apiUrls['test']);
   });
 
   it('should return prod environment url', async () => {
     const res = await swedbankBase.getUrl('prod');
-    // @ts-ignore
+    // @ts-expect-error
     expect(res).toBe(swedbankBase.apiUrls['prod']);
   });
 
@@ -54,7 +54,7 @@ describe('SwedbankBase', () => {
       testMode: true
     });
     const res = await swedbank.getUrl();
-    // @ts-ignore
+    // @ts-expect-error
     expect(res).toBe(swedbank.apiUrls['test']);
   });
 });

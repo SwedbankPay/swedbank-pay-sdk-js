@@ -1,5 +1,5 @@
-import { MerchantConfig } from './MerchantConfig';
 import got, { Method, Response } from 'got';
+import { MerchantConfig } from './MerchantConfig';
 
 export class SwedbankBase {
   private apiUrls = {
@@ -30,7 +30,7 @@ export class SwedbankBase {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
-        'user-agent': `swedbank@swedbank-pay-js/0.0.0`,
+        'user-agent': 'swedbank@swedbank-pay-js/0.0.0',
       },
       responseType: 'json',
       json: body,
@@ -47,7 +47,7 @@ export class SwedbankBase {
       method,
       headers: {
         authorization: `Bearer ${this.config.merchantToken}`,
-        'user-agent': `swedbank@swedbank-pay-js/0.0.0`,
+        'user-agent': 'swedbank@swedbank-pay-js/0.0.0',
       },
       responseType: 'json',
       json: body,

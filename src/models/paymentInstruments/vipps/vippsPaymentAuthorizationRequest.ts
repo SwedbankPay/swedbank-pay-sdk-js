@@ -1,7 +1,7 @@
-import { VippsAuthorizationTransaction } from './vippsAuthorizationTransaction';
+import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
-import { Type } from 'class-transformer';
+import { VippsAuthorizationTransaction } from './vippsAuthorizationTransaction';
 
 export class VippsPaymentAuthorizationRequest extends BaseModel{
     @v.ValidateNested()

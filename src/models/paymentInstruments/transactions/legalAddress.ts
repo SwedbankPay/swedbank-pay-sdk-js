@@ -1,5 +1,5 @@
-import { BaseModel } from '../../generics/baseModel';
 import * as v from 'class-validator';
+import { BaseModel } from '../../generics/baseModel';
 
 export class LegalAddress extends BaseModel{
     @v.IsUrl()

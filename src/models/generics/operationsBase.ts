@@ -1,8 +1,8 @@
-import * as v from 'class-validator';
 import { Type } from 'class-transformer';
+import * as v from 'class-validator';
+import { LinkRelation } from '../enums/linkRelation';
 import { BaseModel } from './baseModel';
 import { HttpOperation } from './httpOperation';
-import { LinkRelation } from '../enums/linkRelation';
 
 export default class OperationsBase extends BaseModel {
     @v.IsArray()

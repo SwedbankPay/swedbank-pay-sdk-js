@@ -1,23 +1,23 @@
-import { Amount } from '../generics/amount';
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
 import { Currency } from '../currency';
-import { Language } from '../language';
 import { Operation } from '../enums/operation';
 import { PaymentInstrument } from '../enums/paymentInstrument';
-import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
-import { CaptureListResponse } from '../paymentInstruments/transactions/captureListResponse';
+import { State } from '../enums/state';
+import { Amount } from '../generics/amount';
+import { BaseModel } from '../generics/baseModel';
+import { Urls } from '../generics/urls';
+import { Language } from '../language';
+import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/cardPaymentAuthorizationResponse';
 import { PaymentIntent } from '../paymentInstruments/enums/paymentIntent';
 import { PriceListResponse } from '../paymentInstruments/priceListResponse';
+import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
+import { CaptureListResponse } from '../paymentInstruments/transactions/captureListResponse';
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversalListResponse';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transactionListResponse';
-import { State } from '../enums/state';
-import { Urls } from '../generics/urls';
-import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';
 import { PaymentOrderPayeeInfo } from './paymentOrderPayeeInfo';
+import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';
 import { SaleListResponse } from './saleListResponse';
-import { BaseModel } from '../generics/baseModel';
-import * as v from 'class-validator';
-import { Type } from 'class-transformer';
-import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/cardPaymentAuthorizationResponse';
 
 export class CurrentPayment extends BaseModel{
     @v.ValidateNested()
