@@ -1,11 +1,11 @@
-import { Address } from "../../address";
-import { AccountInfo } from "../../accountInfo";
-import { EmailAddress } from "../../emailAddress";
-import { Identifiable } from "../../generics/identifiable";
-import { Msisdn } from "../../msisdn";
-import { NationalIdentifier } from "../nationalIdentifier";
+import { Address } from '../../address';
+import { AccountInfo } from '../../accountInfo';
+import { EmailAddress } from '../../emailAddress';
+import { Identifiable } from '../../generics/identifiable';
+import { Msisdn } from '../../msisdn';
+import { NationalIdentifier } from '../nationalIdentifier';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 export class PayerResponse extends Identifiable {
     @v.ValidateNested()

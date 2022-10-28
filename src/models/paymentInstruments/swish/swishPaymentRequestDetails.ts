@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { GenericPaymentRequestDetails } from "../genericPaymentRequestDetails";
+import { GenericPaymentRequestDetails } from '../genericPaymentRequestDetails';
 
 export class SwishPaymentRequestDetails extends GenericPaymentRequestDetails{
     @v.IsString()

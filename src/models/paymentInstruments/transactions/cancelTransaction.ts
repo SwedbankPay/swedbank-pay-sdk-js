@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
-import { BaseModel } from "../../generics/baseModel";
+import { BaseModel } from '../../generics/baseModel';
 
 class TransactionModel extends BaseModel {
     @v.IsString()

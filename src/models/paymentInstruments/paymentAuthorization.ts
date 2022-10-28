@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { CardPaymentCardDetails } from "./card/cardPaymentCardDetails";
+import { CardPaymentCardDetails } from './card/cardPaymentCardDetails';
 import { BaseModel } from '../generics/baseModel';
 import { Type } from 'class-transformer';
 

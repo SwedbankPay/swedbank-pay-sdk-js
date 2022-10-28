@@ -1,13 +1,13 @@
-import { Amount } from "../../generics/amount";
-import { Currency } from "../../currency";
-import { Language } from "../../language";
-import { MetaData } from "../../generics/MetaData-resource";
-import { Operation } from "../../enums/operation";
-import { Urls } from "../../generics/urls";
-import { PaymentIntent } from "../enums/paymentIntent";
+import { Amount } from '../../generics/amount';
+import { Currency } from '../../currency';
+import { Language } from '../../language';
+import { MetaData } from '../../generics/MetaData-resource';
+import { Operation } from '../../enums/operation';
+import { Urls } from '../../generics/urls';
+import { PaymentIntent } from '../enums/paymentIntent';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
-import { PayeeInfo } from "../../generics/payeeInfo";
+import { Type } from 'class-transformer';
+import { PayeeInfo } from '../../generics/payeeInfo';
 
 export class CardPaymentVerifyRequestDetails {
     @v.IsEnum(Operation)

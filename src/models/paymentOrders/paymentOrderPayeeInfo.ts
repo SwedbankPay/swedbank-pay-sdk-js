@@ -1,4 +1,4 @@
-import { PayeeInfo } from "../../Services/PaymentOrder/models/PayeeInfo";
+import { PayeeInfo } from '../../Services/PaymentOrder/models/PayeeInfo';
 import * as v from 'class-validator';
 
 export class PaymentOrderPayeeInfo extends PayeeInfo {

@@ -141,7 +141,7 @@ ___
 
 ###  getUrl
 
-▸ **getUrl**(`env?`: "test" | "prod"): *string*
+▸ **getUrl**(`env?`: 'test' | 'prod'): *string*
 
 *Inherited from [SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)*
 
@@ -149,7 +149,7 @@ ___
 
 Name | Type |
 ------ | ------ |
-`env?` | "test" &#124; "prod" |
+`env?` | 'test' &#124; 'prod' |
 
 **Returns:** *string*
 

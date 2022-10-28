@@ -1,8 +1,8 @@
 import * as v from 'class-validator';
 import { BaseModel } from './generics/baseModel';
-import { CountryCode } from "./countryCode";
-import { EmailAddress } from "./emailAddress";
-import { Msisdn } from "./msisdn";
+import { CountryCode } from './countryCode';
+import { EmailAddress } from './emailAddress';
+import { Msisdn } from './msisdn';
 import { Type } from 'class-transformer';
 
 export class Address extends BaseModel{

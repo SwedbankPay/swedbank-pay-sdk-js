@@ -1,4 +1,4 @@
-import { BaseModel } from "../../generics/baseModel";
+import { BaseModel } from '../../generics/baseModel';
 import * as v from 'class-validator'
 
 export class PaymentOrderCancelTransaction extends BaseModel{

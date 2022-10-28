@@ -1,5 +1,5 @@
-import { PaymentInstrument } from "../paymentInstrument";
-import { MobilePayPaymentAuthorizationListResponse } from "./mobilePayPaymentAuthorizationListResponse";
+import { PaymentInstrument } from '../paymentInstrument';
+import { MobilePayPaymentAuthorizationListResponse } from './mobilePayPaymentAuthorizationListResponse';
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
 

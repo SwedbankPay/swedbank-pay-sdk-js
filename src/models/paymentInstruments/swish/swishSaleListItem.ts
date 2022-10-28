@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as  v from 'class-validator';
-import { Identifiable } from "../../generics/identifiable";
-import { Transaction } from "../transactions/transaction";
+import { Identifiable } from '../../generics/identifiable';
+import { Transaction } from '../transactions/transaction';
 
 export class SwishSaleListItem extends Identifiable {
     @v.IsString()

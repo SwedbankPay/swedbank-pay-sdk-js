@@ -1,4 +1,4 @@
 export enum  ReOrderPurchaseIndicator {
-    MerchandiseAvailable = "01",
-    ReOrderPurchaseIndicator = "02"
+    MerchandiseAvailable = '01',
+    ReOrderPurchaseIndicator = '02'
 }

@@ -75,13 +75,13 @@ ___
 
 ###  getUrl
 
-▸ **getUrl**(`env?`: "test" | "prod"): *string*
+▸ **getUrl**(`env?`: 'test' | 'prod'): *string*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`env?` | "test" &#124; "prod" |
+`env?` | 'test' &#124; 'prod' |
 
 **Returns:** *string*
 
@@ -135,8 +135,8 @@ Name | Type |
 
 ###  prod
 
-• **prod**: *string* = "https://api.payex.com"
+• **prod**: *string* = 'https://api.payex.com'
 
 ###  test
 
-• **test**: *string* = "https://api.externalintegration.payex.com"
+• **test**: *string* = 'https://api.externalintegration.payex.com'

@@ -1,4 +1,4 @@
-import { Address } from "../address";
+import { Address } from '../address';
 import * as v from 'class-validator';
 
 export class PickUpAddress extends Address{

@@ -1,9 +1,9 @@
-import { Amount } from "../../generics/amount";
-import { Identifiable } from "../../generics/identifiable";
-import { PaymentType } from "../../paymentInstruments/enums/paymentType";
-import { State } from "../../enums/state";
+import { Amount } from '../../generics/amount';
+import { Identifiable } from '../../generics/identifiable';
+import { PaymentType } from '../../paymentInstruments/enums/paymentType';
+import { State } from '../../enums/state';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 export class PaymentAuthorizationResponse extends Identifiable {
 

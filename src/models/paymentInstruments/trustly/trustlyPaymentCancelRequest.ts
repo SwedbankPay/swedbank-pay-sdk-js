@@ -1,4 +1,4 @@
-import { TrustlyPaymentCancelTransaction } from "./trustlyPaymentCancelTransaction";
+import { TrustlyPaymentCancelTransaction } from './trustlyPaymentCancelTransaction';
 
 export class TrustlyPaymentCancelRequest extends TrustlyPaymentCancelTransaction{
 }

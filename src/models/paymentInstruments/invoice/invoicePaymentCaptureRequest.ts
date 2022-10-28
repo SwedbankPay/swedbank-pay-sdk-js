@@ -1,7 +1,7 @@
-import { BaseModel } from "../../generics/baseModel";
-import { CaptureTransaction } from "../transactions/captureTransaction";
+import { BaseModel } from '../../generics/baseModel';
+import { CaptureTransaction } from '../transactions/captureTransaction';
 import * as v from 'class-validator'
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 class ItemDescription extends BaseModel {
     @v.IsNumber()

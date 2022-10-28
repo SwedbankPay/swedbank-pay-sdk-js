@@ -1,9 +1,9 @@
-import { Amount } from "../../generics/amount";
-import { HttpOperation } from "../../generics/httpOperation";
-import { State } from "../../enums/state";
+import { Amount } from '../../generics/amount';
+import { HttpOperation } from '../../generics/httpOperation';
+import { State } from '../../enums/state';
 import * as v from 'class-validator'
 import { Type } from 'class-transformer';
-import { BaseModel } from "../../generics/baseModel";
+import { BaseModel } from '../../generics/baseModel';
 
 export class AuthorizationTransaction extends BaseModel{
     @v.ValidateNested()

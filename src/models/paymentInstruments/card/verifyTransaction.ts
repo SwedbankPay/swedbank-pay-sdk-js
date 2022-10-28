@@ -1,4 +1,4 @@
-import { Transaction } from "../transactions/transaction";
+import { Transaction } from '../transactions/transaction';
 import * as v from 'class-validator'
 
 export class VerifyTransaction extends Transaction {

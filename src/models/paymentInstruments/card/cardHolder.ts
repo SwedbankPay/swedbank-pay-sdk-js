@@ -1,10 +1,10 @@
-import { Type } from "class-transformer";
-import * as v from "class-validator";
-import { AccountInfo } from "../../accountInfo";
-import { Address } from "../../address";
-import { EmailAddress } from "../../emailAddress";
-import { BaseModel } from "../../generics/baseModel";
-import { Msisdn } from "../../msisdn";
+import { Type } from 'class-transformer';
+import * as v from 'class-validator';
+import { AccountInfo } from '../../accountInfo';
+import { Address } from '../../address';
+import { EmailAddress } from '../../emailAddress';
+import { BaseModel } from '../../generics/baseModel';
+import { Msisdn } from '../../msisdn';
 
 export class Cardholder extends BaseModel{
 

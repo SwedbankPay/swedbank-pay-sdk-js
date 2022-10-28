@@ -1,4 +1,4 @@
-import { PaymentOrderRequest } from "../models/PaymentOrderRequest";
+import { PaymentOrderRequest } from '../models/PaymentOrderRequest';
 
 export default {
     paymentorder: {
@@ -6,9 +6,9 @@ export default {
         currency: 'NOK',
         amount: 1000,
         vatAmount: 0,
-        description: "Test",
-        userAgent: "SDK",
-        language: "nb-NO",
+        description: 'Test',
+        userAgent: 'SDK',
+        language: 'nb-NO',
         generateRecurrenceToken: false,
         urls: {
             completeUrl: 'https://example.com/payment-completed',
@@ -28,11 +28,11 @@ export default {
         orderItems: [{
             amount: 1000,
             vatAmount: 0,
-            class: "Item",
-            name: "item",
-            type: "OTHER",
+            class: 'Item',
+            name: 'item',
+            type: 'OTHER',
             quantity: 1,
-            quantityUnit: "items",
+            quantityUnit: 'items',
             unitPrice: 1000,
             vatPercent: 0
         }]

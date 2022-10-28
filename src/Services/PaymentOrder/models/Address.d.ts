@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { BaseModel } from "../../../models/generics/baseModel";
+import { BaseModel } from '../../../models/generics/baseModel';
 
 export class Address extends BaseModel{
   /**

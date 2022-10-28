@@ -1,9 +1,9 @@
-import { BaseModel } from "../generics/baseModel";
-import { CreditCardOptions } from "../creditCardOptions";
-import { Invoice } from "./invoice";
-import { Swish } from "./swish";
+import { BaseModel } from '../generics/baseModel';
+import { CreditCardOptions } from '../creditCardOptions';
+import { Invoice } from './invoice';
+import { Swish } from './swish';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 export class PaymentOrderPaymentOptionsItems extends BaseModel{
     @v.ValidateNested()

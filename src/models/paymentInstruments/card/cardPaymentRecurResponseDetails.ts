@@ -1,8 +1,8 @@
 
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { Amount } from "../../generics/amount";
-import { GetPaymentResponse } from "../transactions/getPaymentResponse";
+import { Amount } from '../../generics/amount';
+import { GetPaymentResponse } from '../transactions/getPaymentResponse';
 
 export class CardPaymentRecurResponseDetails extends GetPaymentResponse {
     @v.IsString()

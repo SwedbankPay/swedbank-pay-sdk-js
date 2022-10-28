@@ -1,4 +1,4 @@
-import { ConsumerOperations } from "./consumerOperations";
+import { ConsumerOperations } from './consumerOperations';
 
 export interface ConsumersResponse {
     operations: ConsumerOperations;

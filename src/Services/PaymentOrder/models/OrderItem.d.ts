@@ -1,14 +1,14 @@
-import { Url } from "url";
+import { Url } from 'url';
 import * as v from 'class-validator';
-import { BaseModel } from "../../../models/generics/baseModel";
+import { BaseModel } from '../../../models/generics/baseModel';
 
 declare enum OrderItemType {
-  PRODUCT = "PRODUCT",
-  SERVICE = "SERVICE",
-  SHIPPING_FEE = "SHIPPING_FEE",
-  PAYMENT_FEE = "PAYMENT_FEE",
-  VALUE_CODE = "VALUE_CODE",
-  OTHER = "OTHER"
+  PRODUCT = 'PRODUCT',
+  SERVICE = 'SERVICE',
+  SHIPPING_FEE = 'SHIPPING_FEE',
+  PAYMENT_FEE = 'PAYMENT_FEE',
+  VALUE_CODE = 'VALUE_CODE',
+  OTHER = 'OTHER'
 }
 
 export class OrderItem extends BaseModel {

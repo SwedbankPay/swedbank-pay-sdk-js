@@ -1,11 +1,11 @@
-import { AccountInfo } from "../accountInfo";
-import { EmailAddress } from "../emailAddress";
-import { BaseModel } from "../generics/baseModel";
-import { Msisdn } from "../msisdn";
-import { NationalIdentifier } from "./nationalIdentifier";
+import { AccountInfo } from '../accountInfo';
+import { EmailAddress } from '../emailAddress';
+import { BaseModel } from '../generics/baseModel';
+import { Msisdn } from '../msisdn';
+import { NationalIdentifier } from './nationalIdentifier';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
-import { Address } from "../address";
+import { Type } from 'class-transformer';
+import { Address } from '../address';
 
 export class Payer extends BaseModel{
     @v.ValidateNested()

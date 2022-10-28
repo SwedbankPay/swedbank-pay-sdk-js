@@ -1,4 +1,4 @@
-import { AuthorizationTransaction } from "../transactions/authorizationTransaction";
+import { AuthorizationTransaction } from '../transactions/authorizationTransaction';
 import * as v from 'class-validator';
 import { Type } from 'class-transformer';
 

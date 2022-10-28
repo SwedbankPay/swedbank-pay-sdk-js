@@ -1,4 +1,4 @@
-import { GenericPaymentRequestDetails } from "../genericPaymentRequestDetails";
+import { GenericPaymentRequestDetails } from '../genericPaymentRequestDetails';
 import * as v from 'class-validator';
 
 export class VippsPaymentRequestDetails extends GenericPaymentRequestDetails{

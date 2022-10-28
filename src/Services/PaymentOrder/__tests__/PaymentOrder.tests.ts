@@ -1,7 +1,7 @@
 import * as nock from 'nock';
-import { PaymentOrder } from "../PaymentOrder";
+import { PaymentOrder } from '../PaymentOrder';
 import PaymentOrderRequestExample from '../__fixtures__/PaymentOrderRequestExample';
-import PaymentOrderResponseExample from "../__fixtures__/PaymentOrderResponseExample";
+import PaymentOrderResponseExample from '../__fixtures__/PaymentOrderResponseExample';
 import { Purchase } from '../operations/Purchase';
 
 nock('https://api.payex.com/psp')
@@ -28,7 +28,7 @@ describe('PaymentOrder', () => {
       .persist()
       .get('/test')
       .reply(200, PaymentOrderResponseExample);
-    const response = await paymentorder.get("/test");
+    const response = await paymentorder.get('/test');
     expect(response.paymentOrder).toBeTruthy()
   });
   it('should be able to create paymentOrder object', async () =>{

@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
 import { Type } from 'class-transformer'
-import { Amount } from "../generics/amount";
+import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/baseModel';
 
 export class VatSummary extends BaseModel{

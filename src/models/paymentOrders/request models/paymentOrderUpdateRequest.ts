@@ -1,7 +1,7 @@
-import { BaseModel } from "../../generics/baseModel";
-import { PaymentOrderUpdateRequestDetails } from "./paymentOrderUpdateRequestDetails";
+import { BaseModel } from '../../generics/baseModel';
+import { PaymentOrderUpdateRequestDetails } from './paymentOrderUpdateRequestDetails';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 export class PaymentOrderUpdateRequest extends BaseModel {
 

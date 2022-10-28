@@ -1,7 +1,7 @@
-import { PaymentInstrument } from "../paymentInstrument";
-import { CardPaymentAuthorizationListResponse } from "./cardPaymentAuthorizationListResponse";
+import { PaymentInstrument } from '../paymentInstrument';
+import { CardPaymentAuthorizationListResponse } from './cardPaymentAuthorizationListResponse';
 import * as v from 'class-validator';
-import { Type } from "class-transformer";
+import { Type } from 'class-transformer';
 
 export class CardPayment extends PaymentInstrument {
     @v.ValidateNested()
