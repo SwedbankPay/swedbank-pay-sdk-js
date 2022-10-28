@@ -37,9 +37,7 @@ const runTransaction = async (): Promise<void> => {
     },
   });
 
-  const redirectUrl = purchase.getRedirectAuthorization();
-
-  console.log(`Redirect URL: ${redirectUrl}`);
+  purchase.getRedirectAuthorization();
 };
 
 runTransaction();
