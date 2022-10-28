@@ -1,7 +1,7 @@
 import { MerchantConfig } from '../../merchant-config';
 import { SwedbankBase } from '../../swedbank-base';
 import { Payment, PaymentResponse } from '../../models/payment';
-import { PaymentRequest } from './models/PaymentRequest';
+import { PaymentRequest } from './models/payment-request';
 import { Purchase, PurchaseInput } from './operations/Purchase';
 
 export class CardPayment extends SwedbankBase {

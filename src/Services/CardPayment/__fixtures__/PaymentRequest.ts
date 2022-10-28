@@ -1,4 +1,4 @@
-import { PaymentRequest } from '../models/PaymentRequest';
+import { PaymentRequest } from '../models/payment-request';
 export default {
   payment: {
     operation: 'Purchase',

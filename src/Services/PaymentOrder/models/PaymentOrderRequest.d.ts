@@ -1,4 +1,4 @@
-import { Urls } from '../../CardPayment/models/Payment/Urls';
+import { Urls } from '../../CardPayment/models/Payment/urls-';
 import { OrderItem } from './OrderItem';
 import { PayeeInfo } from './PayeeInfo';
 import { PayerInfo } from './PayerInfo';

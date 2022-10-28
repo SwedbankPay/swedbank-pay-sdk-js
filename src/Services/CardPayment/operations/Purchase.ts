@@ -1,5 +1,5 @@
 import { Payment } from '../../../models/payment';
-import { PaymentRequestResource } from '../models/PaymentRequest';
+import { PaymentRequestResource } from '../models/payment-request';
 
 export type PurchaseInput = Omit<PaymentRequestResource, 'operation'>;
 
