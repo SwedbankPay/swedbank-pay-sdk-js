@@ -5,7 +5,7 @@ import { Address } from '../address';
 import { EmailAddress } from '../email-address';
 import { BaseModel } from '../generics/base-model';
 import { Msisdn } from '../msisdn';
-import { NationalIdentifier } from './nationalIdentifier';
+import { NationalIdentifier } from './national-identifier';
 
 export class Payer extends BaseModel{
     @v.ValidateNested()

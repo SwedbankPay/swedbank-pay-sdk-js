@@ -5,7 +5,7 @@ import { Address } from '../../address';
 import { EmailAddress } from '../../email-address';
 import { Identifiable } from '../../generics/identifiable';
 import { Msisdn } from '../../msisdn';
-import { NationalIdentifier } from '../nationalIdentifier';
+import { NationalIdentifier } from '../national-identifier';
 
 export class PayerResponse extends Identifiable {
     @v.ValidateNested()

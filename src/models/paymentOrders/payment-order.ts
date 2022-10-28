@@ -8,7 +8,7 @@ import { Amount } from '../generics/amount';
 import { Identifiable } from '../generics/identifiable';
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
-import { OrderItemListResponse } from './orderItemListResponse';
+import { OrderItemListResponse } from './order-item-list-response';
 import { CurrentPaymentResponse } from './response models/currentPaymentResponse';
 import { PayerResponse } from './response models/payerResponse';
 

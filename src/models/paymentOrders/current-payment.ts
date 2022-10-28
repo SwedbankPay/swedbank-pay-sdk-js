@@ -15,9 +15,9 @@ import { CancellationListResponse } from '../paymentInstruments/transactions/can
 import { CaptureListResponse } from '../paymentInstruments/transactions/capture-list-response';
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversal-list-response';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';
-import { PaymentOrderPayeeInfo } from './paymentOrderPayeeInfo';
+import { PaymentOrderPayeeInfo } from './payment-order-payee-info';
 import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';
-import { SaleListResponse } from './saleListResponse';
+import { SaleListResponse } from './sale-list-response';
 
 export class CurrentPayment extends BaseModel{
     @v.ValidateNested()

@@ -11,7 +11,7 @@ import { BaseModel } from '../../generics/base-model';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';
 import { Payer } from '../payer';
-import { PaymentOrderPaymentOptionsItems } from '../paymentOrderPaymentOptionsItems';
+import { PaymentOrderPaymentOptionsItems } from '../payment-order-payment-options-items';
 
 export class PaymentOrderRequestDetails extends BaseModel{
     @v.ValidateNested()

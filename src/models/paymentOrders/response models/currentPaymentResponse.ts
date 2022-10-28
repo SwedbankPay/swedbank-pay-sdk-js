@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../generics/base-model';
-import { CurrentPayment } from '../currentPayment';
+import { CurrentPayment } from '../current-payment';
 
 export class CurrentPaymentResponse extends BaseModel{
     @v.ValidateNested()
