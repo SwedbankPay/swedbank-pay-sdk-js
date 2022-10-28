@@ -1,6 +1,6 @@
 import nock = require('nock');
 import { Payment } from '../../../models/payment';
-import { payment_response } from '../__fixtures__/payment-response';
+import { PaymentResponse } from '../__fixtures__/payment-response';
 import { CardPayment } from '../card-payment';
 import { Price } from '../models/Payment/price';
 
@@ -15,7 +15,7 @@ const examplePrice: Price[] = [
 nock('https://api.payex.com')
   .persist()
   .get('/test-resource')
-  .reply(200, payment_response)
+  .reply(200, PaymentResponse)
   .get('/psp/creditcard/payments/a3d0d519-7b06-4964-5b38-08d7d70fea28/prices')
   .reply(200, examplePrice);
 
