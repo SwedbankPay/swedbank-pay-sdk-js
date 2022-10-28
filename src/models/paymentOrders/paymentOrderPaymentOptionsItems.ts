@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { CreditCardOptions } from '../creditCardOptions';
+import { CreditCardOptions } from '../credicard-options';
 import { BaseModel } from '../generics/baseModel';
 import { Invoice } from './invoice';
 import { Swish } from './swish';

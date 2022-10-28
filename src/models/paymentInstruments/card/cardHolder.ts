@@ -2,7 +2,7 @@ import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { AccountInfo } from '../../accountInfo';
 import { Address } from '../../address';
-import { EmailAddress } from '../../emailAddress';
+import { EmailAddress } from '../../email-address';
 import { BaseModel } from '../../generics/baseModel';
 import { Msisdn } from '../../msisdn';
 
