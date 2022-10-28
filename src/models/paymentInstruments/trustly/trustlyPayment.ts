@@ -1,4 +1,4 @@
-import { PaymentInstrument } from '../paymentInstrument';
+import { PaymentInstrument } from '../payment-instrument';
 
 export class TrustlyPayment extends PaymentInstrument {
 
