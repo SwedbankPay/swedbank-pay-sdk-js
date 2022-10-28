@@ -2,7 +2,7 @@ import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { Identifiable } from '../../generics/identifiable';
 import { Problem } from '../../generics/problem';
-import { VerifyTransaction } from './verifyTransaction';
+import { VerifyTransaction } from './verify-transaction';
 
 export class CardPaymentVerification extends Identifiable {
     @v.IsString()

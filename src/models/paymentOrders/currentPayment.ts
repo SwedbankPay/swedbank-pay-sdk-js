@@ -8,7 +8,7 @@ import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/baseModel';
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
-import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/cardPaymentAuthorizationResponse';
+import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/card-payment-authorization-response';
 import { PaymentIntent } from '../paymentInstruments/enums/payment-intent';
 import { PriceListResponse } from '../paymentInstruments/price-list-response';
 import { CancellationListResponse } from '../paymentInstruments/transactions/cancellation-list-response';

@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../generics/baseModel';
-import { CardPaymentCardDetails } from './card/cardPaymentCardDetails';
+import { CardPaymentCardDetails } from './card/card-payment-card-details';
 
 export class PaymentAuthorization extends BaseModel{
     @v.IsString()
