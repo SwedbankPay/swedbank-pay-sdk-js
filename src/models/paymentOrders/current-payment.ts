@@ -16,7 +16,7 @@ import { CaptureListResponse } from '../paymentInstruments/transactions/capture-
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversal-list-response';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';
 import { PaymentOrderPayeeInfo } from './payment-order-payee-info';
-import { PaymentAuthorizationResponse } from './response models/paymentAuthorizationResponse';
+import { PaymentAuthorizationResponse } from './response models/payment-authorization-response';
 import { SaleListResponse } from './sale-list-response';
 
 export class CurrentPayment extends BaseModel{
