@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { AuthorizationTransaction } from '../transactions/authorizationTransaction';
+import { AuthorizationTransaction } from '../transactions/authorization-transaction';
 
 export class MobilePayPaymentAuthorization {
     @v.IsString()

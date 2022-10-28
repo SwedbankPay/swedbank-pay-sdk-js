@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { Identifiable } from '../../generics/identifiable';
-import { AuthorizationTransaction } from '../transactions/authorizationTransaction';
+import { AuthorizationTransaction } from '../transactions/authorization-transaction';
 
 export class VippsPaymentAuthorization extends Identifiable{
     @v.IsString()
