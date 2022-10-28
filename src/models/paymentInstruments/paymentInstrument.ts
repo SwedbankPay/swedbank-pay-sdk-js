@@ -10,7 +10,7 @@ import { PayeeInfo } from '../generics/payeeInfo'
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
 import { PaymentIntent } from './enums/paymentIntent';
-import { PriceListResponse } from './priceListResponse';
+import { PriceListResponse } from './price-list-response';
 import { CancellationListResponse } from './transactions/cancellationListResponse';
 import { CaptureListResponse } from './transactions/captureListResponse';
 import { ReversalListResponse } from './transactions/reversalListResponse';
