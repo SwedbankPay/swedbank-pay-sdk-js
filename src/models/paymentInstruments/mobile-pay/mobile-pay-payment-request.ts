@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { BaseModel } from '../../generics/baseModel';
+import { BaseModel } from '../../generics/base-model';
 import { MobilePayPaymentDetails } from './mobile-pay-payment-details';
 import { MobilePayRequestData } from './mobile-pay-request-data';
 

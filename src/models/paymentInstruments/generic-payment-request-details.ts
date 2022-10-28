@@ -3,7 +3,7 @@ import * as v from 'class-validator';
 import { Currency } from '../currency';
 import { Operation } from '../enums/operation';
 import { MetaData } from '../generics/MetaData-resource';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from '../generics/base-model';
 import { PayeeInfo } from '../generics/payeeInfo';
 import { Urls } from '../generics/urls';
 import { Language } from '../language';

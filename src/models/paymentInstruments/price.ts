@@ -1,7 +1,7 @@
 import * as v from 'class-validator';
 import { PriceType } from '../enums/priceType';
 import { Amount } from '../generics/amount';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from '../generics/base-model';
 
 export class Price extends BaseModel {
     @v.ValidateNested()

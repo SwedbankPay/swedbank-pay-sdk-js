@@ -5,7 +5,7 @@ import { Operation } from '../enums/operation';
 import { PaymentInstrument } from '../enums/paymentInstrument';
 import { State } from '../enums/state';
 import { Amount } from '../generics/amount';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from '../generics/base-model';
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
 import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/card-payment-authorization-response';

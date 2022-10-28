@@ -1,6 +1,6 @@
 import * as v from 'class-validator';
 import { Methods } from '../enums/methods';
-import { BaseModel } from './baseModel';
+import { BaseModel } from './base-model';
 
 export class Operation extends BaseModel {
   @v.IsString()

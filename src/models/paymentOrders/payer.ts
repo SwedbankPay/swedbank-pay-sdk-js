@@ -3,7 +3,7 @@ import * as v from 'class-validator';
 import { AccountInfo } from '../account-info';
 import { Address } from '../address';
 import { EmailAddress } from '../email-address';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from '../generics/base-model';
 import { Msisdn } from '../msisdn';
 import { NationalIdentifier } from './nationalIdentifier';
 

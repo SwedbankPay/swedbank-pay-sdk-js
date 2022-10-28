@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { CountryCode } from '../country-code';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from '../generics/base-model';
 
 export class NationalIdentifier extends BaseModel{
     @v.ValidateNested()

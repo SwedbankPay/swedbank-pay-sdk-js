@@ -5,7 +5,7 @@ import { AccountPwdChangeIndicator } from './enums/accountPwdChangeIndicator';
 import { ShippingAddressUsageIndicator } from './enums/shippingAddressUsageIndicator';
 import { ShippingNameIndicator } from './enums/shippingNameIndicator';
 import { SuspiciousAccountActivity } from './enums/suspiciousAccountActivity';
-import { BaseModel } from './generics/baseModel';
+import { BaseModel } from './generics/base-model';
 
 export class AccountInfo extends BaseModel {
 

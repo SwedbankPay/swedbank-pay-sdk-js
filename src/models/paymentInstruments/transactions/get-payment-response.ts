@@ -5,7 +5,7 @@ import { Operation } from '../../enums/operation';
 import { State } from '../../enums/state';
 import { Amount } from '../../generics/amount';
 import { Identifiable } from '../../generics/identifiable';
-import { MetaData } from '../../generics/metadata';
+import { MetaData } from '../../generics/meta-data';
 import { PayeeInfo } from '../../generics/payeeInfo';
 import { Urls } from '../../generics/urls';
 import { Language } from '../../language';

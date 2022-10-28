@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { BaseModel } from '../../generics/baseModel';
+import { BaseModel } from '../../generics/base-model';
 
 export class TrustlyPrefillInfo extends BaseModel {
     @v.IsString()

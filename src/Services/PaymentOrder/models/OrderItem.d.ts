@@ -1,6 +1,6 @@
 import { Url } from 'url';
 import * as v from 'class-validator';
-import { BaseModel } from '../../../models/generics/baseModel';
+import { BaseModel } from '../../../models/generics/base-model';
 
 declare enum OrderItemType {
   PRODUCT = 'PRODUCT',

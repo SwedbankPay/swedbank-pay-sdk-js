@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { BaseModel } from '../generics/baseModel';
+import { BaseModel } from './base-model';
 
 export class Urls extends BaseModel {
     @v.IsUrl()

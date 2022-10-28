@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { HttpOperation } from '../generics/httpOperation';
-import OperationsBase from '../generics/operationsBase';
+import { HttpOperation } from '../generics/http-operation';
+import OperationsBase from '../generics/operations-base';
 
 export class ConsumerOperations extends OperationsBase {
     @v.ValidateNested()

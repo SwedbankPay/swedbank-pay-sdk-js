@@ -1,7 +1,7 @@
 import * as v from 'class-validator';
 import { HttpMethod } from '../enums/HttpMethod';
 import { LinkRelation } from '../enums/linkRelation';
-import { BaseModel } from './baseModel';
+import { BaseModel } from './base-model';
 
 export class HttpOperation extends BaseModel {
     @v.IsString()
