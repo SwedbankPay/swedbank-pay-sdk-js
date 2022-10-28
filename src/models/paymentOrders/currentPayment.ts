@@ -11,7 +11,7 @@ import { Language } from '../language';
 import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/cardPaymentAuthorizationResponse';
 import { PaymentIntent } from '../paymentInstruments/enums/paymentIntent';
 import { PriceListResponse } from '../paymentInstruments/price-list-response';
-import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
+import { CancellationListResponse } from '../paymentInstruments/transactions/cancellation-list-response';
 import { CaptureListResponse } from '../paymentInstruments/transactions/capture-list-response';
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversal-list-response';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';

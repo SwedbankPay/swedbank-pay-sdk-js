@@ -11,7 +11,7 @@ import { Urls } from '../generics/urls';
 import { Language } from '../language';
 import { PaymentIntent } from './enums/paymentIntent';
 import { PriceListResponse } from './price-list-response';
-import { CancellationListResponse } from './transactions/cancellationListResponse';
+import { CancellationListResponse } from './transactions/cancellation-list-response';
 import { CaptureListResponse } from './transactions/capture-list-response';
 import { ReversalListResponse } from './transactions/reversal-list-response';
 import { TransactionListResponse } from './transactions/transaction-list-response';

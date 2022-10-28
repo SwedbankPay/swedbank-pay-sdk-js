@@ -12,7 +12,7 @@ import { Language } from '../../language';
 import { PaymentIntent } from '../enums/paymentIntent';
 import { Price } from '../price';
 import { AuthorizationListResponse } from './authorizationListResponse';
-import { CancellationListResponse } from './cancellationListResponse';
+import { CancellationListResponse } from './cancellation-list-response';
 import { SaleListResponse } from './sale-list-response';
 import { TransactionListResponse } from './transaction-list-response';
 
