@@ -3,7 +3,7 @@ import * as v from 'class-validator';
 import { State } from '../enums/state';
 import { Amount } from '../generics/amount';
 import { BaseModel } from '../generics/base-model';
-import { PaymentType } from '../paymentInstruments/enums/payment-type';
+import { PaymentType } from '../payment-instruments/enums/payment-type';
 
 export class SaleListItem extends BaseModel{
     @v.IsUrl()
