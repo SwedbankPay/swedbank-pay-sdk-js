@@ -1,6 +1,6 @@
 import * as v from 'class-validator'
 import { ReversalTransaction } from '../transactions/reversal-transaction'
-import { InvoiceType } from './invoicePaymentInvoiceType'
+import { InvoiceType } from './invoice-payment-invoice-type'
 
 export class ReversalRequestDetails extends ReversalTransaction {
     @v.IsEnum(InvoiceType)
