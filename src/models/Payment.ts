@@ -111,7 +111,7 @@ export class Payment extends SwedbankBase {
   // }
 
   async getPrices(): Promise<Price[]> {
-    return this.GenericResource(this.prices && this.prices.id);
+    return this.GenericResource(this.prices?.id);
   }
 
   getOperations(): Operation[] {
