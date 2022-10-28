@@ -1,4 +1,4 @@
-import * as nock from 'nock';
+import nock = require('nock');
 import { payment_order_request_example } from '../__fixtures__/payment-order-request-example';
 import { payment_order_response_example } from '../__fixtures__/payment-order-response-example';
 import { Purchase } from '../operations/purchase';

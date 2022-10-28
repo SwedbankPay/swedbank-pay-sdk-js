@@ -20,7 +20,8 @@
     "strictNullChecks": false,
     "declaration": true,
     "experimentalDecorators": true,
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*",

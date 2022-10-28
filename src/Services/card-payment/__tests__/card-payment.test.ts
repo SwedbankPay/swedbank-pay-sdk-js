@@ -1,4 +1,4 @@
-import * as nock from 'nock';
+import nock = require('nock');
 import { payment_request } from '../__fixtures__/payment-request';
 import {payment_response} from '../__fixtures__/payment-response';
 import { CardPayment } from '../card-payment';
