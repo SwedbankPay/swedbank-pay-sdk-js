@@ -1,6 +1,6 @@
 /* eslint @typescript-eslint/ban-ts-ignore: 0 */
 import * as nock from 'nock';
-import { SwedbankBase } from '../swedbankBase';
+import { SwedbankBase } from '../swedbank-base';
 
 const runOperationScope = nock('https://api.payex.com')
   .get('/test')

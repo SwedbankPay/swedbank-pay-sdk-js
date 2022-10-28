@@ -1,5 +1,5 @@
 import { MerchantConfig } from '../../merchant-config';
-import { SwedbankBase } from '../../swedbankBase';
+import { SwedbankBase } from '../../swedbank-base';
 import { Payment, PaymentResponse } from '../../models/payment';
 import { PaymentRequest } from './models/PaymentRequest';
 import { Purchase, PurchaseInput } from './operations/Purchase';
