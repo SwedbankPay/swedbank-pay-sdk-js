@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { AccountInfo } from '../../accountInfo';
+import { AccountInfo } from '../../account-info';
 import { Address } from '../../address';
 import { EmailAddress } from '../../email-address';
 import { Identifiable } from '../../generics/identifiable';
