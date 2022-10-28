@@ -1,7 +1,7 @@
 import * as nock from 'nock';
 import { Payment } from '../../../models/payment';
 import { CardPayment } from '../card-payment';
-import PaymentResponse from '../__fixtures__/PaymentResponse';
+import PaymentResponse from '../__fixtures__/payment-response';
 import { Price } from '../models/Payment/price';
 
 const examplePrice: Price[] = [

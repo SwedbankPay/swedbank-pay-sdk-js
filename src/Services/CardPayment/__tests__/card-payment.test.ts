@@ -1,7 +1,7 @@
 import * as nock from 'nock';
 import { CardPayment } from '../card-payment';
-import PaymentRequest from '../__fixtures__/PaymentRequest';
-import PaymentResponse from '../__fixtures__/PaymentResponse';
+import PaymentRequest from '../__fixtures__/payment-request';
+import PaymentResponse from '../__fixtures__/payment-response';
 import { Purchase } from '../operations/purchase';
 
 nock('https://api.payex.com/psp')
