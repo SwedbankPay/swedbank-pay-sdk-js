@@ -1,4 +1,4 @@
-import { Payment } from '../../../models/Payment';
+import { Payment } from '../../../models/payment';
 import { Operation } from '../../../models/generics/Operation-resource';
 import { PaymentOrderProperties } from './PaymentOrderProperties';
 

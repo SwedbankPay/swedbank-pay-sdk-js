@@ -1,5 +1,5 @@
 import * as nock from 'nock';
-import { Payment } from '../../../models/Payment';
+import { Payment } from '../../../models/payment';
 import { CardPayment } from '../CardPayment';
 import PaymentResponse from '../__fixtures__/PaymentResponse';
 import { Price } from '../models/Payment/Price';
