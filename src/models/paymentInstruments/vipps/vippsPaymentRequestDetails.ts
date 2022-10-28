@@ -1,5 +1,5 @@
 import * as v from 'class-validator';
-import { GenericPaymentRequestDetails } from '../genericPaymentRequestDetails';
+import { GenericPaymentRequestDetails } from '../generic-payment-request-details';
 
 export class VippsPaymentRequestDetails extends GenericPaymentRequestDetails{
     @v.IsBoolean()

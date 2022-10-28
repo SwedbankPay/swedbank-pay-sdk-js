@@ -1,6 +1,6 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
-import { GenericPaymentRequestDetails } from '../genericPaymentRequestDetails';
+import { GenericPaymentRequestDetails } from '../generic-payment-request-details';
 import { TrustlyPrefillInfo } from './trustlyPrefillInfo';
 
 export class TrustlyPaymentDetails extends GenericPaymentRequestDetails{
