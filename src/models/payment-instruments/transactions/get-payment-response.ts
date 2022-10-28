@@ -46,6 +46,9 @@ export class GetPaymentResponse extends Identifiable {
   @v.ValidateNested()
   @Type(() => Price)
   prices: Price[];
+
+  @v.ValidateNested()
+  @Type(() => Amount)
   amount: Amount;
 
   @v.IsString()
