@@ -3,9 +3,9 @@ import * as v from 'class-validator';
 import { Currency } from '../currency';
 import { Operation } from '../enums/operation';
 import { State } from '../enums/state';
-import { MetaData } from '../generics/meta-data-resource';
 import { Amount } from '../generics/amount';
 import { Identifiable } from '../generics/identifiable';
+import { MetaData } from '../generics/meta-data-resource';
 import { PayeeInfo } from '../generics/payee-info'
 import { Urls } from '../generics/urls';
 import { Language } from '../language';
