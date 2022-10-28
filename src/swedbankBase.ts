@@ -1,5 +1,5 @@
 import got, { Method, Response } from 'got';
-import { MerchantConfig } from './MerchantConfig';
+import { MerchantConfig } from './merchant-config';
 
 export class SwedbankBase {
   private apiUrls = {

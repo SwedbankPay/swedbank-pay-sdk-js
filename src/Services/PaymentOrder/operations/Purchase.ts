@@ -1,4 +1,4 @@
-import { MerchantConfig } from '../../../MerchantConfig';
+import { MerchantConfig } from '../../../merchant-config';
 import { PaymentOrderRequestResource } from '../models/PaymentOrderRequest';
 import { PaymentOrderResponse } from '../models/PaymentOrderResponse';
 
