@@ -24,16 +24,6 @@ export class CardPayment extends SwedbankBase {
     super(config);
   }
 
-  private async create(item: PaymentRequest): Promise<PaymentResponse> {
-    const payment = await this.request<PaymentResponse>(
-      'psp/creditcard/payments',
-      item,
-      'POST',
-    );
-
-    return payment.body;
-  }
-
   async get(id: string): Promise<Payment> {
     const payment = await this.request<PaymentResponse>(id);
 
@@ -49,6 +39,16 @@ export class CardPayment extends SwedbankBase {
     });
 
     return new Purchase(this.config, response);
+  }
+
+  private async create(item: PaymentRequest): Promise<PaymentResponse> {
+    const payment = await this.request<PaymentResponse>(
+      'psp/creditcard/payments',
+      item,
+      'POST',
+    );
+
+    return payment.body;
   }
 
   // async createRecur() {}
