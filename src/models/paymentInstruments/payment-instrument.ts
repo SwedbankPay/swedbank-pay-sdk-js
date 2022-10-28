@@ -12,7 +12,7 @@ import { Language } from '../language';
 import { PaymentIntent } from './enums/paymentIntent';
 import { PriceListResponse } from './price-list-response';
 import { CancellationListResponse } from './transactions/cancellationListResponse';
-import { CaptureListResponse } from './transactions/captureListResponse';
+import { CaptureListResponse } from './transactions/capture-list-response';
 import { ReversalListResponse } from './transactions/reversal-list-response';
 import { TransactionListResponse } from './transactions/transaction-list-response';
 

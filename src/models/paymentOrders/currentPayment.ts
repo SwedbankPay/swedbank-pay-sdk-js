@@ -12,7 +12,7 @@ import { CardPaymentAuthorizationResponse } from '../paymentInstruments/card/car
 import { PaymentIntent } from '../paymentInstruments/enums/paymentIntent';
 import { PriceListResponse } from '../paymentInstruments/price-list-response';
 import { CancellationListResponse } from '../paymentInstruments/transactions/cancellationListResponse';
-import { CaptureListResponse } from '../paymentInstruments/transactions/captureListResponse';
+import { CaptureListResponse } from '../paymentInstruments/transactions/capture-list-response';
 import { ReversalListResponse } from '../paymentInstruments/transactions/reversal-list-response';
 import { TransactionListResponse } from '../paymentInstruments/transactions/transaction-list-response';
 import { PaymentOrderPayeeInfo } from './paymentOrderPayeeInfo';

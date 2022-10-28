@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
-import { CaptureTransaction } from '../transactions/captureTransaction';
+import { CaptureTransaction } from '../transactions/capture-transaction';
 
 export class VippsPaymentCaptureRequest extends BaseModel{
     @v.ValidateNested()
