@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import * as v from 'class-validator';
 import { BaseModel } from '../../generics/baseModel';
-import { MobilePayPaymentAuthorization } from './mobilePayPaymentAuthorization';
+import { MobilePayPaymentAuthorization } from './mobile-pay-payment-authorization';
 
 export class MobilePayPaymentAuthorizationListResponse extends BaseModel{
     @v.IsArray()
