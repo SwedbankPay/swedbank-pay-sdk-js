@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-* [SwedbankBase](swedbankbase.md)
+- [SwedbankBase](swedbankbase.md)
 
   ↳ **PaymentOrder**
 
@@ -12,68 +12,72 @@
 
 ### Constructors
 
-* [constructor](paymentorder.md#constructor)
+- [constructor](paymentorder.md#constructor)
 
 ### Properties
 
-* [_operations](paymentorder.md#private-_operations)
-* [config](paymentorder.md#config)
-* [paymentOrder](paymentorder.md#paymentorder)
+- [\_operations](paymentorder.md#private-_operations)
+- [config](paymentorder.md#config)
+- [paymentOrder](paymentorder.md#paymentorder)
 
 ### Methods
 
-* [GenericResource](paymentorder.md#genericresource)
-* [create](paymentorder.md#create)
-* [createPurchase](paymentorder.md#createpurchase)
-* [get](paymentorder.md#get)
-* [getOperations](paymentorder.md#getoperations)
-* [getUrl](paymentorder.md#geturl)
-* [request](paymentorder.md#request)
-* [runOperation](paymentorder.md#runoperation)
+- [GenericResource](paymentorder.md#genericresource)
+- [create](paymentorder.md#create)
+- [createPurchase](paymentorder.md#createpurchase)
+- [get](paymentorder.md#get)
+- [getOperations](paymentorder.md#getoperations)
+- [getUrl](paymentorder.md#geturl)
+- [request](paymentorder.md#request)
+- [runOperation](paymentorder.md#runoperation)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new PaymentOrder**(`config`: MerchantConfig): *[PaymentOrder](paymentorder.md)*
+\+ **new PaymentOrder**(`config`: MerchantConfig):
+_[PaymentOrder](paymentorder.md)_
 
-*Overrides [SwedbankBase](swedbankbase.md).[constructor](swedbankbase.md#constructor)*
+_Overrides
+[SwedbankBase](swedbankbase.md).[constructor](swedbankbase.md#constructor)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`config` | MerchantConfig |
+| Name     | Type           |
+| -------- | -------------- |
+| `config` | MerchantConfig |
 
-**Returns:** *[PaymentOrder](paymentorder.md)*
+**Returns:** _[PaymentOrder](paymentorder.md)_
 
 ## Properties
 
-### `Private` _operations
+### `Private` \_operations
 
-• **_operations**: *Operation[]*
+• **\_operations**: _Operation[]_
 
-___
+---
 
-###  config
+### config
 
-• **config**: *MerchantConfig*
+• **config**: _MerchantConfig_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)_
 
-___
+---
 
-###  paymentOrder
+### paymentOrder
 
-• **paymentOrder**: *PaymentOrderProperties*
+• **paymentOrder**: _PaymentOrderProperties_
 
 ## Methods
 
-###  GenericResource
+### GenericResource
 
-▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
+▸ **GenericResource**‹**T**›(`id?`: string): _Promise‹T›_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)_
 
 **Type parameters:**
 
@@ -81,109 +85,93 @@ ___
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`id?` | string |
+| Name  | Type   |
+| ----- | ------ |
+| `id?` | string |
 
-**Returns:** *Promise‹T›*
+**Returns:** _Promise‹T›_
 
-___
+---
 
-###  create
+### create
 
-▸ **create**(`item`: PaymentOrderRequest): *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`item` | PaymentOrderRequest |
-
-**Returns:** *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
-
-___
-
-###  createPurchase
-
-▸ **createPurchase**(`item`: [PurchaseInput](../README.md#purchaseinput)): *Promise‹Purchase›*
+▸ **create**(`item`: PaymentOrderRequest):
+_Promise‹[PaymentOrderResponse](paymentorderresponse.md)›_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`item` | [PurchaseInput](../README.md#purchaseinput) |
+| Name   | Type                |
+| ------ | ------------------- |
+| `item` | PaymentOrderRequest |
 
-**Returns:** *Promise‹Purchase›*
+**Returns:** _Promise‹[PaymentOrderResponse](paymentorderresponse.md)›_
 
-___
+---
 
-###  get
+### createPurchase
 
-▸ **get**(`id`: string): *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`id` | string |
-
-**Returns:** *Promise‹[PaymentOrderResponse](paymentorderresponse.md)›*
-
-___
-
-###  getOperations
-
-▸ **getOperations**(): *Operation[]*
-
-**Returns:** *Operation[]*
-
-___
-
-###  getUrl
-
-▸ **getUrl**(`env?`: "test" | "prod"): *string*
-
-*Inherited from [SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)*
+▸ **createPurchase**(`item`: [PurchaseInput](../README.md#purchaseinput)):
+_Promise‹Purchase›_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`env?` | "test" &#124; "prod" |
+| Name   | Type                                        |
+| ------ | ------------------------------------------- |
+| `item` | [PurchaseInput](../README.md#purchaseinput) |
 
-**Returns:** *string*
+**Returns:** _Promise‹Purchase›_
+
+---
+
+### get
+
+▸ **get**(`id`: string):
+_Promise‹[PaymentOrderResponse](paymentorderresponse.md)›_
+
+**Parameters:**
+
+| Name | Type   |
+| ---- | ------ |
+| `id` | string |
+
+**Returns:** _Promise‹[PaymentOrderResponse](paymentorderresponse.md)›_
+
+---
+
+### getOperations
+
+▸ **getOperations**(): _Operation[]_
+
+**Returns:** _Operation[]_
+
+---
+
+### getUrl
+
+▸ **getUrl**(`env?`: 'test' | 'prod'): _string_
+
+_Inherited from
+[SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)_
+
+**Parameters:**
+
+| Name   | Type                 |
+| ------ | -------------------- |
+| `env?` | 'test' &#124; 'prod' |
+
+**Returns:** _string_
 
 URL to API
 
-___
+---
 
-###  request
+### request
 
-▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)*
-
-**Type parameters:**
-
-▪ **T**
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`path` | string |
-`body?` | object |
-`method?` | Method |
-
-**Returns:** *Promise‹Response‹T››*
-
-___
-
-###  runOperation
-
-▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
-
-*Inherited from [SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)_
 
 **Type parameters:**
 
@@ -191,10 +179,34 @@ ___
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`url` | string |
-`body?` | object |
-`method?` | Method |
+| Name      | Type   |
+| --------- | ------ |
+| `path`    | string |
+| `body?`   | object |
+| `method?` | Method |
 
-**Returns:** *Promise‹Response‹T››*
+**Returns:** _Promise‹Response‹T››_
+
+---
+
+### runOperation
+
+▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
+
+_Inherited from
+[SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)_
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name      | Type   |
+| --------- | ------ |
+| `url`     | string |
+| `body?`   | object |
+| `method?` | Method |
+
+**Returns:** _Promise‹Response‹T››_

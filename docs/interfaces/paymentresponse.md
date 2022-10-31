@@ -4,23 +4,23 @@
 
 ## Hierarchy
 
-* **PaymentResponse**
+- **PaymentResponse**
 
 ## Index
 
 ### Properties
 
-* [operations](paymentresponse.md#operations)
-* [payment](paymentresponse.md#payment)
+- [operations](paymentresponse.md#operations)
+- [payment](paymentresponse.md#payment)
 
 ## Properties
 
-###  operations
+### operations
 
-• **operations**: *Operation[]*
+• **operations**: _Operation[]_
 
-___
+---
 
-###  payment
+### payment
 
-• **payment**: *[PaymentProperties](paymentproperties.md)*
+• **payment**: _[PaymentProperties](paymentproperties.md)_

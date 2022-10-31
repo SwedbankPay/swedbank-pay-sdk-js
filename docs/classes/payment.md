@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-* [SwedbankBase](swedbankbase.md)
+- [SwedbankBase](swedbankbase.md)
 
   ↳ **Payment**
 
@@ -16,176 +16,180 @@
 
 ### Constructors
 
-* [constructor](payment.md#constructor)
+- [constructor](payment.md#constructor)
 
 ### Properties
 
-* [_operations](payment.md#private-_operations)
-* [amount](payment.md#amount)
-* [config](payment.md#config)
-* [created](payment.md#created)
-* [description](payment.md#description)
-* [id](payment.md#id)
-* [initiatingSystemUserAgent](payment.md#initiatingsystemuseragent)
-* [instrument](payment.md#instrument)
-* [language](payment.md#language)
-* [number](payment.md#number)
-* [payerReference](payment.md#payerreference)
-* [prices](payment.md#private-prices)
-* [remainingCancellationAmount](payment.md#remainingcancellationamount)
-* [remainingCaptureAmount](payment.md#remainingcaptureamount)
-* [remainingReversalAmount](payment.md#remainingreversalamount)
-* [state](payment.md#state)
-* [updated](payment.md#updated)
-* [userAgent](payment.md#useragent)
+- [\_operations](payment.md#private-_operations)
+- [amount](payment.md#amount)
+- [config](payment.md#config)
+- [created](payment.md#created)
+- [description](payment.md#description)
+- [id](payment.md#id)
+- [initiatingSystemUserAgent](payment.md#initiatingsystemuseragent)
+- [instrument](payment.md#instrument)
+- [language](payment.md#language)
+- [number](payment.md#number)
+- [payerReference](payment.md#payerreference)
+- [prices](payment.md#private-prices)
+- [remainingCancellationAmount](payment.md#remainingcancellationamount)
+- [remainingCaptureAmount](payment.md#remainingcaptureamount)
+- [remainingReversalAmount](payment.md#remainingreversalamount)
+- [state](payment.md#state)
+- [updated](payment.md#updated)
+- [userAgent](payment.md#useragent)
 
 ### Methods
 
-* [GenericResource](payment.md#genericresource)
-* [getOperations](payment.md#getoperations)
-* [getPrices](payment.md#getprices)
-* [getUrl](payment.md#geturl)
-* [request](payment.md#request)
-* [runOperation](payment.md#runoperation)
+- [GenericResource](payment.md#genericresource)
+- [getOperations](payment.md#getoperations)
+- [getPrices](payment.md#getprices)
+- [getUrl](payment.md#geturl)
+- [request](payment.md#request)
+- [runOperation](payment.md#runoperation)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new Payment**(`config`: MerchantConfig, `response`: object): *[Payment](payment.md)*
+\+ **new Payment**(`config`: MerchantConfig, `response`: object):
+_[Payment](payment.md)_
 
-*Overrides [SwedbankBase](swedbankbase.md).[constructor](swedbankbase.md#constructor)*
+_Overrides
+[SwedbankBase](swedbankbase.md).[constructor](swedbankbase.md#constructor)_
 
 **Parameters:**
 
-▪ **config**: *MerchantConfig*
+▪ **config**: _MerchantConfig_
 
-▪ **response**: *object*
+▪ **response**: _object_
 
-Name | Type |
------- | ------ |
-`operations` | Operation[] |
-`payment` | [PaymentProperties](../interfaces/paymentproperties.md) |
+| Name         | Type                                                    |
+| ------------ | ------------------------------------------------------- |
+| `operations` | Operation[]                                             |
+| `payment`    | [PaymentProperties](../interfaces/paymentproperties.md) |
 
-**Returns:** *[Payment](payment.md)*
+**Returns:** _[Payment](payment.md)_
 
 ## Properties
 
-### `Private` _operations
+### `Private` \_operations
 
-• **_operations**: *Operation[]*
+• **\_operations**: _Operation[]_
 
-___
+---
 
-###  amount
+### amount
 
-• **amount**: *number*
+• **amount**: _number_
 
-___
+---
 
-###  config
+### config
 
-• **config**: *MerchantConfig*
+• **config**: _MerchantConfig_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[config](swedbankbase.md#config)_
 
-___
+---
 
-###  created
+### created
 
-• **created**: *Date*
+• **created**: _Date_
 
-___
+---
 
-###  description
+### description
 
-• **description**: *string*
+• **description**: _string_
 
-___
+---
 
-###  id
+### id
 
-• **id**: *string*
+• **id**: _string_
 
-___
+---
 
-###  initiatingSystemUserAgent
+### initiatingSystemUserAgent
 
-• **initiatingSystemUserAgent**: *string*
+• **initiatingSystemUserAgent**: _string_
 
-___
+---
 
-###  instrument
+### instrument
 
-• **instrument**: *string*
+• **instrument**: _string_
 
-___
+---
 
-###  language
+### language
 
-• **language**: *string*
+• **language**: _string_
 
-___
+---
 
-###  number
+### number
 
-• **number**: *number*
+• **number**: _number_
 
-___
+---
 
-###  payerReference
+### payerReference
 
-• **payerReference**: *string*
+• **payerReference**: _string_
 
-___
+---
 
 ### `Private` prices
 
-• **prices**: *GenericResource*
+• **prices**: _GenericResource_
 
-___
+---
 
-###  remainingCancellationAmount
+### remainingCancellationAmount
 
-• **remainingCancellationAmount**: *number*
+• **remainingCancellationAmount**: _number_
 
-___
+---
 
-###  remainingCaptureAmount
+### remainingCaptureAmount
 
-• **remainingCaptureAmount**: *number*
+• **remainingCaptureAmount**: _number_
 
-___
+---
 
-###  remainingReversalAmount
+### remainingReversalAmount
 
-• **remainingReversalAmount**: *number*
+• **remainingReversalAmount**: _number_
 
-___
+---
 
-###  state
+### state
 
-• **state**: *string*
+• **state**: _string_
 
-___
+---
 
-###  updated
+### updated
 
-• **updated**: *Date*
+• **updated**: _Date_
 
-___
+---
 
-###  userAgent
+### userAgent
 
-• **userAgent**: *string*
+• **userAgent**: _string_
 
 ## Methods
 
-###  GenericResource
+### GenericResource
 
-▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
+▸ **GenericResource**‹**T**›(`id?`: string): _Promise‹T›_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[GenericResource](swedbankbase.md#genericresource)_
 
 **Type parameters:**
 
@@ -193,75 +197,56 @@ ___
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`id?` | string |
+| Name  | Type   |
+| ----- | ------ |
+| `id?` | string |
 
-**Returns:** *Promise‹T›*
+**Returns:** _Promise‹T›_
 
-___
+---
 
-###  getOperations
+### getOperations
 
-▸ **getOperations**(): *Operation[]*
+▸ **getOperations**(): _Operation[]_
 
-**Returns:** *Operation[]*
+**Returns:** _Operation[]_
 
-___
+---
 
-###  getPrices
+### getPrices
 
-▸ **getPrices**(): *Promise‹Price[]›*
+▸ **getPrices**(): _Promise‹Price[]›_
 
-**Returns:** *Promise‹Price[]›*
+**Returns:** _Promise‹Price[]›_
 
-___
+---
 
-###  getUrl
+### getUrl
 
-▸ **getUrl**(`env?`: "test" | "prod"): *string*
+▸ **getUrl**(`env?`: 'test' | 'prod'): _string_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[getUrl](swedbankbase.md#geturl)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`env?` | "test" &#124; "prod" |
+| Name   | Type                 |
+| ------ | -------------------- |
+| `env?` | 'test' &#124; 'prod' |
 
-**Returns:** *string*
+**Returns:** _string_
 
 URL to API
 
-___
+---
 
-###  request
+### request
 
-▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
 
-*Inherited from [SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)*
-
-**Type parameters:**
-
-▪ **T**
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`path` | string |
-`body?` | object |
-`method?` | Method |
-
-**Returns:** *Promise‹Response‹T››*
-
-___
-
-###  runOperation
-
-▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
-
-*Inherited from [SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)*
+_Inherited from
+[SwedbankBase](swedbankbase.md).[request](swedbankbase.md#request)_
 
 **Type parameters:**
 
@@ -269,10 +254,34 @@ ___
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`url` | string |
-`body?` | object |
-`method?` | Method |
+| Name      | Type   |
+| --------- | ------ |
+| `path`    | string |
+| `body?`   | object |
+| `method?` | Method |
 
-**Returns:** *Promise‹Response‹T››*
+**Returns:** _Promise‹Response‹T››_
+
+---
+
+### runOperation
+
+▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
+
+_Inherited from
+[SwedbankBase](swedbankbase.md).[runOperation](swedbankbase.md#runoperation)_
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name      | Type   |
+| --------- | ------ |
+| `url`     | string |
+| `body?`   | object |
+| `method?` | Method |
+
+**Returns:** _Promise‹Response‹T››_

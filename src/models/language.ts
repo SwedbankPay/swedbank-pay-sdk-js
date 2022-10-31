@@ -1,5 +1,3 @@
-import { BaseModel } from "./generics/baseModel";
+import { BaseModel } from './generics/base-model';
 
-export class Language extends BaseModel{
-
-}
+export class Language extends BaseModel {}

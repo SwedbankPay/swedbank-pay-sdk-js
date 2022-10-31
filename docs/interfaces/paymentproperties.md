@@ -4,121 +4,121 @@
 
 ## Hierarchy
 
-* **PaymentProperties**
+- **PaymentProperties**
 
 ## Index
 
 ### Properties
 
-* [amount](paymentproperties.md#amount)
-* [created](paymentproperties.md#created)
-* [description](paymentproperties.md#description)
-* [id](paymentproperties.md#id)
-* [initiatingSystemUserAgent](paymentproperties.md#initiatingsystemuseragent)
-* [instrument](paymentproperties.md#instrument)
-* [language](paymentproperties.md#language)
-* [number](paymentproperties.md#number)
-* [payerReference](paymentproperties.md#payerreference)
-* [prices](paymentproperties.md#prices)
-* [remainingCancellationAmount](paymentproperties.md#remainingcancellationamount)
-* [remainingCaptureAmount](paymentproperties.md#remainingcaptureamount)
-* [remainingReversalAmount](paymentproperties.md#remainingreversalamount)
-* [state](paymentproperties.md#state)
-* [updated](paymentproperties.md#updated)
-* [userAgent](paymentproperties.md#useragent)
+- [amount](paymentproperties.md#amount)
+- [created](paymentproperties.md#created)
+- [description](paymentproperties.md#description)
+- [id](paymentproperties.md#id)
+- [initiatingSystemUserAgent](paymentproperties.md#initiatingsystemuseragent)
+- [instrument](paymentproperties.md#instrument)
+- [language](paymentproperties.md#language)
+- [number](paymentproperties.md#number)
+- [payerReference](paymentproperties.md#payerreference)
+- [prices](paymentproperties.md#prices)
+- [remainingCancellationAmount](paymentproperties.md#remainingcancellationamount)
+- [remainingCaptureAmount](paymentproperties.md#remainingcaptureamount)
+- [remainingReversalAmount](paymentproperties.md#remainingreversalamount)
+- [state](paymentproperties.md#state)
+- [updated](paymentproperties.md#updated)
+- [userAgent](paymentproperties.md#useragent)
 
 ## Properties
 
-###  amount
+### amount
 
-• **amount**: *number*
+• **amount**: _number_
 
-___
+---
 
-###  created
+### created
 
-• **created**: *Date*
+• **created**: _Date_
 
-___
+---
 
-###  description
+### description
 
-• **description**: *string*
+• **description**: _string_
 
-___
+---
 
-###  id
+### id
 
-• **id**: *string*
+• **id**: _string_
 
-___
+---
 
-###  initiatingSystemUserAgent
+### initiatingSystemUserAgent
 
-• **initiatingSystemUserAgent**: *string*
+• **initiatingSystemUserAgent**: _string_
 
-___
+---
 
-###  instrument
+### instrument
 
-• **instrument**: *string*
+• **instrument**: _string_
 
-___
+---
 
-###  language
+### language
 
-• **language**: *string*
+• **language**: _string_
 
-___
+---
 
-###  number
+### number
 
-• **number**: *number*
+• **number**: _number_
 
-___
+---
 
-###  payerReference
+### payerReference
 
-• **payerReference**: *string*
+• **payerReference**: _string_
 
-___
+---
 
-###  prices
+### prices
 
-• **prices**: *GenericResource*
+• **prices**: _GenericResource_
 
-___
+---
 
-###  remainingCancellationAmount
+### remainingCancellationAmount
 
-• **remainingCancellationAmount**: *number*
+• **remainingCancellationAmount**: _number_
 
-___
+---
 
-###  remainingCaptureAmount
+### remainingCaptureAmount
 
-• **remainingCaptureAmount**: *number*
+• **remainingCaptureAmount**: _number_
 
-___
+---
 
-###  remainingReversalAmount
+### remainingReversalAmount
 
-• **remainingReversalAmount**: *number*
+• **remainingReversalAmount**: _number_
 
-___
+---
 
-###  state
+### state
 
-• **state**: *string*
+• **state**: _string_
 
-___
+---
 
-###  updated
+### updated
 
-• **updated**: *Date*
+• **updated**: _Date_
 
-___
+---
 
-###  userAgent
+### userAgent
 
-• **userAgent**: *string*
+• **userAgent**: _string_

@@ -4,7 +4,7 @@
 
 ## Hierarchy
 
-* **SwedbankBase**
+- **SwedbankBase**
 
   ↳ [Payment](payment.md)
 
@@ -16,48 +16,49 @@
 
 ### Constructors
 
-* [constructor](swedbankbase.md#constructor)
+- [constructor](swedbankbase.md#constructor)
 
 ### Properties
 
-* [config](swedbankbase.md#config)
+- [config](swedbankbase.md#config)
 
 ### Methods
 
-* [GenericResource](swedbankbase.md#genericresource)
-* [getUrl](swedbankbase.md#geturl)
-* [request](swedbankbase.md#request)
-* [runOperation](swedbankbase.md#runoperation)
+- [GenericResource](swedbankbase.md#genericresource)
+- [getUrl](swedbankbase.md#geturl)
+- [request](swedbankbase.md#request)
+- [runOperation](swedbankbase.md#runoperation)
 
 ### Object literals
 
-* [apiUrls](swedbankbase.md#private-apiurls)
+- [apiUrls](swedbankbase.md#private-apiurls)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new SwedbankBase**(`config`: MerchantConfig): *[SwedbankBase](swedbankbase.md)*
+\+ **new SwedbankBase**(`config`: MerchantConfig):
+_[SwedbankBase](swedbankbase.md)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`config` | MerchantConfig |
+| Name     | Type           |
+| -------- | -------------- |
+| `config` | MerchantConfig |
 
-**Returns:** *[SwedbankBase](swedbankbase.md)*
+**Returns:** _[SwedbankBase](swedbankbase.md)_
 
 ## Properties
 
-###  config
+### config
 
-• **config**: *MerchantConfig*
+• **config**: _MerchantConfig_
 
 ## Methods
 
-###  GenericResource
+### GenericResource
 
-▸ **GenericResource**‹**T**›(`id?`: string): *Promise‹T›*
+▸ **GenericResource**‹**T**›(`id?`: string): _Promise‹T›_
 
 **Type parameters:**
 
@@ -65,53 +66,34 @@ Name | Type |
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`id?` | string |
+| Name  | Type   |
+| ----- | ------ |
+| `id?` | string |
 
-**Returns:** *Promise‹T›*
+**Returns:** _Promise‹T›_
 
-___
+---
 
-###  getUrl
+### getUrl
 
-▸ **getUrl**(`env?`: "test" | "prod"): *string*
+▸ **getUrl**(`env?`: 'test' | 'prod'): _string_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`env?` | "test" &#124; "prod" |
+| Name   | Type                 |
+| ------ | -------------------- |
+| `env?` | 'test' &#124; 'prod' |
 
-**Returns:** *string*
+**Returns:** _string_
 
 URL to API
 
-___
+---
 
-###  request
+### request
 
-▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
-
-**Type parameters:**
-
-▪ **T**
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`path` | string |
-`body?` | object |
-`method?` | Method |
-
-**Returns:** *Promise‹Response‹T››*
-
-___
-
-###  runOperation
-
-▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method): *Promise‹Response‹T››*
+▸ **request**‹**T**›(`path`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
 
 **Type parameters:**
 
@@ -119,24 +101,45 @@ ___
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`url` | string |
-`body?` | object |
-`method?` | Method |
+| Name      | Type   |
+| --------- | ------ |
+| `path`    | string |
+| `body?`   | object |
+| `method?` | Method |
 
-**Returns:** *Promise‹Response‹T››*
+**Returns:** _Promise‹Response‹T››_
+
+---
+
+### runOperation
+
+▸ **runOperation**‹**T**›(`url`: string, `body?`: object, `method?`: Method):
+_Promise‹Response‹T››_
+
+**Type parameters:**
+
+▪ **T**
+
+**Parameters:**
+
+| Name      | Type   |
+| --------- | ------ |
+| `url`     | string |
+| `body?`   | object |
+| `method?` | Method |
+
+**Returns:** _Promise‹Response‹T››_
 
 ## Object literals
 
 ### `Private` apiUrls
 
-### ▪ **apiUrls**: *object*
+### ▪ **apiUrls**: _object_
 
-###  prod
+### prod
 
-• **prod**: *string* = "https://api.payex.com"
+• **prod**: _string_ = 'https://api.payex.com'
 
-###  test
+### test
 
-• **test**: *string* = "https://api.externalintegration.payex.com"
+• **test**: _string_ = 'https://api.externalintegration.payex.com'
