@@ -63,7 +63,6 @@ describe('SwedbankBase', () => {
       callbackOverride: customUrl,
     });
     const res = await swedbank.getUrl();
-    // @ts-expect-error
     expect(res).toBe(customUrl);
   });
 });
