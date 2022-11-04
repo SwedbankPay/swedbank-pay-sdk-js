@@ -18,9 +18,9 @@ export class SwedbankBase {
    */
   getUrl(env?: 'test' | 'prod'): string {
     if(this.config.callbackOverride)
-      return this.config.callbackOverride;
+      {return this.config.callbackOverride;}
     else
-      return this.apiUrls[env ? env : this.config.testMode ? 'test' : 'prod'];
+      {return this.apiUrls[env ? env : this.config.testMode ? 'test' : 'prod'];}
   }
 
   // eslint-disable-next

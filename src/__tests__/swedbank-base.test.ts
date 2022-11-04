@@ -56,14 +56,14 @@ describe('SwedbankBase', () => {
   });
 
   it('should return custom environment url when set in constructor', async () => {
-    let customUrl = "https://www.example.com"
+    const customUrl = 'https://www.example.com'
     const swedbank = new SwedbankBase({
       merchantToken: '',
       consumerIp: '1.2.3.4',
       callbackOverride: customUrl
     });
     const res = await swedbank.getUrl();
-    // @ts-ignore
+    // @ts-expect-error
     expect(res).toBe(customUrl);
   });
 });
