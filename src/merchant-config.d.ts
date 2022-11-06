@@ -19,7 +19,7 @@ export interface MerchantConfig {
    */
   testMode?: boolean;
   /**
-   * Override for PayEx API. Replaces testMode to customise environment.
+   * Set URL for all methods. Cannot be used with `testMode`.
    */
-  callbackOverride?: string;
+  baseUrl?: string;
 }
