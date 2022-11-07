@@ -18,4 +18,8 @@ export interface MerchantConfig {
    * Used to run in test-mode. The requests will be sent to Payex' Test API.
    */
   testMode?: boolean;
+  /**
+   * Set URL for all methods. Cannot be used with `testMode`.
+   */
+  baseUrl?: string;
 }

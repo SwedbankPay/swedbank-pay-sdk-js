@@ -54,4 +54,15 @@ describe('SwedbankBase', () => {
     // @ts-expect-error
     expect(res).toBe(swedbank.apiUrls['test']);
   });
+
+  it('should return custom environment url when set in constructor', async () => {
+    const customUrl = 'https://www.example.com';
+    const swedbank = new SwedbankBase({
+      merchantToken: '',
+      consumerIp: '1.2.3.4',
+      baseUrl: customUrl,
+    });
+    const res = await swedbank.getUrl();
+    expect(res).toBe(customUrl);
+  });
 });

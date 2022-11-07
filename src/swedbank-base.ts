@@ -17,7 +17,11 @@ export class SwedbankBase {
    * @returns URL to API
    */
   getUrl(env?: 'test' | 'prod'): string {
-    return this.apiUrls[env ? env : this.config.testMode ? 'test' : 'prod'];
+    if (this.config.baseUrl) {
+      return this.config.baseUrl;
+    } else {
+      return this.apiUrls[env ? env : this.config.testMode ? 'test' : 'prod'];
+    }
   }
 
   // eslint-disable-next
