@@ -17,8 +17,8 @@ export class SwedbankBase {
    * @returns URL to API
    */
   getUrl(env?: 'test' | 'prod'): string {
-    if (this.config.callbackOverride) {
-      return this.config.callbackOverride;
+    if (this.config.baseUrl) {
+      return this.config.baseUrl;
     } else {
       return this.apiUrls[env ? env : this.config.testMode ? 'test' : 'prod'];
     }
