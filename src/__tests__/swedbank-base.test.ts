@@ -60,7 +60,7 @@ describe('SwedbankBase', () => {
     const swedbank = new SwedbankBase({
       merchantToken: '',
       consumerIp: '1.2.3.4',
-      callbackOverride: customUrl,
+      baseUrl: customUrl,
     });
     const res = await swedbank.getUrl();
     expect(res).toBe(customUrl);
