@@ -573,8 +573,8 @@
     defer-to-connect "^2.0.0"
 
 "@types/babel__core@^7.1.14", "@types/babel__core@^7.1.19":
-  version "7.1.19"
-  resolved "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.1.19.tgz"
+  version "7.1.20"
+  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.20.tgz#e168cdd612c92a2d335029ed62ac94c95b362359"
   dependencies:
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
