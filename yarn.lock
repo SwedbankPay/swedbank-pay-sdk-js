@@ -303,9 +303,9 @@
   integrity sha512-ZQoYWnLlC1SIc9GYwFGGUP3h1MkQDGAyBfE8vnLFL+xxlJX4q/qRugtha54HryUs+kCDjzuPwSG3s0gZ1tWPVQ==
 
 "@cobraz/prettier@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@cobraz/prettier/-/prettier-2.0.0.tgz"
-  integrity sha512-3Kug2HKJPW96INaTFGtqPP5tJaMRwhZkA2e2mLQ7REp2Wzd0Brmg4uL94zAFKCPEmX59iUTZF0GAHtljACqwWA==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@cobraz/prettier/-/prettier-2.0.1.tgz#4df5d69e30a0987399b701c99c30f9a1b5ce39cf"
+  integrity sha512-rMlQNO4e7sWzNPREv3OTPfirdIPOHEYlYUh14ormAUyLvXW0kz4ekxxZ3w/+ox/eSVZlp4Ysiqj5NtWFkiv7Lw==
 
 "@eslint/eslintrc@^1.3.3":
   version "1.3.3"
