@@ -1,8 +1,11 @@
 name: Release
+
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
+
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -15,24 +18,32 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
+          registry-url: https://registry.npmjs.org
           cache: yarn
 
-      - name: Installing dependencies 📦️
-        run: yarn install
+      - name: Install dependencies 📦️
+        run: yarn install --frozen-lockfile
 
-      - name: Building 🔨
-        run: yarn run build
+      - name: Build 🔨
+        run: yarn build
 
-      - name: Release? 🤔
-        uses: google-github-actions/release-please-action@v3
-        id: release
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: node
-          package-name: '@swedbank-pay/sdk'
+      - name: Get version from git tag 🏷️
+        id: version
+        uses: jannemattila/get-version-from-tag@v1
 
-      - name: Releasing 🚀
-        if: ${{ steps.release.outputs.release_created }}
-        run: yarn npm publish
+      - name: Set version to release tag 📝
+        run:
+          yarn version --no-commit-hooks --no-git-tag-version --new-version ${{
+          steps.version.outputs.version }}
+
+      - name: Publish 🚀
+        run: yarn publish
         env:
-          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Push version changes to main branch
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: release ${{ github.event.release.tag_name }}'
+          branch: main
+          file_pattern: package.json

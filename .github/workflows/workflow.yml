@@ -38,3 +38,19 @@ jobs:
 
       - name: Sending reports to Codecov 📝
         uses: codecov/codecov-action@v3
+  release-please:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          release-type: node
+          package-name: create-bjerk-typescript
