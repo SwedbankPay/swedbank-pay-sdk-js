@@ -21,7 +21,10 @@
     "declaration": true,
     "experimentalDecorators": true,
     "types": ["node", "jest"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "tslib": ["./node_modules/tslib/tslib.d.ts"]
+    }
   },
   "include": ["src/**/*", "examples/**/*", "__tests__/**/*"],
   "exclude": ["build/"]
