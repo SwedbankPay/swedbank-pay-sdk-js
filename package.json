@@ -21,7 +21,7 @@
   },
   "prettier": "@cobraz/prettier",
   "devDependencies": {
-    "@bjerk/eslint-config": "^3.0.0",
+    "@bjerk/eslint-config": "^4.0.0",
     "@cobraz/prettier": "^2.0.1",
     "@types/babel__core": "^7.20.0",
     "@types/jest": "^29.2.6",
